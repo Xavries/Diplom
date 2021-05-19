@@ -1,0 +1,631 @@
+
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="IE=Edge" http-equiv="X-UA-Compatible"/>
+<title>Search Result - Tamriel Trade Centre</title>
+<link href="/Content/css?v=RalYvvhWpP2ePg9RsLlb8bhgfSjDN2u7-m-3n5KVnvQ1" rel="stylesheet"/>
+<script src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+            (adsbygoogle = window.adsbygoogle || []).push({
+                google_ad_client: "ca-pub-9467209390734812",
+                enable_page_level_ads: true
+            });
+        </script>
+</head>
+<body>
+<div id="fb-root"></div>
+<script>
+        (function (d, s, id)
+        {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+<div class="container">
+<div class="navbar-header">
+<button class="navbar-toggle" data-target="#topNavBar" data-toggle="collapse" type="button">
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+<a class="navbar-brand" href="/" id="logo">
+<img alt="Home" src="/Logo.png"/>
+</a>
+<p class="navbar-text visible-xs" id="nav-header-site-name">Tamriel Trade Centre</p>
+</div>
+<div class="collapse navbar-collapse" id="topNavBar">
+<ul class="nav navbar-nav">
+<li>
+<a href="/pc/Trade/Search">
+<span class="glyphicon glyphicon-search" style="top:3px;"></span>
+<span>Search</span>
+</a>
+</li>
+</ul>
+<ul class="nav navbar-nav navbar-right">
+<li class="dropdown">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#">Addon <b class="caret"></b></a>
+<ul class="dropdown-menu">
+<li>
+<a href="/download">
+<span class="glyphicon glyphicon-download-alt" style="top:3px;"></span>
+<span>Download</span>
+</a>
+</li>
+<li>
+<a href="/pc/Trade/WebClient">
+<span class="glyphicon glyphicon-globe" style="top:3px;"></span>
+<span>Web Client (Beta)</span>
+</a>
+</li>
+</ul>
+</li>
+<li class="dropdown">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#">Language <b class="caret"></b></a>
+<ul class="dropdown-menu">
+<li>
+<a href="https://eu.tamrieltradecentre.com:443/pc/Trade/SearchResult?SearchType=Sell&amp;ItemID=18124&amp;ItemNamePattern=Chromium+Plating&amp;ItemCategory1ID=&amp;ItemTraitID=&amp;ItemQualityID=&amp;IsChampionPoint=false&amp;LevelMin=&amp;LevelMax=&amp;MasterWritVoucherMin=&amp;MasterWritVoucherMax=&amp;AmountMin=&amp;AmountMax=&amp;PriceMin=&amp;PriceMax=125000&amp;lang=en-US">English</a>
+</li>
+<li>
+<a href="https://eu.tamrieltradecentre.com:443/pc/Trade/SearchResult?SearchType=Sell&amp;ItemID=18124&amp;ItemNamePattern=Chromium+Plating&amp;ItemCategory1ID=&amp;ItemTraitID=&amp;ItemQualityID=&amp;IsChampionPoint=false&amp;LevelMin=&amp;LevelMax=&amp;MasterWritVoucherMin=&amp;MasterWritVoucherMax=&amp;AmountMin=&amp;AmountMax=&amp;PriceMin=&amp;PriceMax=125000&amp;lang=de-DE">Deutsch</a>
+</li>
+<li>
+<a href="https://eu.tamrieltradecentre.com:443/pc/Trade/SearchResult?SearchType=Sell&amp;ItemID=18124&amp;ItemNamePattern=Chromium+Plating&amp;ItemCategory1ID=&amp;ItemTraitID=&amp;ItemQualityID=&amp;IsChampionPoint=false&amp;LevelMin=&amp;LevelMax=&amp;MasterWritVoucherMin=&amp;MasterWritVoucherMax=&amp;AmountMin=&amp;AmountMax=&amp;PriceMin=&amp;PriceMax=125000&amp;lang=fr-FR">Français</a>
+</li>
+<li>
+<a href="https://eu.tamrieltradecentre.com:443/pc/Trade/SearchResult?SearchType=Sell&amp;ItemID=18124&amp;ItemNamePattern=Chromium+Plating&amp;ItemCategory1ID=&amp;ItemTraitID=&amp;ItemQualityID=&amp;IsChampionPoint=false&amp;LevelMin=&amp;LevelMax=&amp;MasterWritVoucherMin=&amp;MasterWritVoucherMax=&amp;AmountMin=&amp;AmountMax=&amp;PriceMin=&amp;PriceMax=125000&amp;lang=ru-RU">русский</a>
+</li>
+<li>
+<a href="https://eu.tamrieltradecentre.com:443/pc/Trade/SearchResult?SearchType=Sell&amp;ItemID=18124&amp;ItemNamePattern=Chromium+Plating&amp;ItemCategory1ID=&amp;ItemTraitID=&amp;ItemQualityID=&amp;IsChampionPoint=false&amp;LevelMin=&amp;LevelMax=&amp;MasterWritVoucherMin=&amp;MasterWritVoucherMax=&amp;AmountMin=&amp;AmountMax=&amp;PriceMin=&amp;PriceMax=125000&amp;lang=zh-CN">简体中文</a>
+</li>
+</ul>
+</li>
+<li><a href="/account/Register?ReturnUrl=%2Fpc%2FTrade%2FSearchResult%3FSearchType%3DSell%26ItemID%3D18124%26ItemNamePattern%3DChromium%2BPlating%26ItemCategory1ID%3D%26ItemTraitID%3D%26ItemQualityID%3D%26IsChampionPoint%3Dfalse%26LevelMin%3D%26LevelMax%3D%26MasterWritVoucherMin%3D%26MasterWritVoucherMax%3D%26AmountMin%3D%26AmountMax%3D%26PriceMin%3D%26PriceMax%3D125000" id="registerLink">Register</a></li>
+<li><a href="/account/Login?ReturnUrl=%2Fpc%2FTrade%2FSearchResult%3FSearchType%3DSell%26ItemID%3D18124%26ItemNamePattern%3DChromium%2BPlating%26ItemCategory1ID%3D%26ItemTraitID%3D%26ItemQualityID%3D%26IsChampionPoint%3Dfalse%26LevelMin%3D%26LevelMax%3D%26MasterWritVoucherMin%3D%26MasterWritVoucherMax%3D%26AmountMin%3D%26AmountMax%3D%26PriceMin%3D%26PriceMax%3D125000" id="loginLink">Login</a></li>
+</ul>
+</div>
+</div>
+</nav>
+<div id="body">
+<table class="max-width">
+<tr>
+<td></td>
+<td>
+<div id="topAds">
+<!-- TopResponsive -->
+<ins class="adsbygoogle" data-ad-client="ca-pub-9467209390734812" data-ad-format="auto" data-ad-slot="6487768722" style="display:block"></ins>
+<script>
+                                (adsbygoogle = window.adsbygoogle || []).push({});
+                            </script>
+</div>
+</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>
+<div id="topSocialBtnGroup">
+<div class="pull-right">
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input name="cmd" type="hidden" value="_s-xclick"/>
+<input name="hosted_button_id" type="hidden" value="Q5GMB5HV8WBGJ"/>
+<input alt="PayPal - The safer, easier way to pay online!" border="0" name="submit" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" type="image"/>
+<img alt="" border="0" height="1" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1"/>
+</form>
+</div>
+<div class="fb-like pull-right" data-action="like" data-href="https://www.facebook.com/tamrieltradecentre" data-layout="button_count" data-share="true" data-show-faces="true"></div>
+<div class="pull-right">
+<a class="twitter-share-button" data-hashtags="ESO" data-via="TamTradeCentre" href="https://twitter.com/share" {count}="">Tweet</a>
+</div>
+</div>
+</td>
+</tr>
+<tr class="align-top">
+<td>
+<div class="sidebar"></div>
+</td>
+<td class="max-width">
+<section class="content-wrapper main-content clear-fix">
+<div class="glass-panel">
+<div class="alert alert-warning alert-dismissable" id="unblock-msg-alert" role="alert">
+<div class="form-group">
+                                    TTC will not be able to afford everyday server costs without Ads. If you like TTC and wish to keep our servers running, please support us by disabling Ads blocker or by adding TTC into whitelist.<br/><br/>Thank you!
+                                </div>
+<button class="btn btn-primary" data-dismiss="alert" type="button">Got it</button>
+</div>
+<div class="alert alert-warning alert-dismissable hidden" id="help-collect-data-alert" role="alert">
+<div>
+            Our data is collected by community. If you like our site please consider helping us by installing our <a class="alert-link" href="/download">Addon and client</a>. 
+        </div>
+<div class="form-group">
+<a href="/help/HowTheSiteWorks">Details</a>
+</div>
+<button class="btn btn-primary" data-dismiss="alert" type="button">Got it</button>
+</div>
+<h2 class="text-warning">Search Result</h2>
+<hr/>
+<div class="row">
+<div class="col-md-6">
+<form action="/pc/Trade/SearchResult" data-bind="attr: { 'target': OpenInNewTabChecked() ? '_blank' : ''}" id="search-form" method="get"><div class="validation-summary-valid" data-valmsg-summary="true"><ul><li style="display:none"></li>
+</ul></div> <div class="form-group">
+<div class="row form-group" data-bind="visible: ShowAdvancedSearch">
+<div class="col-sm-4">
+<select class="form-control" data-bind="options: SearchTypeOptions,
+                                   optionsText: 'DisplayName',
+                                   optionsValue: 'Value',
+                                   value: SelectedSearchType" name="SearchType"></select>
+</div>
+</div>
+<div class="row form-group">
+<div class="col-xs-11 input-group">
+<input data-bind="value: ItemID" data-val="true" data-val-number="The field ItemID must be a number." id="ItemID" name="ItemID" type="hidden" value="18124">
+<input class="form-control inline-block bold search-auto-complete" data-bind="value: ItemNamePattern, itemQualityClass: SelectedItemQualityID" data-val="true" data-val-length="Item Name cannot exceed 100 characters" data-val-length-max="100" id="ItemNamePattern" name="ItemNamePattern" placeholder="Search For Item" type="text" value="Chromium Plating">
+<span class="input-group-btn" data-bind="visible: ShowAdvancedSearch() == false">
+<button class="btn btn-primary" type="submit">
+<span class="glyphicon glyphicon-search"></span>
+</button>
+</span>
+</input></input></div>
+<div class="col-xs-1">
+<div class="load-spinner invisible" style="right: 10px; margin-top: 6px;"></div>
+</div>
+</div>
+<div class="row form-group" data-bind="visible: ShowAdvancedSearch">
+<div class="col-sm-11">
+<select class="form-control" data-bind="options: ItemCategory1Options,
+                                   optionsText: 'DisplayName',
+                                   optionsValue: 'Value',
+                                   value: SelectedItemCategory1ID" name="ItemCategory1ID"></select>
+</div>
+</div>
+<div class="row form-group" data-bind="visible: ItemCategory2Options().length &gt; 0 &amp;&amp; ShowAdvancedSearch()">
+<div class="col-sm-11">
+<select class="form-control" data-bind="options: ItemCategory2Options,
+                                   optionsText: 'DisplayName',
+                                   optionsValue: 'Value',
+                                   value: SelectedItemCategory2ID,
+                                   disable: ItemCategory2Options().length == 0" name="ItemCategory2ID"></select>
+</div>
+</div>
+<div class="row form-group" data-bind="visible: ItemCategory3Options().length &gt; 0 &amp;&amp; ShowAdvancedSearch()">
+<div class="col-sm-11">
+<select class="form-control" data-bind="options: ItemCategory3Options,
+                                   optionsText: 'DisplayName',
+                                   optionsValue: 'Value',
+                                   value: SelectedItemCategory3ID,
+                                   disable: ItemCategory3Options().length == 0" name="ItemCategory3ID"></select>
+</div>
+</div>
+<div class="row form-group" data-bind="visible: ShowAdvancedSearch">
+<div class="col-sm-11">
+<select class="form-control" data-bind="options: ItemTraitOptions,
+                                   optionsText: 'DisplayName',
+                                   optionsValue: 'Value',
+                                   value: SelectedItemTraitID" name="ItemTraitID"></select>
+</div>
+</div>
+<div class="row form-group" data-bind="visible: ShowAdvancedSearch">
+<div class="col-sm-11">
+<select class="form-control" data-bind="options: ItemQualityOptions,
+                                   optionsText: 'DisplayName',
+                                   optionsValue: 'Value',
+                                   optionsAfterRender: ApplyQualityColorClass,
+                                   value: SelectedItemQualityID,
+                                   itemQualityClass: SelectedItemQualityID" name="ItemQualityID"></select>
+</div>
+</div>
+<div class="form-group" data-bind="visible: ShowAdvancedSearch">
+<span class="field-validation-valid" data-valmsg-for="LevelMin" data-valmsg-replace="true"></span>
+<span class="field-validation-valid" data-valmsg-for="LevelMax" data-valmsg-replace="true"></span>
+</div>
+<div class="row form-group" data-bind="visible: ShowAdvancedSearch">
+<div class="col-sm-11">
+<div class="row">
+<div class="col-sm-3">
+<div class="row">
+<div class="col-xs-8 nowrap">
+                                Level:
+                            </div>
+<div class="col-xs-4">
+<input class="champion-point-checkbox" data-bind="checked: IsChampionPoint" data-val="true" data-val-required="The IsChampionPoint field is required." id="IsChampionPoint" name="IsChampionPoint" type="checkbox" value="true"><input name="IsChampionPoint" type="hidden" value="false"/>
+<label class="champion-point-label" for="IsChampionPoint"> </label>
+</input></div>
+</div>
+</div>
+<div class="col-sm-9">
+<div class="row">
+<div class="col-xs-5">
+<input class="form-control inline-block" data-bind="value: LevelMin" data-val="true" data-val-number="The field Level must be a number." data-val-range="Level must be between 0 and 1800" data-val-range-max="1800" data-val-range-min="0" id="LevelMin" name="LevelMin" type="text" value=""/>
+</div>
+<div class="col-xs-2 text-center">
+                                ~
+                            </div>
+<div class="col-xs-5">
+<input class="form-control inline-block" data-bind="value: LevelMax" data-val="true" data-val-number="The field Level must be a number." data-val-range="Level must be between 0 and 1800" data-val-range-max="1800" data-val-range-min="0" id="LevelMax" name="LevelMax" type="text" value=""/>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row form-group" data-bind="visible: ShowAdvancedSearch">
+<div class="col-sm-11">
+<div class="row">
+<div class="col-sm-3">
+<div class="row">
+<div class="col-xs-12 nowrap">
+                                Writ Voucher:
+                            </div>
+</div>
+</div>
+<div class="col-sm-9">
+<div class="row">
+<div class="col-xs-5">
+<input class="form-control inline-block" data-bind="value: MasterWritVoucherMin" data-val="true" data-val-number="The field MasterWritVoucherMin must be a number." id="MasterWritVoucherMin" name="MasterWritVoucherMin" type="text" value=""/>
+</div>
+<div class="col-xs-2">
+                                ~
+                            </div>
+<div class="col-xs-5">
+<input class="form-control inline-block" data-bind="value: MasterWritVoucherMax" data-val="true" data-val-number="The field MasterWritVoucherMax must be a number." id="MasterWritVoucherMax" name="MasterWritVoucherMax" type="text" value=""/>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="form-group" data-bind="visible: SelectedSearchType() == 'Sell' &amp;&amp; ShowAdvancedSearch()">
+<span class="field-validation-valid" data-valmsg-for="AmountMin" data-valmsg-replace="true"></span>
+<span class="field-validation-valid" data-valmsg-for="AmountMax" data-valmsg-replace="true"></span>
+</div>
+<div class="row form-group" data-bind="visible: SelectedSearchType() == 'Sell' &amp;&amp; ShowAdvancedSearch()">
+<div class="col-sm-11">
+<div class="row">
+<div class="col-sm-3">
+<div class="row">
+<div class="col-xs-8 nowrap">
+                                Amount:
+                            </div>
+<div class="col-xs-4">
+<img class="small-icon" src="/Content/icons/amount.png">
+</img></div>
+</div>
+</div>
+<div class="col-sm-9">
+<div class="row">
+<div class="col-xs-5">
+<input class="form-control inline-block" data-bind="value: AmountMin, enable: SelectedSearchType() == 'Sell'" data-val="true" data-val-number="The field Amount must be a number." data-val-range="Amount must be between 0 and 9999999" data-val-range-max="9999999" data-val-range-min="0" id="AmountMin" name="AmountMin" type="text" value=""/>
+</div>
+<div class="col-xs-2">
+                                ~
+                            </div>
+<div class="col-xs-5">
+<input class="form-control inline-block" data-bind="value: AmountMax, enable: SelectedSearchType() == 'Sell'" data-val="true" data-val-number="The field Amount must be a number." data-val-range="Amount must be between 0 and 9999999" data-val-range-max="9999999" data-val-range-min="0" id="AmountMax" name="AmountMax" type="text" value=""/>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="form-group" data-bind="visible: SelectedSearchType() == 'Sell' &amp;&amp; ShowAdvancedSearch()">
+<span class="field-validation-valid" data-valmsg-for="PriceMin" data-valmsg-replace="true"></span>
+<span class="field-validation-valid" data-valmsg-for="PriceMax" data-valmsg-replace="true"></span>
+</div>
+<div class="row" data-bind="visible: SelectedSearchType() == 'Sell' &amp;&amp; ShowAdvancedSearch()">
+<div class="col-sm-11">
+<div class="row">
+<div class="col-sm-3">
+<div class="row">
+<div class="col-xs-8 nowrap">
+                                Unit Price:
+                            </div>
+<div class="col-xs-4">
+<img class="small-icon" src="/Content/icons/gold.png"/>
+</div>
+</div>
+</div>
+<div class="col-sm-9">
+<div class="row">
+<div class="col-xs-5">
+<input class="form-control inline-block" data-bind="value: PriceMin, enable: SelectedSearchType() == 'Sell'" data-val="true" data-val-number="The field Price must be a number." data-val-range="Price must be between 0 and 99999999" data-val-range-max="99999999" data-val-range-min="0" id="PriceMin" name="PriceMin" type="text" value=""/>
+</div>
+<div class="col-xs-2">
+                                ~
+                            </div>
+<div class="col-xs-5">
+<input class="form-control inline-block" data-bind="value: PriceMax, enable: SelectedSearchType() == 'Sell'" data-val="true" data-val-number="The field Price must be a number." data-val-range="Price must be between 0 and 99999999" data-val-range-max="99999999" data-val-range-min="0" id="PriceMax" name="PriceMax" type="text" value="125000"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-sm-11">
+<div class="row">
+<div class="col-xs-6">
+<div class="checkbox" data-bind="visible: ShowAdvancedSearch">
+<label>
+<input data-bind="checked: OpenInNewTabChecked" type="checkbox"/>
+                                Open in new tab
+                            </label>
+</div>
+</div>
+<div class="col-xs-6">
+<div class="pull-right text-primary" data-bind="style: { 'padding-top' : ShowAdvancedSearch() ? 10 : 0}">
+<input data-bind="checked: ShowAdvancedSearch" hidden="" id="advanced-search-checkbox" type="checkbox"/>
+<label class="cursor-pointer underline" data-bind="text: ShowAdvancedSearch() ? 'Simple Search' : 'Advanced Search' " for="advanced-search-checkbox"></label>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row form-group" data-bind="visible: ShowAdvancedSearch">
+<div class="col-sm-11">
+<div class="row">
+<div class="col-xs-6">
+<input class="btn btn-primary" type="submit" value="Search"/>
+</div>
+<div class="col-xs-6">
+<input class="btn btn-default pull-right" data-bind="click:Reset" type="button" value="Reset"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+</form>
+</div>
+</div>
+<ins class="adsbygoogle" data-ad-client="ca-pub-9467209390734812" data-ad-format="auto" data-ad-slot="1732532088" data-full-width-responsive="true" style="display:block"></ins>
+<script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<div id="search-result-view">
+<!--ko ifnot: IsRequestDone-->
+<div class="pull-left load-spinner" data-bind="visible: IsBusy" style="right: 10px;"></div>
+<h4 data-bind="text: Status"></h4>
+<!--/ko-->
+<!--ko if: IsRequestDone-->
+<div data-bind="with: TradeListPageModel">
+<h4 data-bind="if: TotalMatchCount == 0">
+        No trade matches your constraint
+    </h4>
+<div data-bind="if: TotalMatchCount != 0">
+<table class="trade-list-table max-width">
+<thead>
+<tr>
+<th class="cursor-pointer" data-bind="click: Sort.bind($data, 0)">
+                        Item
+                    </th>
+<th class="hidden-xs">
+                        Trader
+                    </th>
+<th class="hidden-xs">
+                        Location
+                    </th>
+<th class="cursor-pointer" data-bind="click: Sort.bind($data, 1)">
+                        Price
+                    </th>
+<th class="cursor-pointer hidden-xs" data-bind="click: Sort.bind($data, 2)">
+                        Last Seen
+                    </th>
+</tr>
+</thead>
+<tbody data-bind="foreach: TradeDetails">
+<tr class="cursor-pointer" data-bind="click: OpenDetailPage.bind($data),
+                       attr: { title: Message }" data-toggle="tooltip">
+<td data-bind="using: TradeAsset.Item">
+<img alt="Icon" class="trade-item-icon" data-bind="attr: {
+                                        src: '/Content/icons/' + IconName,
+                                        title: GetItemPropertyDescription()
+                                    },
+                                    itemQualityClass: QualityID"/>
+<div data-bind="itemQualityClass: QualityID,
+                                    text: Name">
+</div>
+<!--ko if: MasterWritInfo != null && MasterWritInfo.NumVoucher != null -->
+<div data-bind="text: String.format(StringResource.MasterWritRewardVoucherX, MasterWritInfo.NumVoucher)"></div>
+<!--/ko-->
+<div>
+                            Level
+                            <img class="small-icon" data-bind="attr: { src: '/Content/icons/' + (IsChampionPoint? 'championPoint' : 'nonvet') + '.png' } "/>
+<span data-bind="text: Level"></span>
+</div>
+</td>
+<td class="hidden-xs">
+<div class="text-small-width" data-bind="text: PlayerID"></div>
+</td>
+<td>
+<div data-bind="text: StringResource['TraderLocation' + DBData.GuildKioskLocation[GuildKioskLocationID]]"></div>
+<div data-bind="text: GuildName"></div>
+</td>
+<td class="gold-amount bold" data-bind="using: TradeAsset">
+<span data-bind="localizedNumber: UnitPrice"></span>
+<img class="small-icon" src="/Content/icons/gold.png"/>
+<div class="text-danger">
+                            X
+                        </div>
+<span data-bind="localizedNumber: Amount"></span>
+<img class="small-icon" src="/Content/icons/amount.png"/>
+<div class="text-danger">
+                            =
+                        </div>
+<span data-bind="localizedNumber: TotalPrice"></span>
+<img class="small-icon" src="/Content/icons/gold.png"/>
+</td>
+<td class="bold hidden-xs" data-bind="minutesElapsed: DiscoverUnixTime"></td>
+</tr>
+<tr class="row-separator"></tr>
+</tbody>
+</table>
+<div class="align-center">
+<ul class="pagination">
+<li data-bind="css: { disabled : CurrentPage == 1 }">
+<!--ko if: CurrentPage == 1 -->
+<a>&lt;</a>
+<!--/ko-->
+<!--ko if: CurrentPage != 1 -->
+<a data-bind="attr:{ href: GetUrlForPage(CurrentPage - 1) }">&lt;</a>
+<!--/ko-->
+</li>
+<!--ko if: ShowFirstPage -->
+<li>
+<a class="hidden-sm hidden-xs" data-bind="attr:{ href: GetUrlForPage(1) }">1</a>
+</li>
+<li class="disabled">
+<a class="hidden-sm hidden-xs">
+                ...
+            </a>
+</li>
+<!--/ko-->
+<!--ko foreach: Pages-->
+<li>
+<!--ko if: $data == $parent.CurrentPage-->
+<span class="active" data-bind="text: $data"></span>
+<!--/ko-->
+<!--ko if: $data != $parent.CurrentPage-->
+<a data-bind="text: $data,
+                          attr: { href: $parent.GetUrlForPage($data) }">
+</a>
+<!--/ko-->
+</li>
+<!--/ko-->
+<!--ko if: ShowLastPage -->
+<li class="disabled">
+<a class="hidden-sm hidden-xs">
+                ...
+            </a>
+</li>
+<li>
+<a class="hidden-sm hidden-xs" data-bind="attr:{ href: GetUrlForPage(TotalPageCount) },
+                                                      text: TotalPageCount">
+</a>
+</li>
+<!--/ko-->
+<li data-bind="css: { disabled : CurrentPage &gt;= TotalPageCount }">
+<!--ko if: CurrentPage >= TotalPageCount -->
+<a>&gt;</a>
+<!--/ko-->
+<!--ko if: CurrentPage < TotalPageCount -->
+<a data-bind="attr:{ href: GetUrlForPage(CurrentPage + 1) }">&gt;</a>
+<!--/ko-->
+</li>
+</ul>
+</div>
+</div>
+</div>
+<!--/ko-->
+<div class="modal fade" data-backdrop="static" data-keyboard="false" id="captcha-modal" role="dialog">
+<div class="modal-dialog" role="document">
+<div class="modal-content">
+<div class="modal-header">
+<button class="close" data-dismiss="modal" type="button">
+                        ×
+                    </button>
+<h3 class="modal-title">
+                        Sorry but you need to complete the captcha test to continue
+                    </h3>
+</div>
+<div class="modal-body">
+<div class="g-recaptcha" data-sitekey="6LdlqLwZAAAAAFlFfnj_h6JUU-igcmWx46wHcdBf" id="g-recaptcha"></div>
+</div>
+<div class="modal-footer">
+<button class="btn btn-default" data-dismiss="modal" type="button">
+                        Cancel
+                    </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<ins class="adsbygoogle" data-ad-client="ca-pub-9467209390734812" data-ad-format="auto" data-ad-slot="2656334928" style="display:block"></ins>
+<script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</section>
+</td>
+<td>
+<div class="sidebar">
+<div id="rightAds">
+<!-- SideResponsive -->
+<ins class="adsbygoogle" data-ad-client="ca-pub-9467209390734812" data-ad-format="auto" data-ad-slot="9572085307" style="display:block"></ins>
+<script>
+                                    (adsbygoogle = window.adsbygoogle || []).push({});
+                                </script>
+</div>
+<div>
+<div class="fb-like" data-action="like" data-href="https://www.facebook.com/tamrieltradecentre" data-layout="box_count" data-share="true" data-show-faces="true" data-width="200"></div>
+</div>
+<div>
+<a class="twitter-share-button" data-hashtags="ESO" data-via="TamTradeCentre" href="https://twitter.com/share" {count}="">Tweet</a>
+</div>
+<div>
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input name="cmd" type="hidden" value="_s-xclick"/>
+<input name="hosted_button_id" type="hidden" value="Q5GMB5HV8WBGJ"/>
+<input alt="PayPal - The safer, easier way to pay online!" border="0" name="submit" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" type="image"/>
+<img alt="" border="0" height="1" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1"/>
+</form>
+</div>
+</div>
+<div class="sidebar"></div>
+</td>
+</tr>
+</table>
+</div>
+<footer>
+<div class="content-wrapper">
+<div class="well">
+<div class="text-right">
+<a href="/About">About</a>
+                    |
+                    <a href="/help">Help</a>
+                    |
+                    <a href="/Contact">Contact us</a>
+                    |
+                    <a href="/TermsOfService">Terms of Service</a>
+                    |
+                    <a href="/PrivacyPolicy">Privacy Policy</a>
+</div>
+<p>© 2015 by Steven Chen   All rights reserved</p>
+<p>
+                    Tamriel Trade Centre was created using content and materials from The Elder Scrolls® Online: Tamriel Unlimited™ © ZeniMax® Online Studios, LLC or its licensors. This site is not affiliated with ZeniMax Online Studios, and ZeniMax Online Studios is not responsible for any of the content on, or the privacy policy of this site.<br/>Windows®, Xbox® and their logos are registered trademarks of Microsoft Corporation<br/>Sony PlayStation® and its logo are registered trademarks of Sony Inc.
+                </p>
+</div>
+</div>
+</footer>
+<script src="/bundles/General?v=Bj7ipGezryOMRLdyqbGo6fcHveyQPgl_apMbayfR4rg1"></script>
+<script src="/bundles/Localization/EN?v=Di3SnJsDH1DI4o1_Zq5N_sLISeg2zrL_aAqnj0Lr8fI1"></script>
+<script src="/bundles/TradeGeneral?v=e2uiG9nlkcA8qfuLMW3hZkOgAjKYbNO4hTqfwefUovA1"></script>
+<script src="/bundles/jqueryval?v=hEGG8cMxk9p0ncdRUOJ-CnKN7NezhnPnWIvn6REucZo1"></script>
+<script src="/bundles/knockout?v=ws0v60PUGOCwGRnZpwAYv5uFjkDa1JPbdHNoFxLjLo41"></script>
+<script src="/bundles/JsonModels?v=VevX9C5gJLhpIdfIg_O_A0ioaRqvWyfbF9X8tJ-7b901"></script>
+<script src="/bundles/HttpClient?v=JI-9mNF0mX1fOIrZyHyn8llcM7tNTiiW9WgsKB0LOZI1"></script>
+<script src="/bundles/SearchForm?v=6lx9jrrgluG8knhq079sYxkinb1jnVxrm901hgMJIrs1"></script>
+<script src="/bundles/SearchResult?v=o4UArzZY_rkssshI_DreUWBRLDwsIEbU4Jo13nJ42fY1"></script>
+<script async="" defer="" src="https://www.recaptcha.net/recaptcha/api.js?render=6LetPBwaAAAAAE_aSqbkOIOCTqmzmbzMr3ZKEr7c&amp;onload=onloadCallback&amp;render=explicit"></script>
+<script>!function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https'; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = p + '://platform.twitter.com/widgets.js'; fjs.parentNode.insertBefore(js, fjs); } }(document, 'script', 'twitter-wjs');</script>
+<script>
+        (function (i, s, o, g, r, a, m)
+        {
+        i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function ()
+        {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-70775257-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+</body>
+</html>

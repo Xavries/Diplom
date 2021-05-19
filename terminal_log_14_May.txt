@@ -1,0 +1,104 @@
+linp@linp-Inspiron-7559:~$ python3 -m pip install requests
+Requirement already satisfied: requests in /usr/lib/python3/dist-packages (2.22.0)
+linp@linp-Inspiron-7559:~$ sudo apt install python3-selenium
+[sudo] password for linp: 
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following packages were automatically installed and are no longer required:
+  libfprint-2-tod1 libllvm10 libnvidia-cfg1-440 libnvidia-common-440
+  libnvidia-compute-440 libnvidia-compute-440:i386 libnvidia-decode-440
+  libnvidia-decode-440:i386 libnvidia-encode-440 libnvidia-encode-440:i386
+  libnvidia-extra-440 libnvidia-fbc1-440 libnvidia-gl-440
+  libnvidia-gl-440:i386 libnvidia-ifr1-440 nvidia-compute-utils-440
+  nvidia-utils-440 xserver-xorg-video-nvidia-440
+Use 'sudo apt autoremove' to remove them.
+The following additional packages will be installed:
+  chromium-browser chromium-chromedriver
+The following NEW packages will be installed
+  chromium-browser chromium-chromedriver python3-selenium
+0 to upgrade, 3 to newly install, 0 to remove and 17 not to upgrade.
+Need to get 137 kB of archives.
+After this operation, 829 kB of additional disk space will be used.
+Do you want to continue? [Y/n] y
+Get:1 http://gb.archive.ubuntu.com/ubuntu focal-updates/universe amd64 chromium-browser amd64 1:85.0.4183.83-0ubuntu0.20.04.2 [48.3 kB]
+Get:2 http://gb.archive.ubuntu.com/ubuntu focal-updates/universe amd64 chromium-chromedriver amd64 1:85.0.4183.83-0ubuntu0.20.04.2 [2,496 B]
+Get:3 http://gb.archive.ubuntu.com/ubuntu focal/universe amd64 python3-selenium all 4.0.0~a1+dfsg1-1.1 [86.2 kB]
+Fetched 137 kB in 1s (239 kB/s)            
+Preconfiguring packages ...
+Selecting previously unselected package chromium-browser.
+(Reading database ... 194748 files and directories currently installed.)
+Preparing to unpack .../chromium-browser_1%3a85.0.4183.83-0ubuntu0.20.04.2_amd64
+.deb ...
+=> Installing the chromium snap
+==> Checking connectivity with the snap store
+==> Installing the chromium snap
+chromium 90.0.4430.212 from Canonical✓ installed
+=> Snap installation complete
+Unpacking chromium-browser (1:85.0.4183.83-0ubuntu0.20.04.2) ...
+Selecting previously unselected package chromium-chromedriver.
+Preparing to unpack .../chromium-chromedriver_1%3a85.0.4183.83-0ubuntu0.20.04.2_
+amd64.deb ...
+Unpacking chromium-chromedriver (1:85.0.4183.83-0ubuntu0.20.04.2) ...
+Selecting previously unselected package python3-selenium.
+Preparing to unpack .../python3-selenium_4.0.0~a1+dfsg1-1.1_all.deb ...
+Unpacking python3-selenium (4.0.0~a1+dfsg1-1.1) ...
+Setting up python3-selenium (4.0.0~a1+dfsg1-1.1) ...
+Setting up chromium-browser (1:85.0.4183.83-0ubuntu0.20.04.2) ...
+Setting up chromium-chromedriver (1:85.0.4183.83-0ubuntu0.20.04.2) ...
+Processing triggers for mime-support (3.64ubuntu1) ...
+Processing triggers for hicolor-icon-theme (0.17-2) ...
+Processing triggers for gnome-menus (3.36.0-1ubuntu1) ...
+Processing triggers for desktop-file-utils (0.24-1ubuntu3) ...
+linp@linp-Inspiron-7559:~$ python3 -m pip install geckodriver
+ERROR: Could not find a version that satisfies the requirement geckodriver (from versions: none)
+ERROR: No matching distribution found for geckodriver
+linp@linp-Inspiron-7559:~$ wget https://github.com/mozilla/geckodriver/releases/download/v0.29.1/geckodriver-v0.29.1-linux64.tar.gz
+--2021-05-14 19:09:45--  https://github.com/mozilla/geckodriver/releases/download/v0.29.1/geckodriver-v0.29.1-linux64.tar.gz
+Resolving github.com (github.com)... 140.82.121.3
+Connecting to github.com (github.com)|140.82.121.3|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://github-releases.githubusercontent.com/25354393/4bd0ab80-991d-11eb-942c-72658f3553a7?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20210514%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20210514T160851Z&X-Amz-Expires=300&X-Amz-Signature=91e538a66f2231b3866bcaa42558b625fe3e9bdb65c9d5b58fb47f69441195ff&X-Amz-SignedHeaders=host&actor_id=0&key_id=0&repo_id=25354393&response-content-disposition=attachment%3B%20filename%3Dgeckodriver-v0.29.1-linux64.tar.gz&response-content-type=application%2Foctet-stream [following]
+--2021-05-14 19:09:46--  https://github-releases.githubusercontent.com/25354393/4bd0ab80-991d-11eb-942c-72658f3553a7?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20210514%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20210514T160851Z&X-Amz-Expires=300&X-Amz-Signature=91e538a66f2231b3866bcaa42558b625fe3e9bdb65c9d5b58fb47f69441195ff&X-Amz-SignedHeaders=host&actor_id=0&key_id=0&repo_id=25354393&response-content-disposition=attachment%3B%20filename%3Dgeckodriver-v0.29.1-linux64.tar.gz&response-content-type=application%2Foctet-stream
+Resolving github-releases.githubusercontent.com (github-releases.githubusercontent.com)... 185.199.109.154, 185.199.111.154, 185.199.108.154, ...
+Connecting to github-releases.githubusercontent.com (github-releases.githubusercontent.com)|185.199.109.154|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 2716874 (2.6M) [application/octet-stream]
+Saving to: ‘geckodriver-v0.29.1-linux64.tar.gz’
+
+geckodriver-v0.29.1 100%[===================>]   2.59M  1.37MB/s    in 1.9s    
+
+2021-05-14 19:09:48 (1.37 MB/s) - ‘geckodriver-v0.29.1-linux64.tar.gz’ saved [2716874/2716874]
+
+linp@linp-Inspiron-7559:~$ tar -xvzf geckodriver*
+geckodriver
+linp@linp-Inspiron-7559:~$ chmod +x geckodriver
+linp@linp-Inspiron-7559:~$ export PATH=$PATH:geckodriver
+linp@linp-Inspiron-7559:~$ export PATH=$PATH:/home/linp/geckodriver
+linp@linp-Inspiron-7559:~$ export PATH=$PATH:/home/linp/geckodriver/.
+linp@linp-Inspiron-7559:~$ sudo mv geckodriver /usr/local/bin/
+[sudo] password for linp: 
+linp@linp-Inspiron-7559:~$ python3
+Python 3.8.5 (default, Jan 27 2021, 15:41:15) 
+[GCC 9.3.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> from selenium import webdriver
+>>> help(find_element_by_class_name)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'find_element_by_class_name' is not defined
+>>> driver = webdriver.Firefox()
+>>> help(driver.find_element_by_class_name)
+linp@linp-Inspiron-7559:~$ python3 -m pip install fake_useragent
+python3 -m pip install fake_useragent
+Collecting fake_useragent
+  Downloading fake-useragent-0.1.11.tar.gz (13 kB)
+Building wheels for collected packages: fake-useragent
+  Building wheel for fake-useragent (setup.py) ... done
+  Created wheel for fake-useragent: filename=fake_useragent-0.1.11-py3-none-any.whl size=13487 sha256=f04d2db5a554057af505b6fed7f18b6424394c3bedbb99f90c5e34e08faacfa0
+  Stored in directory: /home/linp/.cache/pip/wheels/a0/b8/b7/8c942b2c5be5158b874a88195116b05ad124bac795f6665e65
+Successfully built fake-useragent
+Installing collected packages: fake-useragent
+Successfully installed fake-useragent-0.1.11
+linp@linp-Inspiron-7559:~$ 
+

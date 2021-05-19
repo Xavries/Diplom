@@ -1,0 +1,227 @@
+<th class="cursor-pointer" data-bind="click: Sort.bind($data, 0)">
+                        Item
+                    </th>
+<th class="hidden-xs">
+                        Trader
+                    </th>
+<th class="hidden-xs">
+                        Location
+                    </th>
+<th class="cursor-pointer" data-bind="click: Sort.bind($data, 1)">
+                        Price
+                    </th>
+<th class="cursor-pointer hidden-xs" data-bind="click: Sort.bind($data, 2)">
+                        Last Seen
+                    </th>
+</tr>
+</thead>
+<tbody data-bind="foreach: TradeDetails">
+<tr class="cursor-pointer" data-bind="click: OpenDetailPage.bind($data),
+                       attr: { title: Message }" data-toggle="tooltip">
+<td data-bind="using: TradeAsset.Item">
+<img alt="Icon" class="trade-item-icon" data-bind="attr: {
+                                        src: '/Content/icons/' + IconName,
+                                        title: GetItemPropertyDescription()
+                                    },
+                                    itemQualityClass: QualityID"/>
+<div data-bind="itemQualityClass: QualityID,
+                                    text: Name">
+</div>
+<!--ko if: MasterWritInfo != null && MasterWritInfo.NumVoucher != null -->
+<div data-bind="text: String.format(StringResource.MasterWritRewardVoucherX, MasterWritInfo.NumVoucher)"></div>
+<!--/ko-->
+<div>
+                            Level
+                            <img class="small-icon" data-bind="attr: { src: '/Content/icons/' + (IsChampionPoint? 'championPoint' : 'nonvet') + '.png' } "/>
+<span data-bind="text: Level"></span>
+</div>
+</td>
+<td class="hidden-xs">
+<div class="text-small-width" data-bind="text: PlayerID"></div>
+</td>
+<td>
+<div data-bind="text: StringResource['TraderLocation' + DBData.GuildKioskLocation[GuildKioskLocationID]]"></div>
+<div data-bind="text: GuildName"></div>
+</td>
+<td class="gold-amount bold" data-bind="using: TradeAsset">
+<span data-bind="localizedNumber: UnitPrice"></span>
+<img class="small-icon" src="/Content/icons/gold.png"/>
+<div class="text-danger">
+                            X
+                        </div>
+<span data-bind="localizedNumber: Amount"></span>
+<img class="small-icon" src="/Content/icons/amount.png"/>
+<div class="text-danger">
+                            =
+                        </div>
+<span data-bind="localizedNumber: TotalPrice"></span>
+<img class="small-icon" src="/Content/icons/gold.png"/>
+</td>
+<td class="bold hidden-xs" data-bind="minutesElapsed: DiscoverUnixTime"></td>
+</tr>
+<tr class="row-separator"></tr>
+</tbody>
+</table>
+<div class="align-center">
+<ul class="pagination">
+<li data-bind="css: { disabled : CurrentPage == 1 }">
+<!--ko if: CurrentPage == 1 -->
+<a>&lt;</a>
+<!--/ko-->
+<!--ko if: CurrentPage != 1 -->
+<a data-bind="attr:{ href: GetUrlForPage(CurrentPage - 1) }">&lt;</a>
+<!--/ko-->
+</li>
+<!--ko if: ShowFirstPage -->
+<li>
+<a class="hidden-sm hidden-xs" data-bind="attr:{ href: GetUrlForPage(1) }">1</a>
+</li>
+<li class="disabled">
+<a class="hidden-sm hidden-xs">
+                ...
+            </a>
+</li>
+<!--/ko-->
+<!--ko foreach: Pages-->
+<li>
+<!--ko if: $data == $parent.CurrentPage-->
+<span class="active" data-bind="text: $data"></span>
+<!--/ko-->
+<!--ko if: $data != $parent.CurrentPage-->
+<a data-bind="text: $data,
+                          attr: { href: $parent.GetUrlForPage($data) }">
+</a>
+<!--/ko-->
+</li>
+<!--/ko-->
+<!--ko if: ShowLastPage -->
+<li class="disabled">
+<a class="hidden-sm hidden-xs">
+                ...
+            </a>
+</li>
+<li>
+<a class="hidden-sm hidden-xs" data-bind="attr:{ href: GetUrlForPage(TotalPageCount) },
+                                                      text: TotalPageCount">
+</a>
+</li>
+<!--/ko-->
+<li data-bind="css: { disabled : CurrentPage &gt;= TotalPageCount }">
+<!--ko if: CurrentPage >= TotalPageCount -->
+<a>&gt;</a>
+<!--/ko-->
+<!--ko if: CurrentPage < TotalPageCount -->
+<a data-bind="attr:{ href: GetUrlForPage(CurrentPage + 1) }">&gt;</a>
+<!--/ko-->
+</li>
+</ul>
+</div>
+</div>
+</div>
+<!--/ko-->
+<div class="modal fade" data-backdrop="static" data-keyboard="false" id="captcha-modal" role="dialog">
+<div class="modal-dialog" role="document">
+<div class="modal-content">
+<div class="modal-header">
+<button class="close" data-dismiss="modal" type="button">
+                        ×
+                    </button>
+<h3 class="modal-title">
+                        Sorry but you need to complete the captcha test to continue
+                    </h3>
+</div>
+<div class="modal-body">
+<div class="g-recaptcha" data-sitekey="6LdlqLwZAAAAAFlFfnj_h6JUU-igcmWx46wHcdBf" id="g-recaptcha"></div>
+</div>
+<div class="modal-footer">
+<button class="btn btn-default" data-dismiss="modal" type="button">
+                        Cancel
+                    </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<ins class="adsbygoogle" data-ad-client="ca-pub-9467209390734812" data-ad-format="auto" data-ad-slot="2656334928" style="display:block"></ins>
+<script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</section>
+</td>
+<td>
+<div class="sidebar">
+<div id="rightAds">
+<!-- SideResponsive -->
+<ins class="adsbygoogle" data-ad-client="ca-pub-9467209390734812" data-ad-format="auto" data-ad-slot="9572085307" style="display:block"></ins>
+<script>
+                                    (adsbygoogle = window.adsbygoogle || []).push({});
+                                </script>
+</div>
+<div>
+<div class="fb-like" data-action="like" data-href="https://www.facebook.com/tamrieltradecentre" data-layout="box_count" data-share="true" data-show-faces="true" data-width="200"></div>
+</div>
+<div>
+<a class="twitter-share-button" data-hashtags="ESO" data-via="TamTradeCentre" href="https://twitter.com/share" {count}="">Tweet</a>
+</div>
+<div>
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input name="cmd" type="hidden" value="_s-xclick"/>
+<input name="hosted_button_id" type="hidden" value="Q5GMB5HV8WBGJ"/>
+<input alt="PayPal - The safer, easier way to pay online!" border="0" name="submit" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" type="image"/>
+<img alt="" border="0" height="1" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1"/>
+</form>
+</div>
+</div>
+<div class="sidebar"></div>
+</td>
+</tr>
+</table>
+</div>
+<footer>
+<div class="content-wrapper">
+<div class="well">
+<div class="text-right">
+<a href="/About">About</a>
+                    |
+                    <a href="/help">Help</a>
+                    |
+                    <a href="/Contact">Contact us</a>
+                    |
+                    <a href="/TermsOfService">Terms of Service</a>
+                    |
+                    <a href="/PrivacyPolicy">Privacy Policy</a>
+</div>
+<p>© 2015 by Steven Chen   All rights reserved</p>
+<p>
+                    Tamriel Trade Centre was created using content and materials from The Elder Scrolls® Online: Tamriel Unlimited™ © ZeniMax® Online Studios, LLC or its licensors. This site is not affiliated with ZeniMax Online Studios, and ZeniMax Online Studios is not responsible for any of the content on, or the privacy policy of this site.<br/>Windows®, Xbox® and their logos are registered trademarks of Microsoft Corporation<br/>Sony PlayStation® and its logo are registered trademarks of Sony Inc.
+                </p>
+</div>
+</div>
+</footer>
+<script src="/bundles/General?v=Bj7ipGezryOMRLdyqbGo6fcHveyQPgl_apMbayfR4rg1"></script>
+<script src="/bundles/Localization/EN?v=Di3SnJsDH1DI4o1_Zq5N_sLISeg2zrL_aAqnj0Lr8fI1"></script>
+<script src="/bundles/TradeGeneral?v=e2uiG9nlkcA8qfuLMW3hZkOgAjKYbNO4hTqfwefUovA1"></script>
+<script src="/bundles/jqueryval?v=hEGG8cMxk9p0ncdRUOJ-CnKN7NezhnPnWIvn6REucZo1"></script>
+<script src="/bundles/knockout?v=ws0v60PUGOCwGRnZpwAYv5uFjkDa1JPbdHNoFxLjLo41"></script>
+<script src="/bundles/JsonModels?v=VevX9C5gJLhpIdfIg_O_A0ioaRqvWyfbF9X8tJ-7b901"></script>
+<script src="/bundles/HttpClient?v=JI-9mNF0mX1fOIrZyHyn8llcM7tNTiiW9WgsKB0LOZI1"></script>
+<script src="/bundles/SearchForm?v=6lx9jrrgluG8knhq079sYxkinb1jnVxrm901hgMJIrs1"></script>
+<script src="/bundles/SearchResult?v=o4UArzZY_rkssshI_DreUWBRLDwsIEbU4Jo13nJ42fY1"></script>
+<script async="" defer="" src="https://www.recaptcha.net/recaptcha/api.js?render=6LetPBwaAAAAAE_aSqbkOIOCTqmzmbzMr3ZKEr7c&amp;onload=onloadCallback&amp;render=explicit"></script>
+<script>!function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https'; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = p + '://platform.twitter.com/widgets.js'; fjs.parentNode.insertBefore(js, fjs); } }(document, 'script', 'twitter-wjs');</script>
+<script>
+        (function (i, s, o, g, r, a, m)
+        {
+        i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function ()
+        {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-70775257-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+</body>
+</html>

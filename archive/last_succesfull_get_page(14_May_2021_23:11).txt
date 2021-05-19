@@ -1,0 +1,412 @@
+Error occurred during loading data. Trying to use cache server https://fake-useragent.herokuapp.com/browsers/0.1.11
+Traceback (most recent call last):
+  File "/home/linp/.local/lib/python3.8/site-packages/fake_useragent/utils.py", line 64, in get
+    with contextlib.closing(urlopen(
+  File "/usr/lib/python3.8/urllib/request.py", line 222, in urlopen
+    return opener.open(url, data, timeout)
+  File "/usr/lib/python3.8/urllib/request.py", line 525, in open
+    response = self._open(req, data)
+  File "/usr/lib/python3.8/urllib/request.py", line 542, in _open
+    result = self._call_chain(self.handle_open, protocol, protocol +
+  File "/usr/lib/python3.8/urllib/request.py", line 502, in _call_chain
+    result = func(*args)
+  File "/usr/lib/python3.8/urllib/request.py", line 1379, in http_open
+    return self.do_open(http.client.HTTPConnection, req)
+  File "/usr/lib/python3.8/urllib/request.py", line 1354, in do_open
+    r = h.getresponse()
+  File "/usr/lib/python3.8/http/client.py", line 1347, in getresponse
+    response.begin()
+  File "/usr/lib/python3.8/http/client.py", line 307, in begin
+    version, status, reason = self._read_status()
+  File "/usr/lib/python3.8/http/client.py", line 268, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/usr/lib/python3.8/socket.py", line 669, in readinto
+    return self._sock.recv_into(b)
+socket.timeout: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/linp/.local/lib/python3.8/site-packages/fake_useragent/utils.py", line 164, in load
+    browsers_dict[browser_key] = get_browser_versions(
+  File "/home/linp/.local/lib/python3.8/site-packages/fake_useragent/utils.py", line 120, in get_browser_versions
+    html = get(
+  File "/home/linp/.local/lib/python3.8/site-packages/fake_useragent/utils.py", line 84, in get
+    raise FakeUserAgentError('Maximum amount of retries reached')
+fake_useragent.errors.FakeUserAgentError: Maximum amount of retries reached
+Mozilla/5.0 (Windows; U; Windows NT 5.1; ru-RU) AppleWebKit/533.19.4 (KHTML, like Gecko) Version/5.0.3 Safari/533.19.4
+get_page1.py:29: DeprecationWarning: firefox_profile has been deprecated, please pass in a Service object
+  driver = webdriver.Firefox(firefox_options=options, firefox_profile=profile)#, desired_capabilities=desired)
+<div id="search-result-view">
+    <!--ko ifnot: IsRequestDone--><!--/ko-->
+    <!--ko if: IsRequestDone-->
+    <div data-bind="with: TradeListPageModel">
+    <h4 data-bind="if: TotalMatchCount == 0"></h4>
+
+    <div data-bind="if: TotalMatchCount != 0">
+        <table class="trade-list-table max-width">
+            <thead>
+                <tr>
+                    <th class="cursor-pointer" data-bind="click: Sort.bind($data, 0)">
+                        Item
+                    </th>
+                    <th class="hidden-xs">
+                        Trader
+                    </th>
+                    <th class="hidden-xs">
+                        Location
+                    </th>
+                    <th class="cursor-pointer" data-bind="click: Sort.bind($data, 1)">
+                        Price
+                    </th>
+                    <th class="cursor-pointer hidden-xs" data-bind="click: Sort.bind($data, 2)">
+                        Last Seen
+                    </th>
+                </tr>
+            </thead>
+
+            <tbody data-bind="foreach: TradeDetails">
+                <tr class="cursor-pointer" data-toggle="tooltip" data-bind="click: OpenDetailPage.bind($data),
+                       attr: { title: Message }" data-original-title="">
+                    <td data-bind="using: TradeAsset.Item">
+                        <img alt="Icon" class="trade-item-icon item-quality-legendary" data-bind="attr: {
+                                        src: '/Content/icons/' + IconName,
+                                        title: GetItemPropertyDescription()
+                                    },
+                                    itemQualityClass: QualityID" src="/Content/icons/jewelrycrafting_booster_raw_chromium.png" title="">
+
+                        <div data-bind="itemQualityClass: QualityID,
+                                    text: Name" class="item-quality-legendary">Chromium Grains</div>
+
+                        <!--ko if: MasterWritInfo != null && MasterWritInfo.NumVoucher != null --><!--/ko-->
+                        <div>
+                            Level
+                            <img class="small-icon" data-bind="attr: { src: '/Content/icons/' + (IsChampionPoint? 'championPoint' : 'nonvet') + '.png' } " src="/Content/icons/nonvet.png">
+                            <span data-bind="text: Level">1</span>
+                        </div>
+                    </td>
+                    <td class="hidden-xs">
+                        <div class="text-small-width" data-bind="text: PlayerID">@RickHardstyle26NL</div></td>
+                    <td>
+                        <div data-bind="text: StringResource['TraderLocation' + DBData.GuildKioskLocation[GuildKioskLocationID]]">Stormhaven: Wayrest</div>
+                        <div data-bind="text: GuildName">Allmart</div>
+                    </td>
+                    <td class="gold-amount bold" data-bind="using: TradeAsset">
+                        <span data-bind="localizedNumber: UnitPrice">9,375</span>
+                        <img class="small-icon" src="/Content/icons/gold.png">
+
+                        <div class="text-danger">
+                            X
+                        </div>
+
+                        <span data-bind="localizedNumber: Amount">6</span>
+                        <img class="small-icon" src="/Content/icons/amount.png">
+
+                        <div class="text-danger">
+                            =
+                        </div>
+                        <span data-bind="localizedNumber: TotalPrice">56,250</span>
+                        <img class="small-icon" src="/Content/icons/gold.png">
+                    </td>
+                    <td class="bold hidden-xs" data-bind="minutesElapsed: DiscoverUnixTime">13 Minute ago</td>
+
+                </tr>
+                <tr class="row-separator"></tr>
+            
+                <tr class="cursor-pointer" data-toggle="tooltip" data-bind="click: OpenDetailPage.bind($data),
+                       attr: { title: Message }" data-original-title="">
+                    <td data-bind="using: TradeAsset.Item">
+                        <img alt="Icon" class="trade-item-icon item-quality-legendary" data-bind="attr: {
+                                        src: '/Content/icons/' + IconName,
+                                        title: GetItemPropertyDescription()
+                                    },
+                                    itemQualityClass: QualityID" src="/Content/icons/jewelrycrafting_booster_raw_chromium.png" title="">
+
+                        <div data-bind="itemQualityClass: QualityID,
+                                    text: Name" class="item-quality-legendary">Chromium Grains</div>
+
+                        <!--ko if: MasterWritInfo != null && MasterWritInfo.NumVoucher != null --><!--/ko-->
+                        <div>
+                            Level
+                            <img class="small-icon" data-bind="attr: { src: '/Content/icons/' + (IsChampionPoint? 'championPoint' : 'nonvet') + '.png' } " src="/Content/icons/nonvet.png">
+                            <span data-bind="text: Level">1</span>
+                        </div>
+                    </td>
+                    <td class="hidden-xs">
+                        <div class="text-small-width" data-bind="text: PlayerID">@vfcnth2703</div></td>
+                    <td>
+                        <div data-bind="text: StringResource['TraderLocation' + DBData.GuildKioskLocation[GuildKioskLocationID]]">The Gold Coast: Anvil</div>
+                        <div data-bind="text: GuildName">Bar Indoril Nalivayka</div>
+                    </td>
+                    <td class="gold-amount bold" data-bind="using: TradeAsset">
+                        <span data-bind="localizedNumber: UnitPrice">6,271.50</span>
+                        <img class="small-icon" src="/Content/icons/gold.png">
+
+                        <div class="text-danger">
+                            X
+                        </div>
+
+                        <span data-bind="localizedNumber: Amount">2</span>
+                        <img class="small-icon" src="/Content/icons/amount.png">
+
+                        <div class="text-danger">
+                            =
+                        </div>
+                        <span data-bind="localizedNumber: TotalPrice">12,543</span>
+                        <img class="small-icon" src="/Content/icons/gold.png">
+                    </td>
+                    <td class="bold hidden-xs" data-bind="minutesElapsed: DiscoverUnixTime">20 Minute ago</td>
+
+                </tr>
+                <tr class="row-separator"></tr>
+            
+                <tr class="cursor-pointer" data-toggle="tooltip" data-bind="click: OpenDetailPage.bind($data),
+                       attr: { title: Message }" data-original-title="">
+                    <td data-bind="using: TradeAsset.Item">
+                        <img alt="Icon" class="trade-item-icon item-quality-legendary" data-bind="attr: {
+                                        src: '/Content/icons/' + IconName,
+                                        title: GetItemPropertyDescription()
+                                    },
+                                    itemQualityClass: QualityID" src="/Content/icons/jewelrycrafting_booster_raw_chromium.png" title="">
+
+                        <div data-bind="itemQualityClass: QualityID,
+                                    text: Name" class="item-quality-legendary">Chromium Grains</div>
+
+                        <!--ko if: MasterWritInfo != null && MasterWritInfo.NumVoucher != null --><!--/ko-->
+                        <div>
+                            Level
+                            <img class="small-icon" data-bind="attr: { src: '/Content/icons/' + (IsChampionPoint? 'championPoint' : 'nonvet') + '.png' } " src="/Content/icons/nonvet.png">
+                            <span data-bind="text: Level">1</span>
+                        </div>
+                    </td>
+                    <td class="hidden-xs">
+                        <div class="text-small-width" data-bind="text: PlayerID">@Marshmallowglow</div></td>
+                    <td>
+                        <div data-bind="text: StringResource['TraderLocation' + DBData.GuildKioskLocation[GuildKioskLocationID]]">Elsweyr: Rimmen</div>
+                        <div data-bind="text: GuildName">Dragons Bane</div>
+                    </td>
+                    <td class="gold-amount bold" data-bind="using: TradeAsset">
+                        <span data-bind="localizedNumber: UnitPrice">6,700</span>
+                        <img class="small-icon" src="/Content/icons/gold.png">
+
+                        <div class="text-danger">
+                            X
+                        </div>
+
+                        <span data-bind="localizedNumber: Amount">2</span>
+                        <img class="small-icon" src="/Content/icons/amount.png">
+
+                        <div class="text-danger">
+                            =
+                        </div>
+                        <span data-bind="localizedNumber: TotalPrice">13,400</span>
+                        <img class="small-icon" src="/Content/icons/gold.png">
+                    </td>
+                    <td class="bold hidden-xs" data-bind="minutesElapsed: DiscoverUnixTime">1 Hour ago</td>
+
+                </tr>
+                <tr class="row-separator"></tr>
+            
+                <tr class="cursor-pointer" data-toggle="tooltip" data-bind="click: OpenDetailPage.bind($data),
+                       attr: { title: Message }" data-original-title="">
+                    <td data-bind="using: TradeAsset.Item">
+                        <img alt="Icon" class="trade-item-icon item-quality-legendary" data-bind="attr: {
+                                        src: '/Content/icons/' + IconName,
+                                        title: GetItemPropertyDescription()
+                                    },
+                                    itemQualityClass: QualityID" src="/Content/icons/jewelrycrafting_booster_raw_chromium.png" title="">
+
+                        <div data-bind="itemQualityClass: QualityID,
+                                    text: Name" class="item-quality-legendary">Chromium Grains</div>
+
+                        <!--ko if: MasterWritInfo != null && MasterWritInfo.NumVoucher != null --><!--/ko-->
+                        <div>
+                            Level
+                            <img class="small-icon" data-bind="attr: { src: '/Content/icons/' + (IsChampionPoint? 'championPoint' : 'nonvet') + '.png' } " src="/Content/icons/nonvet.png">
+                            <span data-bind="text: Level">1</span>
+                        </div>
+                    </td>
+                    <td class="hidden-xs">
+                        <div class="text-small-width" data-bind="text: PlayerID">@straubinger69</div></td>
+                    <td>
+                        <div data-bind="text: StringResource['TraderLocation' + DBData.GuildKioskLocation[GuildKioskLocationID]]">Murkmire: Lilmoth</div>
+                        <div data-bind="text: GuildName">Arkays Einrichtungshaus</div>
+                    </td>
+                    <td class="gold-amount bold" data-bind="using: TradeAsset">
+                        <span data-bind="localizedNumber: UnitPrice">9,999</span>
+                        <img class="small-icon" src="/Content/icons/gold.png">
+
+                        <div class="text-danger">
+                            X
+                        </div>
+
+                        <span data-bind="localizedNumber: Amount">3</span>
+                        <img class="small-icon" src="/Content/icons/amount.png">
+
+                        <div class="text-danger">
+                            =
+                        </div>
+                        <span data-bind="localizedNumber: TotalPrice">29,997</span>
+                        <img class="small-icon" src="/Content/icons/gold.png">
+                    </td>
+                    <td class="bold hidden-xs" data-bind="minutesElapsed: DiscoverUnixTime">2 Hour ago</td>
+
+                </tr>
+                <tr class="row-separator"></tr>
+            
+                <tr class="cursor-pointer" data-toggle="tooltip" data-bind="click: OpenDetailPage.bind($data),
+                       attr: { title: Message }" data-original-title="">
+                    <td data-bind="using: TradeAsset.Item">
+                        <img alt="Icon" class="trade-item-icon item-quality-legendary" data-bind="attr: {
+                                        src: '/Content/icons/' + IconName,
+                                        title: GetItemPropertyDescription()
+                                    },
+                                    itemQualityClass: QualityID" src="/Content/icons/jewelrycrafting_booster_raw_chromium.png" title="">
+
+                        <div data-bind="itemQualityClass: QualityID,
+                                    text: Name" class="item-quality-legendary">Chromium Grains</div>
+
+                        <!--ko if: MasterWritInfo != null && MasterWritInfo.NumVoucher != null --><!--/ko-->
+                        <div>
+                            Level
+                            <img class="small-icon" data-bind="attr: { src: '/Content/icons/' + (IsChampionPoint? 'championPoint' : 'nonvet') + '.png' } " src="/Content/icons/nonvet.png">
+                            <span data-bind="text: Level">1</span>
+                        </div>
+                    </td>
+                    <td class="hidden-xs">
+                        <div class="text-small-width" data-bind="text: PlayerID">@straubinger69</div></td>
+                    <td>
+                        <div data-bind="text: StringResource['TraderLocation' + DBData.GuildKioskLocation[GuildKioskLocationID]]">Murkmire: Lilmoth</div>
+                        <div data-bind="text: GuildName">Arkays Einrichtungshaus</div>
+                    </td>
+                    <td class="gold-amount bold" data-bind="using: TradeAsset">
+                        <span data-bind="localizedNumber: UnitPrice">9,999</span>
+                        <img class="small-icon" src="/Content/icons/gold.png">
+
+                        <div class="text-danger">
+                            X
+                        </div>
+
+                        <span data-bind="localizedNumber: Amount">1</span>
+                        <img class="small-icon" src="/Content/icons/amount.png">
+
+                        <div class="text-danger">
+                            =
+                        </div>
+                        <span data-bind="localizedNumber: TotalPrice">9,999</span>
+                        <img class="small-icon" src="/Content/icons/gold.png">
+                    </td>
+                    <td class="bold hidden-xs" data-bind="minutesElapsed: DiscoverUnixTime">4 Hour ago</td>
+
+                </tr>
+                <tr class="row-separator"></tr>
+            
+                <tr class="cursor-pointer" data-toggle="tooltip" data-bind="click: OpenDetailPage.bind($data),
+                       attr: { title: Message }" data-original-title="">
+                    <td data-bind="using: TradeAsset.Item">
+                        <img alt="Icon" class="trade-item-icon item-quality-legendary" data-bind="attr: {
+                                        src: '/Content/icons/' + IconName,
+                                        title: GetItemPropertyDescription()
+                                    },
+                                    itemQualityClass: QualityID" src="/Content/icons/jewelrycrafting_booster_raw_chromium.png" title="">
+
+                        <div data-bind="itemQualityClass: QualityID,
+                                    text: Name" class="item-quality-legendary">Chromium Grains</div>
+
+                        <!--ko if: MasterWritInfo != null && MasterWritInfo.NumVoucher != null --><!--/ko-->
+                        <div>
+                            Level
+                            <img class="small-icon" data-bind="attr: { src: '/Content/icons/' + (IsChampionPoint? 'championPoint' : 'nonvet') + '.png' } " src="/Content/icons/nonvet.png">
+                            <span data-bind="text: Level">1</span>
+                        </div>
+                    </td>
+                    <td class="hidden-xs">
+                        <div class="text-small-width" data-bind="text: PlayerID">@ItsDatAsh</div></td>
+                    <td>
+                        <div data-bind="text: StringResource['TraderLocation' + DBData.GuildKioskLocation[GuildKioskLocationID]]">Hew's Bane: Abah's Landing</div>
+                        <div data-bind="text: GuildName">Merchants of the Wulves</div>
+                    </td>
+                    <td class="gold-amount bold" data-bind="using: TradeAsset">
+                        <span data-bind="localizedNumber: UnitPrice">10,000</span>
+                        <img class="small-icon" src="/Content/icons/gold.png">
+
+                        <div class="text-danger">
+                            X
+                        </div>
+
+                        <span data-bind="localizedNumber: Amount">2</span>
+                        <img class="small-icon" src="/Content/icons/amount.png">
+
+                        <div class="text-danger">
+                            =
+                        </div>
+                        <span data-bind="localizedNumber: TotalPrice">20,000</span>
+                        <img class="small-icon" src="/Content/icons/gold.png">
+                    </td>
+                    <td class="bold hidden-xs" data-bind="minutesElapsed: DiscoverUnixTime">15 Hour ago</td>
+
+                </tr>
+                <tr class="row-separator"></tr>
+            </tbody>
+        </table>
+
+        <div class="align-center">
+    <ul class="pagination">
+        <li data-bind="css: { disabled : CurrentPage == 1 }" class="disabled">
+            <!--ko if: CurrentPage == 1 -->
+            <a>&lt;</a>
+            <!--/ko-->
+            <!--ko if: CurrentPage != 1 --><!--/ko-->
+        </li>
+
+        <!--ko if: ShowFirstPage --><!--/ko-->
+        <!--ko foreach: Pages-->
+        <li>
+            <!--ko if: $data == $parent.CurrentPage-->
+            <span class="active" data-bind="text: $data">1</span>
+            <!--/ko-->
+            <!--ko if: $data != $parent.CurrentPage--><!--/ko-->
+        </li>
+        <!--/ko-->
+        <!--ko if: ShowLastPage --><!--/ko-->
+
+        <li data-bind="css: { disabled : CurrentPage >= TotalPageCount }" class="disabled">
+            <!--ko if: CurrentPage >= TotalPageCount -->
+            <a>&gt;</a>
+            <!--/ko-->
+            <!--ko if: CurrentPage < TotalPageCount --><!--/ko-->
+        </li>
+    </ul>
+</div>
+    </div>
+</div>
+    <!--/ko-->
+
+    <div class="modal fade" id="captcha-modal" role="dialog" data-backdrop="static" data-keyboard="false">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">
+                        ×
+                    </button>
+                    <h3 class="modal-title">
+                        Sorry but you need to complete the captcha test to continue
+                    </h3>
+                </div>
+                <div class="modal-body">
+                    <div id="g-recaptcha" class="g-recaptcha" data-sitekey="6LdlqLwZAAAAAFlFfnj_h6JUU-igcmWx46wHcdBf"></div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">
+                        Cancel
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+------------------
+(program exited with code: 0)
+Press return to continue
