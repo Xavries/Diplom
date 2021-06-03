@@ -10,6 +10,7 @@ while len(t)>k:
 '''
 #first way of getting data
 itemst = ['Chromium Plating', 'Zircon Plating', 'Potent Nirncrux', 'Perfect Roe', 'Hakeijo', 'Dreugh Wax', 'Tempering Alloy']
+'''
 n = 0
 b = 140
 for i in itemst:
@@ -19,9 +20,9 @@ for i in itemst:
 		n += 14
 	n += 22
 	b += 162
+'''
 
-
-f = open("ttspage1.html", "r")
+f = open("ttspage5.html", "r")
 t1 = f.read().split('"')
 f.close()
 
