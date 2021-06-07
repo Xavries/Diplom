@@ -1,0 +1,3148 @@
+<<div id="search-result-view">
+    <!--ko ifnot: IsRequestDone--><!--/ko-->
+    <!--ko if: IsRequestDone-->
+    <div data-bind="with: TradeListPageModel">
+    <h4 data-bind="if: TotalMatchCount == 0"></h4>
+
+    <div data-bind="if: TotalMatchCount != 0">
+        <table class="trade-list-table max-width">
+            <thead>
+                <tr>
+                    <th class="cursor-pointer" data-bind="click: Sort.bind($data, 0)">
+                        Item
+                    </th>
+                    <th class="hidden-xs">
+                        Trader
+                    </th>
+                    <th class="hidden-xs">
+                        Location
+                    </th>
+                    <th class="cursor-pointer" data-bind="click: Sort.bind($data, 1)">
+                        Price
+                    </th>
+                    <th class="cursor-pointer hidden-xs" data-bind="click: Sort.bind($data, 2)">
+                        Last Seen
+                    </th>
+                </tr>
+            </thead>
+
+            <tbody data-bind="foreach: TradeDetails">
+                <tr class="cursor-pointer" data-toggle="tooltip" data-bind="click: OpenDetailPage.bind($data),
+                       attr: { title: Message }" data-original-title="">
+                    <td data-bind="using: TradeAsset.Item">
+                        
+                        <div data-bind="itemQualityClass: QualityID,
+                                    text: Name" class="item-quality-legendary">Chromium Plating</div>
+
+                        <!--ko if: MasterWritInfo != null && MasterWritInfo.NumVoucher != null --><!--/ko-->
+                        
+                    </td>
+                    <td class="hidden-xs">
+                        <div class="text-small-width" data-bind="text: PlayerID">@WybieX</div></td>
+                    <td>
+                        <div data-bind="text: StringResource['TraderLocation' + DBData.GuildKioskLocation[GuildKioskLocationID]]">Grahtwood:  Elden Root</div>
+                        <div data-bind="text: GuildName">Valinor Merchants</div>
+                    </td>
+                    <td class="gold-amount bold" data-bind="using: TradeAsset">
+                        <span data-bind="localizedNumber: UnitPrice">129,999</span>
+                        
+
+                        <div class="text-danger">
+                            X
+                        </div>
+
+                        <span data-bind="localizedNumber: Amount">1</span>
+                        
+                        <div class="text-danger">
+                            =
+                        </div>
+                        <span data-bind="localizedNumber: TotalPrice">129,999</span>
+                        
+                    </td>
+                    <td class="bold hidden-xs" data-bind="minutesElapsed: DiscoverUnixTime">Now</td>
+
+                </tr>
+                <tr class="row-separator"></tr>
+            
+                <tr class="cursor-pointer" data-toggle="tooltip" data-bind="click: OpenDetailPage.bind($data),
+                       attr: { title: Message }" data-original-title="">
+                    <td data-bind="using: TradeAsset.Item">
+                        </div>
+
+                        <!--ko if: MasterWritInfo != null && MasterWritInfo.NumVoucher != null --><!--/ko-->
+                        <div>
+                            Level
+                            </span>
+                        </div>
+                    </td>
+                    <td class="hidden-xs">
+                        <div class="text-small-width" data-bind="text: PlayerID">@WybieX</div></td>
+                    <td>
+                        <div data-bind="text: StringResource['TraderLocation' + DBData.GuildKioskLocation[GuildKioskLocationID]]">Grahtwood:  Elden Root</div>
+                        <div data-bind="text: GuildName">Valinor Merchants</div>
+                    </td>
+                    <td class="gold-amount bold" data-bind="using: TradeAsset">
+                        <span data-bind="localizedNumber: UnitPrice">129,999</span>
+                        </div>
+
+                        <span data-bind="localizedNumber: Amount">1</span>
+                        </div>
+                        <span data-bind="localizedNumber: TotalPrice">129,999</span>
+                        <td class="bold hidden-xs" data-bind="minutesElapsed: DiscoverUnixTime">Now</td>
+
+                </tr>
+                <tr class="row-separator"></tr>
+            
+                <tr class="cursor-pointer" data-toggle="tooltip" data-bind="click: OpenDetailPage.bind($data),
+                       attr: { title: Message }" data-original-title="">
+                    <td data-bind="using: TradeAsset.Item">
+                        </div>
+
+                        <!--ko if: MasterWritInfo != null && MasterWritInfo.NumVoucher != null --><!--/ko-->
+                        <div>
+                            Level
+                            </span>
+                        </div>
+                    </td>
+                    <td class="hidden-xs">
+                        <div class="text-small-width" data-bind="text: PlayerID">@WybieX</div></td>
+                    <td>
+                        <div data-bind="text: StringResource['TraderLocation' + DBData.GuildKioskLocation[GuildKioskLocationID]]">Grahtwood:  Elden Root</div>
+                        <div data-bind="text: GuildName">Valinor Merchants</div>
+                    </td>
+                    <td class="gold-amount bold" data-bind="using: TradeAsset">
+                        <span data-bind="localizedNumber: UnitPrice">129,999</span>
+                        </div>
+
+                        <span data-bind="localizedNumber: Amount">1</span>
+                        </div>
+                        <span data-bind="localizedNumber: TotalPrice">129,999</span>
+                        <td class="bold hidden-xs" data-bind="minutesElapsed: DiscoverUnixTime">Now</td>
+
+                </tr>
+                <tr class="row-separator"></tr>
+            
+                <tr class="cursor-pointer" data-toggle="tooltip" data-bind="click: OpenDetailPage.bind($data),
+                       attr: { title: Message }" data-original-title="">
+                    <td data-bind="using: TradeAsset.Item">
+                        </div>
+
+                        <!--ko if: MasterWritInfo != null && MasterWritInfo.NumVoucher != null --><!--/ko-->
+                        <div>
+                            Level
+                            </span>
+                        </div>
+                    </td>
+                    <td class="hidden-xs">
+                        <div class="text-small-width" data-bind="text: PlayerID">@MrOaksen</div></td>
+                    <td>
+                        <div data-bind="text: StringResource['TraderLocation' + DBData.GuildKioskLocation[GuildKioskLocationID]]">Western Skyrim: Solitude</div>
+                        <div data-bind="text: GuildName">Pact Veteran Trade II</div>
+                    </td>
+                    <td class="gold-amount bold" data-bind="using: TradeAsset">
+                        <span data-bind="localizedNumber: UnitPrice">130,000</span>
+                        </div>
+
+                        <span data-bind="localizedNumber: Amount">1</span>
+                        </div>
+                        <span data-bind="localizedNumber: TotalPrice">130,000</span>
+                        <td class="bold hidden-xs" data-bind="minutesElapsed: DiscoverUnixTime">32 Minute ago</td>
+
+                </tr>
+                <tr class="row-separator"></tr>
+            
+                <tr class="cursor-pointer" data-toggle="tooltip" data-bind="click: OpenDetailPage.bind($data),
+                       attr: { title: Message }" data-original-title="">
+                    <td data-bind="using: TradeAsset.Item">
+                        </div>
+
+                        <!--ko if: MasterWritInfo != null && MasterWritInfo.NumVoucher != null --><!--/ko-->
+                        <div>
+                            Level
+                            </span>
+                        </div>
+                    </td>
+                    <td class="hidden-xs">
+                        <div class="text-small-width" data-bind="text: PlayerID">@Tooslo</div></td>
+                    <td>
+                        <div data-bind="text: StringResource['TraderLocation' + DBData.GuildKioskLocation[GuildKioskLocationID]]">Summerset: Alinor's Outlaw Refuge</div>
+                        <div data-bind="text: GuildName">Sithis Shadow</div>
+                    </td>
+                    <td class="gold-amount bold" data-bind="using: TradeAsset">
+                        <span data-bind="localizedNumber: UnitPrice">130,000</span>
+                        </div>
+
+                        <span data-bind="localizedNumber: Amount">1</span>
+                        </div>
+                        <span data-bind="localizedNumber: TotalPrice">130,000</span>
+                        <td class="bold hidden-xs" data-bind="minutesElapsed: DiscoverUnixTime">50 Minute ago</td>
+
+                </tr>
+                <tr class="row-separator"></tr>
+            
+                <tr class="cursor-pointer" data-toggle="tooltip" data-bind="click: OpenDetailPage.bind($data),
+                       attr: { title: Message }" data-original-title="">
+                    <td data-bind="using: TradeAsset.Item">
+                        </div>
+
+                        <!--ko if: MasterWritInfo != null && MasterWritInfo.NumVoucher != null --><!--/ko-->
+                        <div>
+                            Level
+                            </span>
+                        </div>
+                    </td>
+                    <td class="hidden-xs">
+                        <div class="text-small-width" data-bind="text: PlayerID">@Novel68</div></td>
+                    <td>
+                        <div data-bind="text: StringResource['TraderLocation' + DBData.GuildKioskLocation[GuildKioskLocationID]]">Bangkorai: Evermore</div>
+                        <div data-bind="text: GuildName">Sheogorath Cheese Temple</div>
+                    </td>
+                    <td class="gold-amount bold" data-bind="using: TradeAsset">
+                        <span data-bind="localizedNumber: UnitPrice">109,000</span>
+                        </div>
+
+                        <span data-bind="localizedNumber: Amount">1</span>
+                        </div>
+                        <span data-bind="localizedNumber: TotalPrice">109,000</span>
+                        <td class="bold hidden-xs" data-bind="minutesElapsed: DiscoverUnixTime">57 Minute ago</td>
+
+                </tr>
+                <tr class="row-separator"></tr>
+            
+                <tr class="cursor-pointer" data-toggle="tooltip" data-bind="click: OpenDetailPage.bind($data),
+                       attr: { title: Message }" data-original-title="">
+                    <td data-bind="using: TradeAsset.Item">
+                        </div>
+
+                        <!--ko if: MasterWritInfo != null && MasterWritInfo.NumVoucher != null --><!--/ko-->
+                        <div>
+                            Level
+                            </span>
+                        </div>
+                    </td>
+                    <td class="hidden-xs">
+                        <div class="text-small-width" data-bind="text: PlayerID">@Laviannia</div></td>
+                    <td>
+                        <div data-bind="text: StringResource['TraderLocation' + DBData.GuildKioskLocation[GuildKioskLocationID]]">The Gold Coast: Kvatch</div>
+                        <div data-bind="text: GuildName">The Danish Guild</div>
+                    </td>
+                    <td class="gold-amount bold" data-bind="using: TradeAsset">
+                        <span data-bind="localizedNumber: UnitPrice">100,000</span>
+                        </div>
+
+                        <span data-bind="localizedNumber: Amount">1</span>
+                        </div>
+                        <span data-bind="localizedNumber: TotalPrice">100,000</span>
+                        <td class="bold hidden-xs" data-bind="minutesElapsed: DiscoverUnixTime">1 Hour ago</td>
+
+                </tr>
+                <tr class="row-separator"></tr>
+            
+                <tr class="cursor-pointer" data-toggle="tooltip" data-bind="click: OpenDetailPage.bind($data),
+                       attr: { title: Message }" data-original-title="">
+                    <td data-bind="using: TradeAsset.Item">
+                        </div>
+
+                        <!--ko if: MasterWritInfo != null && MasterWritInfo.NumVoucher != null --><!--/ko-->
+                        <div>
+                            Level
+                            </span>
+                        </div>
+                    </td>
+                    <td class="hidden-xs">
+                        <div class="text-small-width" data-bind="text: PlayerID">@Silvermania</div></td>
+                    <td>
+                        <div data-bind="text: StringResource['TraderLocation' + DBData.GuildKioskLocation[GuildKioskLocationID]]">Rivenspire: Shornhelm</div>
+                        <div data-bind="text: GuildName">Caveat Emptor</div>
+                    </td>
+                    <td class="gold-amount bold" data-bind="using: TradeAsset">
+                        <span data-bind="localizedNumber: UnitPrice">130,000</span>
+                        </div>
+
+                        <span data-bind="localizedNumber: Amount">1</span>
+                        </div>
+                        <span data-bind="localizedNumber: TotalPrice">130,000</span>
+                        <td class="bold hidden-xs" data-bind="minutesElapsed: DiscoverUnixTime">1 Hour ago</td>
+
+                </tr>
+                <tr class="row-separator"></tr>
+            
+                <tr class="cursor-pointer" data-toggle="tooltip" data-bind="click: OpenDetailPage.bind($data),
+                       attr: { title: Message }" data-original-title="">
+                    <td data-bind="using: TradeAsset.Item">
+                        </div>
+
+                        <!--ko if: MasterWritInfo != null && MasterWritInfo.NumVoucher != null --><!--/ko-->
+                        <div>
+                            Level
+                            </span>
+                        </div>
+                    </td>
+                    <td class="hidden-xs">
+                        <div class="text-small-width" data-bind="text: PlayerID">@Hulameni</div></td>
+                    <td>
+                        <div data-bind="text: StringResource['TraderLocation' + DBData.GuildKioskLocation[GuildKioskLocationID]]">Stonefalls: Ebonheart</div>
+                        <div data-bind="text: GuildName">Schildwacht</div>
+                    </td>
+                    <td class="gold-amount bold" data-bind="using: TradeAsset">
+                        <span data-bind="localizedNumber: UnitPrice">111,111</span>
+                        </div>
+
+                        <span data-bind="localizedNumber: Amount">1</span>
+                        </div>
+                        <span data-bind="localizedNumber: TotalPrice">111,111</span>
+                        <td class="bold hidden-xs" data-bind="minutesElapsed: DiscoverUnixTime">1 Hour ago</td>
+
+                </tr>
+                <tr class="row-separator"></tr>
+            
+                <tr class="cursor-pointer" data-toggle="tooltip" data-bind="click: OpenDetailPage.bind($data),
+                       attr: { title: Message }" data-original-title="">
+                    <td data-bind="using: TradeAsset.Item">
+                        </div>
+
+                        <!--ko if: MasterWritInfo != null && MasterWritInfo.NumVoucher != null --><!--/ko-->
+                        <div>
+                            Level
+                            </span>
+                        </div>
+                    </td>
+                    <td class="hidden-xs">
+                        <div class="text-small-width" data-bind="text: PlayerID">@debellare</div></td>
+                    <td>
+                        <div data-bind="text: StringResource['TraderLocation' + DBData.GuildKioskLocation[GuildKioskLocationID]]">Vvardenfell: Vivec City's Outlaw Refuge</div>
+                        <div data-bind="text: GuildName">Rimmen Skooma Dealers</div>
+                    </td>
+                    <td class="gold-amount bold" data-bind="using: TradeAsset">
+                        <span data-bind="localizedNumber: UnitPrice">130,000</span>
+                        </div>
+
+                        <span data-bind="localizedNumber: Amount">1</span>
+                        </div>
+                        <span data-bind="localizedNumber: TotalPrice">130,000</span>
+                        <td class="bold hidden-xs" data-bind="minutesElapsed: DiscoverUnixTime">2 Hour ago</td>
+
+                </tr>
+                <tr class="row-separator"></tr>
+            </tbody>
+        </table>
+
+        <div class="align-center">
+    <ul class="pagination">
+        <li data-bind="css: { disabled : CurrentPage == 1 }" class="disabled">
+            <!--ko if: CurrentPage == 1 -->
+            <a>&lt;</a>
+            <!--/ko-->
+            <!--ko if: CurrentPage != 1 --><!--/ko-->
+        </li>
+
+        <!--ko if: ShowFirstPage --><!--/ko-->
+        <!--ko foreach: Pages-->
+        <li>
+            <!--ko if: $data == $parent.CurrentPage-->
+            <span class="active" data-bind="text: $data">1</span>
+            <!--/ko-->
+            <!--ko if: $data != $parent.CurrentPage--><!--/ko-->
+        </li>
+        
+        <li>
+            <!--ko if: $data == $parent.CurrentPage--><!--/ko-->
+            <!--ko if: $data != $parent.CurrentPage-->
+            <a data-bind="text: $data,
+                          attr: { href: $parent.GetUrlForPage($data) }" href="https://eu.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&amp;ItemID=18124&amp;ItemNamePattern=Chromium+Plating&amp;ItemCategory1ID=&amp;ItemTraitID=&amp;ItemQualityID=&amp;IsChampionPoint=false&amp;LevelMin=&amp;LevelMax=&amp;MasterWritVoucherMin=&amp;MasterWritVoucherMax=&amp;AmountMin=&amp;AmountMax=&amp;PriceMin=&amp;PriceMax=130000&amp;page=2">2</a>
+            <!--/ko-->
+        </li>
+        
+        <li>
+            <!--ko if: $data == $parent.CurrentPage--><!--/ko-->
+            <!--ko if: $data != $parent.CurrentPage-->
+            <a data-bind="text: $data,
+                          attr: { href: $parent.GetUrlForPage($data) }" href="https://eu.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&amp;ItemID=18124&amp;ItemNamePattern=Chromium+Plating&amp;ItemCategory1ID=&amp;ItemTraitID=&amp;ItemQualityID=&amp;IsChampionPoint=false&amp;LevelMin=&amp;LevelMax=&amp;MasterWritVoucherMin=&amp;MasterWritVoucherMax=&amp;AmountMin=&amp;AmountMax=&amp;PriceMin=&amp;PriceMax=130000&amp;page=3">3</a>
+            <!--/ko-->
+        </li>
+        
+        <li>
+            <!--ko if: $data == $parent.CurrentPage--><!--/ko-->
+            <!--ko if: $data != $parent.CurrentPage-->
+            <a data-bind="text: $data,
+                          attr: { href: $parent.GetUrlForPage($data) }" href="https://eu.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&amp;ItemID=18124&amp;ItemNamePattern=Chromium+Plating&amp;ItemCategory1ID=&amp;ItemTraitID=&amp;ItemQualityID=&amp;IsChampionPoint=false&amp;LevelMin=&amp;LevelMax=&amp;MasterWritVoucherMin=&amp;MasterWritVoucherMax=&amp;AmountMin=&amp;AmountMax=&amp;PriceMin=&amp;PriceMax=130000&amp;page=4">4</a>
+            <!--/ko-->
+        </li>
+        
+        <li>
+            <!--ko if: $data == $parent.CurrentPage--><!--/ko-->
+            <!--ko if: $data != $parent.CurrentPage-->
+            <a data-bind="text: $data,
+                          attr: { href: $parent.GetUrlForPage($data) }" href="https://eu.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&amp;ItemID=18124&amp;ItemNamePattern=Chromium+Plating&amp;ItemCategory1ID=&amp;ItemTraitID=&amp;ItemQualityID=&amp;IsChampionPoint=false&amp;LevelMin=&amp;LevelMax=&amp;MasterWritVoucherMin=&amp;MasterWritVoucherMax=&amp;AmountMin=&amp;AmountMax=&amp;PriceMin=&amp;PriceMax=130000&amp;page=5">5</a>
+            <!--/ko-->
+        </li>
+        <!--/ko-->
+        <!--ko if: ShowLastPage --><!--/ko-->
+
+        <li data-bind="css: { disabled : CurrentPage >= TotalPageCount }">
+            <!--ko if: CurrentPage >= TotalPageCount --><!--/ko-->
+            <!--ko if: CurrentPage < TotalPageCount -->
+            <a data-bind="attr:{ href: GetUrlForPage(CurrentPage + 1) }" href="https://eu.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&amp;ItemID=18124&amp;ItemNamePattern=Chromium+Plating&amp;ItemCategory1ID=&amp;ItemTraitID=&amp;ItemQualityID=&amp;IsChampionPoint=false&amp;LevelMin=&amp;LevelMax=&amp;MasterWritVoucherMin=&amp;MasterWritVoucherMax=&amp;AmountMin=&amp;AmountMax=&amp;PriceMin=&amp;PriceMax=130000&amp;page=2">&gt;</a>
+            <!--/ko-->
+        </li>
+    </ul>
+</div>
+    </div>
+</div>
+    <!--/ko-->
+
+    <div class="modal fade" id="captcha-modal" role="dialog" data-backdrop="static" data-keyboard="false">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">
+                        ×
+                    </button>
+                    <h3 class="modal-title">
+                        Sorry but you need to complete the captcha test to continue
+                    </h3>
+                </div>
+                <div class="modal-body">
+                    <div id="g-recaptcha" class="g-recaptcha" data-sitekey="6LdlqLwZAAAAAFlFfnj_h6JUU-igcmWx46wHcdBf"></div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">
+                        Cancel
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div><div id="search-result-view">
+    <!--ko ifnot: IsRequestDone--><!--/ko-->
+    <!--ko if: IsRequestDone-->
+    <div data-bind="with: TradeListPageModel">
+    <h4 data-bind="if: TotalMatchCount == 0"></h4>
+
+    <div data-bind="if: TotalMatchCount != 0">
+        <table class="trade-list-table max-width">
+            <thead>
+                <tr>
+                    <th class="cursor-pointer" data-bind="click: Sort.bind($data, 0)">
+                        Item
+                    </th>
+                    <th class="hidden-xs">
+                        Trader
+                    </th>
+                    <th class="hidden-xs">
+                        Location
+                    </th>
+                    <th class="cursor-pointer" data-bind="click: Sort.bind($data, 1)">
+                        Price
+                    </th>
+                    <th class="cursor-pointer hidden-xs" data-bind="click: Sort.bind($data, 2)">
+                        Last Seen
+                    </th>
+                </tr>
+            </thead>
+
+            <tbody data-bind="foreach: TradeDetails">
+                <tr class="cursor-pointer" data-toggle="tooltip" data-bind="click: OpenDetailPage.bind($data),
+                       attr: { title: Message }" data-original-title="">
+                    <td data-bind="using: TradeAsset.Item">
+                        </div>
+
+                        <!--ko if: MasterWritInfo != null && MasterWritInfo.NumVoucher != null --><!--/ko-->
+                        <div>
+                            Level
+                            </span>
+                        </div>
+                    </td>
+                    <td class="hidden-xs">
+                        <div class="text-small-width" data-bind="text: PlayerID">@WybieX</div></td>
+                    <td>
+                        <div data-bind="text: StringResource['TraderLocation' + DBData.GuildKioskLocation[GuildKioskLocationID]]">Grahtwood:  Elden Root</div>
+                        <div data-bind="text: GuildName">Valinor Merchants</div>
+                    </td>
+                    <td class="gold-amount bold" data-bind="using: TradeAsset">
+                        <span data-bind="localizedNumber: UnitPrice">34,999</span>
+                        </div>
+
+                        <span data-bind="localizedNumber: Amount">1</span>
+                        </div>
+                        <span data-bind="localizedNumber: TotalPrice">34,999</span>
+                        <td class="bold hidden-xs" data-bind="minutesElapsed: DiscoverUnixTime">Now</td>
+
+                </tr>
+                <tr class="row-separator"></tr>
+            
+                <tr class="cursor-pointer" data-toggle="tooltip" data-bind="click: OpenDetailPage.bind($data),
+                       attr: { title: Message }" data-original-title="">
+                    <td data-bind="using: TradeAsset.Item">
+                        </div>
+
+                        <!--ko if: MasterWritInfo != null && MasterWritInfo.NumVoucher != null --><!--/ko-->
+                        <div>
+                            Level
+                            </span>
+                        </div>
+                    </td>
+                    <td class="hidden-xs">
+                        <div class="text-small-width" data-bind="text: PlayerID">@WybieX</div></td>
+                    <td>
+                        <div data-bind="text: StringResource['TraderLocation' + DBData.GuildKioskLocation[GuildKioskLocationID]]">Grahtwood:  Elden Root</div>
+                        <div data-bind="text: GuildName">Valinor Merchants</div>
+                    </td>
+                    <td class="gold-amount bold" data-bind="using: TradeAsset">
+                        <span data-bind="localizedNumber: UnitPrice">34,999</span>
+                        </div>
+
+                        <span data-bind="localizedNumber: Amount">1</span>
+                        </div>
+                        <span data-bind="localizedNumber: TotalPrice">34,999</span>
+                        <td class="bold hidden-xs" data-bind="minutesElapsed: DiscoverUnixTime">Now</td>
+
+                </tr>
+                <tr class="row-separator"></tr>
+            
+                <tr class="cursor-pointer" data-toggle="tooltip" data-bind="click: OpenDetailPage.bind($data),
+                       attr: { title: Message }" data-original-title="">
+                    <td data-bind="using: TradeAsset.Item">
+                        </div>
+
+                        <!--ko if: MasterWritInfo != null && MasterWritInfo.NumVoucher != null --><!--/ko-->
+                        <div>
+                            Level
+                            </span>
+                        </div>
+                    </td>
+                    <td class="hidden-xs">
+                        <div class="text-small-width" data-bind="text: PlayerID">@MagicCatcher</div></td>
+                    <td>
+                        <div data-bind="text: StringResource['TraderLocation' + DBData.GuildKioskLocation[GuildKioskLocationID]]">Vvardenfell: Vivec City</div>
+                        <div data-bind="text: GuildName">KOMMEPCAHT</div>
+                    </td>
+                    <td class="gold-amount bold" data-bind="using: TradeAsset">
+                        <span data-bind="localizedNumber: UnitPrice">34,490</span>
+                        </div>
+
+                        <span data-bind="localizedNumber: Amount">1</span>
+                        </div>
+                        <span data-bind="localizedNumber: TotalPrice">34,490</span>
+                        <td class="bold hidden-xs" data-bind="minutesElapsed: DiscoverUnixTime">6 Minute ago</td>
+
+                </tr>
+                <tr class="row-separator"></tr>
+            
+                <tr class="cursor-pointer" data-toggle="tooltip" data-bind="click: OpenDetailPage.bind($data),
+                       attr: { title: Message }" data-original-title="">
+                    <td data-bind="using: TradeAsset.Item">
+                        </div>
+
+                        <!--ko if: MasterWritInfo != null && MasterWritInfo.NumVoucher != null --><!--/ko-->
+                        <div>
+                            Level
+                            </span>
+                        </div>
+                    </td>
+                    <td class="hidden-xs">
+                        <div class="text-small-width" data-bind="text: PlayerID">@Shorty-Noir</div></td>
+                    <td>
+                        <div data-bind="text: StringResource['TraderLocation' + DBData.GuildKioskLocation[GuildKioskLocationID]]">Coldharbour: Hollow City</div>
+                        <div data-bind="text: GuildName">Fussels Teufel</div>
+                    </td>
+                    <td class="gold-amount bold" data-bind="using: TradeAsset">
+                        <span data-bind="localizedNumber: UnitPrice">35,000</span>
+                        </div>
+
+                        <span data-bind="localizedNumber: Amount">2</span>
+                        </div>
+                        <span data-bind="localizedNumber: TotalPrice">70,000</span>
+                        <td class="bold hidden-xs" data-bind="minutesElapsed: DiscoverUnixTime">13 Minute ago</td>
+
+                </tr>
+                <tr class="row-separator"></tr>
+            
+                <tr class="cursor-pointer" data-toggle="tooltip" data-bind="click: OpenDetailPage.bind($data),
+                       attr: { title: Message }" data-original-title="">
+                    <td data-bind="using: TradeAsset.Item">
+                        </div>
+
+                        <!--ko if: MasterWritInfo != null && MasterWritInfo.NumVoucher != null --><!--/ko-->
+                        <div>
+                            Level
+                            </span>
+                        </div>
+                    </td>
+                    <td class="hidden-xs">
+                        <div class="text-small-width" data-bind="text: PlayerID">@mr.tomm</div></td>
+                    <td>
+                        <div data-bind="text: StringResource['TraderLocation' + DBData.GuildKioskLocation[GuildKioskLocationID]]">Glenumbra: Daggerfall</div>
+                        <div data-bind="text: GuildName">Sheogorath Cheese Worship</div>
+                    </td>
+                    <td class="gold-amount bold" data-bind="using: TradeAsset">
+                        <span data-bind="localizedNumber: UnitPrice">33,866</span>
+                        </div>
+
+                        <span data-bind="localizedNumber: Amount">4</span>
+                        </div>
+                        <span data-bind="localizedNumber: TotalPrice">135,464</span>
+                        <td class="bold hidden-xs" data-bind="minutesElapsed: DiscoverUnixTime">19 Minute ago</td>
+
+                </tr>
+                <tr class="row-separator"></tr>
+            
+                <tr class="cursor-pointer" data-toggle="tooltip" data-bind="click: OpenDetailPage.bind($data),
+                       attr: { title: Message }" data-original-title="">
+                    <td data-bind="using: TradeAsset.Item">
+                        </div>
+
+                        <!--ko if: MasterWritInfo != null && MasterWritInfo.NumVoucher != null --><!--/ko-->
+                        <div>
+                            Level
+                            </span>
+                        </div>
+                    </td>
+                    <td class="hidden-xs">
+                        <div class="text-small-width" data-bind="text: PlayerID">@mastak369</div></td>
+                    <td>
+                        <div data-bind="text: StringResource['TraderLocation' + DBData.GuildKioskLocation[GuildKioskLocationID]]">Bangkorai: Evermore's Outlaw Refuge</div>
+                        <div data-bind="text: GuildName">Sithis Wars</div>
+                    </td>
+                    <td class="gold-amount bold" data-bind="using: TradeAsset">
+                        <span data-bind="localizedNumber: UnitPrice">35,000</span>
+                        </div>
+
+                        <span data-bind="localizedNumber: Amount">1</span>
+                        </div>
+                        <span data-bind="localizedNumber: TotalPrice">35,000</span>
+                        <td class="bold hidden-xs" data-bind="minutesElapsed: DiscoverUnixTime">29 Minute ago</td>
+
+                </tr>
+                <tr class="row-separator"></tr>
+            
+                <tr class="cursor-pointer" data-toggle="tooltip" data-bind="click: OpenDetailPage.bind($data),
+                       attr: { title: Message }" data-original-title="">
+                    <td data-bind="using: TradeAsset.Item">
+                        </div>
+
+                        <!--ko if: MasterWritInfo != null && MasterWritInfo.NumVoucher != null --><!--/ko-->
+                        <div>
+                            Level
+                            </span>
+                        </div>
+                    </td>
+                    <td class="hidden-xs">
+                        <div class="text-small-width" data-bind="text: PlayerID">@langeblan</div></td>
+                    <td>
+                        <div data-bind="text: StringResource['TraderLocation' + DBData.GuildKioskLocation[GuildKioskLocationID]]">Wrothgar: Orsinium</div>
+                        <div data-bind="text: GuildName">Ordo Militaris Templi</div>
+                    </td>
+                    <td class="gold-amount bold" data-bind="using: TradeAsset">
+                        <span data-bind="localizedNumber: UnitPrice">35,000</span>
+                        </div>
+
+                        <span data-bind="localizedNumber: Amount">1</span>
+                        </div>
+                        <span data-bind="localizedNumber: TotalPrice">35,000</span>
+                        <td class="bold hidden-xs" data-bind="minutesElapsed: DiscoverUnixTime">41 Minute ago</td>
+
+                </tr>
+                <tr class="row-separator"></tr>
+            
+                <tr class="cursor-pointer" data-toggle="tooltip" data-bind="click: OpenDetailPage.bind($data),
+                       attr: { title: Message }" data-original-title="">
+                    <td data-bind="using: TradeAsset.Item">
+                        </div>
+
+                        <!--ko if: MasterWritInfo != null && MasterWritInfo.NumVoucher != null --><!--/ko-->
+                        <div>
+                            Level
+                            </span>
+                        </div>
+                    </td>
+                    <td class="hidden-xs">
+                        <div class="text-small-width" data-bind="text: PlayerID">@GutFriedolin13</div></td>
+                    <td>
+                        <div data-bind="text: StringResource['TraderLocation' + DBData.GuildKioskLocation[GuildKioskLocationID]]">Stonefalls: Ebonheart</div>
+                        <div data-bind="text: GuildName">Tamriels Vagabunden</div>
+                    </td>
+                    <td class="gold-amount bold" data-bind="using: TradeAsset">
+                        <span data-bind="localizedNumber: UnitPrice">32,500</span>
+                        </div>
+
+                        <span data-bind="localizedNumber: Amount">1</span>
+                        </div>
+                        <span data-bind="localizedNumber: TotalPrice">32,500</span>
+                        <td class="bold hidden-xs" data-bind="minutesElapsed: DiscoverUnixTime">51 Minute ago</td>
+
+                </tr>
+                <tr class="row-separator"></tr>
+            
+                <tr class="cursor-pointer" data-toggle="tooltip" data-bind="click: OpenDetailPage.bind($data),
+                       attr: { title: Message }" data-original-title="">
+                    <td data-bind="using: TradeAsset.Item">
+                        </div>
+
+                        <!--ko if: MasterWritInfo != null && MasterWritInfo.NumVoucher != null --><!--/ko-->
+                        <div>
+                            Level
+                            </span>
+                        </div>
+                    </td>
+                    <td class="hidden-xs">
+                        <div class="text-small-width" data-bind="text: PlayerID">@Eichemich</div></td>
+                    <td>
+                        <div data-bind="text: StringResource['TraderLocation' + DBData.GuildKioskLocation[GuildKioskLocationID]]">Glenumbra: Daggerfall</div>
+                        <div data-bind="text: GuildName">Die Handelsanfänger</div>
+                    </td>
+                    <td class="gold-amount bold" data-bind="using: TradeAsset">
+                        <span data-bind="localizedNumber: UnitPrice">35,000</span>
+                        </div>
+
+                        <span data-bind="localizedNumber: Amount">1</span>
+                        </div>
+                        <span data-bind="localizedNumber: TotalPrice">35,000</span>
+                        <td class="bold hidden-xs" data-bind="minutesElapsed: DiscoverUnixTime">52 Minute ago</td>
+
+                </tr>
+                <tr class="row-separator"></tr>
+            
+                <tr class="cursor-pointer" data-toggle="tooltip" data-bind="click: OpenDetailPage.bind($data),
+                       attr: { title: Message }" data-original-title="">
+                    <td data-bind="using: TradeAsset.Item">
+                        </div>
+
+                        <!--ko if: MasterWritInfo != null && MasterWritInfo.NumVoucher != null --><!--/ko-->
+                        <div>
+                            Level
+                            </span>
+                        </div>
+                    </td>
+                    <td class="hidden-xs">
+                        <div class="text-small-width" data-bind="text: PlayerID">@Eichemich</div></td>
+                    <td>
+                        <div data-bind="text: StringResource['TraderLocation' + DBData.GuildKioskLocation[GuildKioskLocationID]]">Glenumbra: Daggerfall</div>
+                        <div data-bind="text: GuildName">Die Handelsanfänger</div>
+                    </td>
+                    <td class="gold-amount bold" data-bind="using: TradeAsset">
+                        <span data-bind="localizedNumber: UnitPrice">35,000</span>
+                        </div>
+
+                        <span data-bind="localizedNumber: Amount">1</span>
+                        </div>
+                        <span data-bind="localizedNumber: TotalPrice">35,000</span>
+                        <td class="bold hidden-xs" data-bind="minutesElapsed: DiscoverUnixTime">52 Minute ago</td>
+
+                </tr>
+                <tr class="row-separator"></tr>
+            </tbody>
+        </table>
+
+        <div class="align-center">
+    <ul class="pagination">
+        <li data-bind="css: { disabled : CurrentPage == 1 }" class="disabled">
+            <!--ko if: CurrentPage == 1 -->
+            <a>&lt;</a>
+            <!--/ko-->
+            <!--ko if: CurrentPage != 1 --><!--/ko-->
+        </li>
+
+        <!--ko if: ShowFirstPage --><!--/ko-->
+        <!--ko foreach: Pages-->
+        <li>
+            <!--ko if: $data == $parent.CurrentPage-->
+            <span class="active" data-bind="text: $data">1</span>
+            <!--/ko-->
+            <!--ko if: $data != $parent.CurrentPage--><!--/ko-->
+        </li>
+        
+        <li>
+            <!--ko if: $data == $parent.CurrentPage--><!--/ko-->
+            <!--ko if: $data != $parent.CurrentPage-->
+            <a data-bind="text: $data,
+                          attr: { href: $parent.GetUrlForPage($data) }" href="https://eu.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&amp;ItemID=17799&amp;ItemNamePattern=Zircon+Plating&amp;ItemCategory1ID=&amp;ItemTraitID=&amp;ItemQualityID=&amp;IsChampionPoint=false&amp;LevelMin=&amp;LevelMax=&amp;MasterWritVoucherMin=&amp;MasterWritVoucherMax=&amp;AmountMin=&amp;AmountMax=&amp;PriceMin=&amp;PriceMax=35000&amp;page=2">2</a>
+            <!--/ko-->
+        </li>
+        
+        <li>
+            <!--ko if: $data == $parent.CurrentPage--><!--/ko-->
+            <!--ko if: $data != $parent.CurrentPage-->
+            <a data-bind="text: $data,
+                          attr: { href: $parent.GetUrlForPage($data) }" href="https://eu.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&amp;ItemID=17799&amp;ItemNamePattern=Zircon+Plating&amp;ItemCategory1ID=&amp;ItemTraitID=&amp;ItemQualityID=&amp;IsChampionPoint=false&amp;LevelMin=&amp;LevelMax=&amp;MasterWritVoucherMin=&amp;MasterWritVoucherMax=&amp;AmountMin=&amp;AmountMax=&amp;PriceMin=&amp;PriceMax=35000&amp;page=3">3</a>
+            <!--/ko-->
+        </li>
+        
+        <li>
+            <!--ko if: $data == $parent.CurrentPage--><!--/ko-->
+            <!--ko if: $data != $parent.CurrentPage-->
+            <a data-bind="text: $data,
+                          attr: { href: $parent.GetUrlForPage($data) }" href="https://eu.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&amp;ItemID=17799&amp;ItemNamePattern=Zircon+Plating&amp;ItemCategory1ID=&amp;ItemTraitID=&amp;ItemQualityID=&amp;IsChampionPoint=false&amp;LevelMin=&amp;LevelMax=&amp;MasterWritVoucherMin=&amp;MasterWritVoucherMax=&amp;AmountMin=&amp;AmountMax=&amp;PriceMin=&amp;PriceMax=35000&amp;page=4">4</a>
+            <!--/ko-->
+        </li>
+        
+        <li>
+            <!--ko if: $data == $parent.CurrentPage--><!--/ko-->
+            <!--ko if: $data != $parent.CurrentPage-->
+            <a data-bind="text: $data,
+                          attr: { href: $parent.GetUrlForPage($data) }" href="https://eu.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&amp;ItemID=17799&amp;ItemNamePattern=Zircon+Plating&amp;ItemCategory1ID=&amp;ItemTraitID=&amp;ItemQualityID=&amp;IsChampionPoint=false&amp;LevelMin=&amp;LevelMax=&amp;MasterWritVoucherMin=&amp;MasterWritVoucherMax=&amp;AmountMin=&amp;AmountMax=&amp;PriceMin=&amp;PriceMax=35000&amp;page=5">5</a>
+            <!--/ko-->
+        </li>
+        
+        <li>
+            <!--ko if: $data == $parent.CurrentPage--><!--/ko-->
+            <!--ko if: $data != $parent.CurrentPage-->
+            <a data-bind="text: $data,
+                          attr: { href: $parent.GetUrlForPage($data) }" href="https://eu.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&amp;ItemID=17799&amp;ItemNamePattern=Zircon+Plating&amp;ItemCategory1ID=&amp;ItemTraitID=&amp;ItemQualityID=&amp;IsChampionPoint=false&amp;LevelMin=&amp;LevelMax=&amp;MasterWritVoucherMin=&amp;MasterWritVoucherMax=&amp;AmountMin=&amp;AmountMax=&amp;PriceMin=&amp;PriceMax=35000&amp;page=6">6</a>
+            <!--/ko-->
+        </li>
+        
+        <li>
+            <!--ko if: $data == $parent.CurrentPage--><!--/ko-->
+            <!--ko if: $data != $parent.CurrentPage-->
+            <a data-bind="text: $data,
+                          attr: { href: $parent.GetUrlForPage($data) }" href="https://eu.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&amp;ItemID=17799&amp;ItemNamePattern=Zircon+Plating&amp;ItemCategory1ID=&amp;ItemTraitID=&amp;ItemQualityID=&amp;IsChampionPoint=false&amp;LevelMin=&amp;LevelMax=&amp;MasterWritVoucherMin=&amp;MasterWritVoucherMax=&amp;AmountMin=&amp;AmountMax=&amp;PriceMin=&amp;PriceMax=35000&amp;page=7">7</a>
+            <!--/ko-->
+        </li>
+        
+        <li>
+            <!--ko if: $data == $parent.CurrentPage--><!--/ko-->
+            <!--ko if: $data != $parent.CurrentPage-->
+            <a data-bind="text: $data,
+                          attr: { href: $parent.GetUrlForPage($data) }" href="https://eu.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&amp;ItemID=17799&amp;ItemNamePattern=Zircon+Plating&amp;ItemCategory1ID=&amp;ItemTraitID=&amp;ItemQualityID=&amp;IsChampionPoint=false&amp;LevelMin=&amp;LevelMax=&amp;MasterWritVoucherMin=&amp;MasterWritVoucherMax=&amp;AmountMin=&amp;AmountMax=&amp;PriceMin=&amp;PriceMax=35000&amp;page=8">8</a>
+            <!--/ko-->
+        </li>
+        
+        <li>
+            <!--ko if: $data == $parent.CurrentPage--><!--/ko-->
+            <!--ko if: $data != $parent.CurrentPage-->
+            <a data-bind="text: $data,
+                          attr: { href: $parent.GetUrlForPage($data) }" href="https://eu.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&amp;ItemID=17799&amp;ItemNamePattern=Zircon+Plating&amp;ItemCategory1ID=&amp;ItemTraitID=&amp;ItemQualityID=&amp;IsChampionPoint=false&amp;LevelMin=&amp;LevelMax=&amp;MasterWritVoucherMin=&amp;MasterWritVoucherMax=&amp;AmountMin=&amp;AmountMax=&amp;PriceMin=&amp;PriceMax=35000&amp;page=9">9</a>
+            <!--/ko-->
+        </li>
+        
+        <li>
+            <!--ko if: $data == $parent.CurrentPage--><!--/ko-->
+            <!--ko if: $data != $parent.CurrentPage-->
+            <a data-bind="text: $data,
+                          attr: { href: $parent.GetUrlForPage($data) }" href="https://eu.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&amp;ItemID=17799&amp;ItemNamePattern=Zircon+Plating&amp;ItemCategory1ID=&amp;ItemTraitID=&amp;ItemQualityID=&amp;IsChampionPoint=false&amp;LevelMin=&amp;LevelMax=&amp;MasterWritVoucherMin=&amp;MasterWritVoucherMax=&amp;AmountMin=&amp;AmountMax=&amp;PriceMin=&amp;PriceMax=35000&amp;page=10">10</a>
+            <!--/ko-->
+        </li>
+        <!--/ko-->
+        <!--ko if: ShowLastPage --><!--/ko-->
+
+        <li data-bind="css: { disabled : CurrentPage >= TotalPageCount }">
+            <!--ko if: CurrentPage >= TotalPageCount --><!--/ko-->
+            <!--ko if: CurrentPage < TotalPageCount -->
+            <a data-bind="attr:{ href: GetUrlForPage(CurrentPage + 1) }" href="https://eu.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&amp;ItemID=17799&amp;ItemNamePattern=Zircon+Plating&amp;ItemCategory1ID=&amp;ItemTraitID=&amp;ItemQualityID=&amp;IsChampionPoint=false&amp;LevelMin=&amp;LevelMax=&amp;MasterWritVoucherMin=&amp;MasterWritVoucherMax=&amp;AmountMin=&amp;AmountMax=&amp;PriceMin=&amp;PriceMax=35000&amp;page=2">&gt;</a>
+            <!--/ko-->
+        </li>
+    </ul>
+</div>
+    </div>
+</div>
+    <!--/ko-->
+
+    <div class="modal fade" id="captcha-modal" role="dialog" data-backdrop="static" data-keyboard="false">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">
+                        ×
+                    </button>
+                    <h3 class="modal-title">
+                        Sorry but you need to complete the captcha test to continue
+                    </h3>
+                </div>
+                <div class="modal-body">
+                    <div id="g-recaptcha" class="g-recaptcha" data-sitekey="6LdlqLwZAAAAAFlFfnj_h6JUU-igcmWx46wHcdBf"></div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">
+                        Cancel
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div><div id="search-result-view">
+    <!--ko ifnot: IsRequestDone--><!--/ko-->
+    <!--ko if: IsRequestDone-->
+    <div data-bind="with: TradeListPageModel">
+    <h4 data-bind="if: TotalMatchCount == 0"></h4>
+
+    <div data-bind="if: TotalMatchCount != 0">
+        <table class="trade-list-table max-width">
+            <thead>
+                <tr>
+                    <th class="cursor-pointer" data-bind="click: Sort.bind($data, 0)">
+                        Item
+                    </th>
+                    <th class="hidden-xs">
+                        Trader
+                    </th>
+                    <th class="hidden-xs">
+                        Location
+                    </th>
+                    <th class="cursor-pointer" data-bind="click: Sort.bind($data, 1)">
+                        Price
+                    </th>
+                    <th class="cursor-pointer hidden-xs" data-bind="click: Sort.bind($data, 2)">
+                        Last Seen
+                    </th>
+                </tr>
+            </thead>
+
+            <tbody data-bind="foreach: TradeDetails">
+                <tr class="cursor-pointer" data-toggle="tooltip" data-bind="click: OpenDetailPage.bind($data),
+                       attr: { title: Message }" data-original-title="">
+                    <td data-bind="using: TradeAsset.Item">
+                        </div>
+
+                        <!--ko if: MasterWritInfo != null && MasterWritInfo.NumVoucher != null --><!--/ko-->
+                        <div>
+                            Level
+                            </span>
+                        </div>
+                    </td>
+                    <td class="hidden-xs">
+                        <div class="text-small-width" data-bind="text: PlayerID">@Warlock1986</div></td>
+                    <td>
+                        <div data-bind="text: StringResource['TraderLocation' + DBData.GuildKioskLocation[GuildKioskLocationID]]">Stormhaven: Wayrest's Outlaw Refuge</div>
+                        <div data-bind="text: GuildName">Shéggørath</div>
+                    </td>
+                    <td class="gold-amount bold" data-bind="using: TradeAsset">
+                        <span data-bind="localizedNumber: UnitPrice">19,999</span>
+                        </div>
+
+                        <span data-bind="localizedNumber: Amount">1</span>
+                        </div>
+                        <span data-bind="localizedNumber: TotalPrice">19,999</span>
+                        <td class="bold hidden-xs" data-bind="minutesElapsed: DiscoverUnixTime">Now</td>
+
+                </tr>
+                <tr class="row-separator"></tr>
+            
+                <tr class="cursor-pointer" data-toggle="tooltip" data-bind="click: OpenDetailPage.bind($data),
+                       attr: { title: Message }" data-original-title="">
+                    <td data-bind="using: TradeAsset.Item">
+                        </div>
+
+                        <!--ko if: MasterWritInfo != null && MasterWritInfo.NumVoucher != null --><!--/ko-->
+                        <div>
+                            Level
+                            </span>
+                        </div>
+                    </td>
+                    <td class="hidden-xs">
+                        <div class="text-small-width" data-bind="text: PlayerID">@Warlock1986</div></td>
+                    <td>
+                        <div data-bind="text: StringResource['TraderLocation' + DBData.GuildKioskLocation[GuildKioskLocationID]]">Stormhaven: Wayrest's Outlaw Refuge</div>
+                        <div data-bind="text: GuildName">Shéggørath</div>
+                    </td>
+                    <td class="gold-amount bold" data-bind="using: TradeAsset">
+                        <span data-bind="localizedNumber: UnitPrice">19,999</span>
+                        </div>
+
+                        <span data-bind="localizedNumber: Amount">1</span>
+                        </div>
+                        <span data-bind="localizedNumber: TotalPrice">19,999</span>
+                        <td class="bold hidden-xs" data-bind="minutesElapsed: DiscoverUnixTime">Now</td>
+
+                </tr>
+                <tr class="row-separator"></tr>
+            
+                <tr class="cursor-pointer" data-toggle="tooltip" data-bind="click: OpenDetailPage.bind($data),
+                       attr: { title: Message }" data-original-title="">
+                    <td data-bind="using: TradeAsset.Item">
+                        </div>
+
+                        <!--ko if: MasterWritInfo != null && MasterWritInfo.NumVoucher != null --><!--/ko-->
+                        <div>
+                            Level
+                            </span>
+                        </div>
+                    </td>
+                    <td class="hidden-xs">
+                        <div class="text-small-width" data-bind="text: PlayerID">@Warlock1986</div></td>
+                    <td>
+                        <div data-bind="text: StringResource['TraderLocation' + DBData.GuildKioskLocation[GuildKioskLocationID]]">Stormhaven: Wayrest's Outlaw Refuge</div>
+                        <div data-bind="text: GuildName">Shéggørath</div>
+                    </td>
+                    <td class="gold-amount bold" data-bind="using: TradeAsset">
+                        <span data-bind="localizedNumber: UnitPrice">19,999</span>
+                        </div>
+
+                        <span data-bind="localizedNumber: Amount">1</span>
+                        </div>
+                        <span data-bind="localizedNumber: TotalPrice">19,999</span>
+                        <td class="bold hidden-xs" data-bind="minutesElapsed: DiscoverUnixTime">Now</td>
+
+                </tr>
+                <tr class="row-separator"></tr>
+            
+                <tr class="cursor-pointer" data-toggle="tooltip" data-bind="click: OpenDetailPage.bind($data),
+                       attr: { title: Message }" data-original-title="">
+                    <td data-bind="using: TradeAsset.Item">
+                        </div>
+
+                        <!--ko if: MasterWritInfo != null && MasterWritInfo.NumVoucher != null --><!--/ko-->
+                        <div>
+                            Level
+                            </span>
+                        </div>
+                    </td>
+                    <td class="hidden-xs">
+                        <div class="text-small-width" data-bind="text: PlayerID">@Dova_13</div></td>
+                    <td>
+                        <div data-bind="text: StringResource['TraderLocation' + DBData.GuildKioskLocation[GuildKioskLocationID]]">Stormhaven: Wayrest's Outlaw Refuge</div>
+                        <div data-bind="text: GuildName">Shéggørath</div>
+                    </td>
+                    <td class="gold-amount bold" data-bind="using: TradeAsset">
+                        <span data-bind="localizedNumber: UnitPrice">21,000</span>
+                        </div>
+
+                        <span data-bind="localizedNumber: Amount">2</span>
+                        </div>
+                        <span data-bind="localizedNumber: TotalPrice">42,000</span>
+                        <td class="bold hidden-xs" data-bind="minutesElapsed: DiscoverUnixTime">Now</td>
+
+                </tr>
+                <tr class="row-separator"></tr>
+            
+                <tr class="cursor-pointer" data-toggle="tooltip" data-bind="click: OpenDetailPage.bind($data),
+                       attr: { title: Message }" data-original-title="">
+                    <td data-bind="using: TradeAsset.Item">
+                        </div>
+
+                        <!--ko if: MasterWritInfo != null && MasterWritInfo.NumVoucher != null --><!--/ko-->
+                        <div>
+                            Level
+                            </span>
+                        </div>
+                    </td>
+                    <td class="hidden-xs">
+                        <div class="text-small-width" data-bind="text: PlayerID">@Renawedd</div></td>
+                    <td>
+                        <div data-bind="text: StringResource['TraderLocation' + DBData.GuildKioskLocation[GuildKioskLocationID]]">Vvardenfell: Vivec City</div>
+                        <div data-bind="text: GuildName">Valinor Traders</div>
+                    </td>
+                    <td class="gold-amount bold" data-bind="using: TradeAsset">
+                        <span data-bind="localizedNumber: UnitPrice">20,500</span>
+                        </div>
+
+                        <span data-bind="localizedNumber: Amount">1</span>
+                        </div>
+                        <span data-bind="localizedNumber: TotalPrice">20,500</span>
+                        <td class="bold hidden-xs" data-bind="minutesElapsed: DiscoverUnixTime">5 Minute ago</td>
+
+                </tr>
+                <tr class="row-separator"></tr>
+            
+                <tr class="cursor-pointer" data-toggle="tooltip" data-bind="click: OpenDetailPage.bind($data),
+                       attr: { title: Message }" data-original-title="">
+                    <td data-bind="using: TradeAsset.Item">
+                        </div>
+
+                        <!--ko if: MasterWritInfo != null && MasterWritInfo.NumVoucher != null --><!--/ko-->
+                        <div>
+                            Level
+                            </span>
+                        </div>
+                    </td>
+                    <td class="hidden-xs">
+                        <div class="text-small-width" data-bind="text: PlayerID">@Old_Demon</div></td>
+                    <td>
+                        <div data-bind="text: StringResource['TraderLocation' + DBData.GuildKioskLocation[GuildKioskLocationID]]">Malabal Tor: Baandari Tradepost</div>
+                        <div data-bind="text: GuildName">Clawhanded Madcrabs</div>
+                    </td>
+                    <td class="gold-amount bold" data-bind="using: TradeAsset">
+                        <span data-bind="localizedNumber: UnitPrice">20,000</span>
+                        </div>
+
+                        <span data-bind="localizedNumber: Amount">1</span>
+                        </div>
+                        <span data-bind="localizedNumber: TotalPrice">20,000</span>
+                        <td class="bold hidden-xs" data-bind="minutesElapsed: DiscoverUnixTime">14 Minute ago</td>
+
+                </tr>
+                <tr class="row-separator"></tr>
+            
+                <tr class="cursor-pointer" data-toggle="tooltip" data-bind="click: OpenDetailPage.bind($data),
+                       attr: { title: Message }" data-original-title="">
+                    <td data-bind="using: TradeAsset.Item">
+                        </div>
+
+                        <!--ko if: MasterWritInfo != null && MasterWritInfo.NumVoucher != null --><!--/ko-->
+                        <div>
+                            Level
+                            </span>
+                        </div>
+                    </td>
+                    <td class="hidden-xs">
+                        <div class="text-small-width" data-bind="text: PlayerID">@AndreiK4</div></td>
+                    <td>
+                        <div data-bind="text: StringResource['TraderLocation' + DBData.GuildKioskLocation[GuildKioskLocationID]]">Malabal Tor: Baandari Tradepost</div>
+                        <div data-bind="text: GuildName">Clawhanded Madcrabs</div>
+                    </td>
+                    <td class="gold-amount bold" data-bind="using: TradeAsset">
+                        <span data-bind="localizedNumber: UnitPrice">20,400</span>
+                        </div>
+
+                        <span data-bind="localizedNumber: Amount">1</span>
+                        </div>
+                        <span data-bind="localizedNumber: TotalPrice">20,400</span>
+                        <td class="bold hidden-xs" data-bind="minutesElapsed: DiscoverUnixTime">14 Minute ago</td>
+
+                </tr>
+                <tr class="row-separator"></tr>
+            
+                <tr class="cursor-pointer" data-toggle="tooltip" data-bind="click: OpenDetailPage.bind($data),
+                       attr: { title: Message }" data-original-title="">
+                    <td data-bind="using: TradeAsset.Item">
+                        </div>
+
+                        <!--ko if: MasterWritInfo != null && MasterWritInfo.NumVoucher != null --><!--/ko-->
+                        <div>
+                            Level
+                            </span>
+                        </div>
+                    </td>
+                    <td class="hidden-xs">
+                        <div class="text-small-width" data-bind="text: PlayerID">@Dohlokotik</div></td>
+                    <td>
+                        <div data-bind="text: StringResource['TraderLocation' + DBData.GuildKioskLocation[GuildKioskLocationID]]">Greenshade: Marbruk</div>
+                        <div data-bind="text: GuildName">DutyTrade</div>
+                    </td>
+                    <td class="gold-amount bold" data-bind="using: TradeAsset">
+                        <span data-bind="localizedNumber: UnitPrice">20,400</span>
+                        </div>
+
+                        <span data-bind="localizedNumber: Amount">1</span>
+                        </div>
+                        <span data-bind="localizedNumber: TotalPrice">20,400</span>
+                        <td class="bold hidden-xs" data-bind="minutesElapsed: DiscoverUnixTime">14 Minute ago</td>
+
+                </tr>
+                <tr class="row-separator"></tr>
+            
+                <tr class="cursor-pointer" data-toggle="tooltip" data-bind="click: OpenDetailPage.bind($data),
+                       attr: { title: Message }" data-original-title="">
+                    <td data-bind="using: TradeAsset.Item">
+                        </div>
+
+                        <!--ko if: MasterWritInfo != null && MasterWritInfo.NumVoucher != null --><!--/ko-->
+                        <div>
+                            Level
+                            </span>
+                        </div>
+                    </td>
+                    <td class="hidden-xs">
+                        <div class="text-small-width" data-bind="text: PlayerID">@Messkir</div></td>
+                    <td>
+                        <div data-bind="text: StringResource['TraderLocation' + DBData.GuildKioskLocation[GuildKioskLocationID]]">Summerset: Alinor</div>
+                        <div data-bind="text: GuildName">Forsaken Souls</div>
+                    </td>
+                    <td class="gold-amount bold" data-bind="using: TradeAsset">
+                        <span data-bind="localizedNumber: UnitPrice">20,590</span>
+                        </div>
+
+                        <span data-bind="localizedNumber: Amount">1</span>
+                        </div>
+                        <span data-bind="localizedNumber: TotalPrice">20,590</span>
+                        <td class="bold hidden-xs" data-bind="minutesElapsed: DiscoverUnixTime">16 Minute ago</td>
+
+                </tr>
+                <tr class="row-separator"></tr>
+            
+                <tr class="cursor-pointer" data-toggle="tooltip" data-bind="click: OpenDetailPage.bind($data),
+                       attr: { title: Message }" data-original-title="">
+                    <td data-bind="using: TradeAsset.Item">
+                        </div>
+
+                        <!--ko if: MasterWritInfo != null && MasterWritInfo.NumVoucher != null --><!--/ko-->
+                        <div>
+                            Level
+                            </span>
+                        </div>
+                    </td>
+                    <td class="hidden-xs">
+                        <div class="text-small-width" data-bind="text: PlayerID">@Merlen_fg</div></td>
+                    <td>
+                        <div data-bind="text: StringResource['TraderLocation' + DBData.GuildKioskLocation[GuildKioskLocationID]]">Greenshade: Marbruk</div>
+                        <div data-bind="text: GuildName">Akaviri Trade House</div>
+                    </td>
+                    <td class="gold-amount bold" data-bind="using: TradeAsset">
+                        <span data-bind="localizedNumber: UnitPrice">19,999</span>
+                        </div>
+
+                        <span data-bind="localizedNumber: Amount">1</span>
+                        </div>
+                        <span data-bind="localizedNumber: TotalPrice">19,999</span>
+                        <td class="bold hidden-xs" data-bind="minutesElapsed: DiscoverUnixTime">17 Minute ago</td>
+
+                </tr>
+                <tr class="row-separator"></tr>
+            </tbody>
+        </table>
+
+        <div class="align-center">
+    <ul class="pagination">
+        <li data-bind="css: { disabled : CurrentPage == 1 }" class="disabled">
+            <!--ko if: CurrentPage == 1 -->
+            <a>&lt;</a>
+            <!--/ko-->
+            <!--ko if: CurrentPage != 1 --><!--/ko-->
+        </li>
+
+        <!--ko if: ShowFirstPage --><!--/ko-->
+        <!--ko foreach: Pages-->
+        <li>
+            <!--ko if: $data == $parent.CurrentPage-->
+            <span class="active" data-bind="text: $data">1</span>
+            <!--/ko-->
+            <!--ko if: $data != $parent.CurrentPage--><!--/ko-->
+        </li>
+        
+        <li>
+            <!--ko if: $data == $parent.CurrentPage--><!--/ko-->
+            <!--ko if: $data != $parent.CurrentPage-->
+            <a data-bind="text: $data,
+                          attr: { href: $parent.GetUrlForPage($data) }" href="https://eu.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&amp;ItemID=3790&amp;ItemNamePattern=Potent+Nirncrux&amp;ItemCategory1ID=&amp;ItemTraitID=&amp;ItemQualityID=&amp;IsChampionPoint=false&amp;LevelMin=&amp;LevelMax=&amp;MasterWritVoucherMin=&amp;MasterWritVoucherMax=&amp;AmountMin=&amp;AmountMax=&amp;PriceMin=&amp;PriceMax=21000&amp;page=2">2</a>
+            <!--/ko-->
+        </li>
+        
+        <li>
+            <!--ko if: $data == $parent.CurrentPage--><!--/ko-->
+            <!--ko if: $data != $parent.CurrentPage-->
+            <a data-bind="text: $data,
+                          attr: { href: $parent.GetUrlForPage($data) }" href="https://eu.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&amp;ItemID=3790&amp;ItemNamePattern=Potent+Nirncrux&amp;ItemCategory1ID=&amp;ItemTraitID=&amp;ItemQualityID=&amp;IsChampionPoint=false&amp;LevelMin=&amp;LevelMax=&amp;MasterWritVoucherMin=&amp;MasterWritVoucherMax=&amp;AmountMin=&amp;AmountMax=&amp;PriceMin=&amp;PriceMax=21000&amp;page=3">3</a>
+            <!--/ko-->
+        </li>
+        
+        <li>
+            <!--ko if: $data == $parent.CurrentPage--><!--/ko-->
+            <!--ko if: $data != $parent.CurrentPage-->
+            <a data-bind="text: $data,
+                          attr: { href: $parent.GetUrlForPage($data) }" href="https://eu.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&amp;ItemID=3790&amp;ItemNamePattern=Potent+Nirncrux&amp;ItemCategory1ID=&amp;ItemTraitID=&amp;ItemQualityID=&amp;IsChampionPoint=false&amp;LevelMin=&amp;LevelMax=&amp;MasterWritVoucherMin=&amp;MasterWritVoucherMax=&amp;AmountMin=&amp;AmountMax=&amp;PriceMin=&amp;PriceMax=21000&amp;page=4">4</a>
+            <!--/ko-->
+        </li>
+        
+        <li>
+            <!--ko if: $data == $parent.CurrentPage--><!--/ko-->
+            <!--ko if: $data != $parent.CurrentPage-->
+            <a data-bind="text: $data,
+                          attr: { href: $parent.GetUrlForPage($data) }" href="https://eu.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&amp;ItemID=3790&amp;ItemNamePattern=Potent+Nirncrux&amp;ItemCategory1ID=&amp;ItemTraitID=&amp;ItemQualityID=&amp;IsChampionPoint=false&amp;LevelMin=&amp;LevelMax=&amp;MasterWritVoucherMin=&amp;MasterWritVoucherMax=&amp;AmountMin=&amp;AmountMax=&amp;PriceMin=&amp;PriceMax=21000&amp;page=5">5</a>
+            <!--/ko-->
+        </li>
+        
+        <li>
+            <!--ko if: $data == $parent.CurrentPage--><!--/ko-->
+            <!--ko if: $data != $parent.CurrentPage-->
+            <a data-bind="text: $data,
+                          attr: { href: $parent.GetUrlForPage($data) }" href="https://eu.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&amp;ItemID=3790&amp;ItemNamePattern=Potent+Nirncrux&amp;ItemCategory1ID=&amp;ItemTraitID=&amp;ItemQualityID=&amp;IsChampionPoint=false&amp;LevelMin=&amp;LevelMax=&amp;MasterWritVoucherMin=&amp;MasterWritVoucherMax=&amp;AmountMin=&amp;AmountMax=&amp;PriceMin=&amp;PriceMax=21000&amp;page=6">6</a>
+            <!--/ko-->
+        </li>
+        
+        <li>
+            <!--ko if: $data == $parent.CurrentPage--><!--/ko-->
+            <!--ko if: $data != $parent.CurrentPage-->
+            <a data-bind="text: $data,
+                          attr: { href: $parent.GetUrlForPage($data) }" href="https://eu.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&amp;ItemID=3790&amp;ItemNamePattern=Potent+Nirncrux&amp;ItemCategory1ID=&amp;ItemTraitID=&amp;ItemQualityID=&amp;IsChampionPoint=false&amp;LevelMin=&amp;LevelMax=&amp;MasterWritVoucherMin=&amp;MasterWritVoucherMax=&amp;AmountMin=&amp;AmountMax=&amp;PriceMin=&amp;PriceMax=21000&amp;page=7">7</a>
+            <!--/ko-->
+        </li>
+        
+        <li>
+            <!--ko if: $data == $parent.CurrentPage--><!--/ko-->
+            <!--ko if: $data != $parent.CurrentPage-->
+            <a data-bind="text: $data,
+                          attr: { href: $parent.GetUrlForPage($data) }" href="https://eu.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&amp;ItemID=3790&amp;ItemNamePattern=Potent+Nirncrux&amp;ItemCategory1ID=&amp;ItemTraitID=&amp;ItemQualityID=&amp;IsChampionPoint=false&amp;LevelMin=&amp;LevelMax=&amp;MasterWritVoucherMin=&amp;MasterWritVoucherMax=&amp;AmountMin=&amp;AmountMax=&amp;PriceMin=&amp;PriceMax=21000&amp;page=8">8</a>
+            <!--/ko-->
+        </li>
+        
+        <li>
+            <!--ko if: $data == $parent.CurrentPage--><!--/ko-->
+            <!--ko if: $data != $parent.CurrentPage-->
+            <a data-bind="text: $data,
+                          attr: { href: $parent.GetUrlForPage($data) }" href="https://eu.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&amp;ItemID=3790&amp;ItemNamePattern=Potent+Nirncrux&amp;ItemCategory1ID=&amp;ItemTraitID=&amp;ItemQualityID=&amp;IsChampionPoint=false&amp;LevelMin=&amp;LevelMax=&amp;MasterWritVoucherMin=&amp;MasterWritVoucherMax=&amp;AmountMin=&amp;AmountMax=&amp;PriceMin=&amp;PriceMax=21000&amp;page=9">9</a>
+            <!--/ko-->
+        </li>
+        
+        <li>
+            <!--ko if: $data == $parent.CurrentPage--><!--/ko-->
+            <!--ko if: $data != $parent.CurrentPage-->
+            <a data-bind="text: $data,
+                          attr: { href: $parent.GetUrlForPage($data) }" href="https://eu.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&amp;ItemID=3790&amp;ItemNamePattern=Potent+Nirncrux&amp;ItemCategory1ID=&amp;ItemTraitID=&amp;ItemQualityID=&amp;IsChampionPoint=false&amp;LevelMin=&amp;LevelMax=&amp;MasterWritVoucherMin=&amp;MasterWritVoucherMax=&amp;AmountMin=&amp;AmountMax=&amp;PriceMin=&amp;PriceMax=21000&amp;page=10">10</a>
+            <!--/ko-->
+        </li>
+        <!--/ko-->
+        <!--ko if: ShowLastPage -->
+        <li class="disabled">
+            <a class="hidden-sm hidden-xs">
+                ...
+            </a>
+        </li>
+        <li>
+            <a class="hidden-sm hidden-xs" data-bind="attr:{ href: GetUrlForPage(TotalPageCount) },
+                                                      text: TotalPageCount" href="https://eu.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&amp;ItemID=3790&amp;ItemNamePattern=Potent+Nirncrux&amp;ItemCategory1ID=&amp;ItemTraitID=&amp;ItemQualityID=&amp;IsChampionPoint=false&amp;LevelMin=&amp;LevelMax=&amp;MasterWritVoucherMin=&amp;MasterWritVoucherMax=&amp;AmountMin=&amp;AmountMax=&amp;PriceMin=&amp;PriceMax=21000&amp;page=69">69</a>
+        </li>
+        <!--/ko-->
+
+        <li data-bind="css: { disabled : CurrentPage >= TotalPageCount }">
+            <!--ko if: CurrentPage >= TotalPageCount --><!--/ko-->
+            <!--ko if: CurrentPage < TotalPageCount -->
+            <a data-bind="attr:{ href: GetUrlForPage(CurrentPage + 1) }" href="https://eu.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&amp;ItemID=3790&amp;ItemNamePattern=Potent+Nirncrux&amp;ItemCategory1ID=&amp;ItemTraitID=&amp;ItemQualityID=&amp;IsChampionPoint=false&amp;LevelMin=&amp;LevelMax=&amp;MasterWritVoucherMin=&amp;MasterWritVoucherMax=&amp;AmountMin=&amp;AmountMax=&amp;PriceMin=&amp;PriceMax=21000&amp;page=2">&gt;</a>
+            <!--/ko-->
+        </li>
+    </ul>
+</div>
+    </div>
+</div>
+    <!--/ko-->
+
+    <div class="modal fade" id="captcha-modal" role="dialog" data-backdrop="static" data-keyboard="false">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">
+                        ×
+                    </button>
+                    <h3 class="modal-title">
+                        Sorry but you need to complete the captcha test to continue
+                    </h3>
+                </div>
+                <div class="modal-body">
+                    <div id="g-recaptcha" class="g-recaptcha" data-sitekey="6LdlqLwZAAAAAFlFfnj_h6JUU-igcmWx46wHcdBf"></div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">
+                        Cancel
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div><div id="search-result-view">
+    <!--ko ifnot: IsRequestDone--><!--/ko-->
+    <!--ko if: IsRequestDone-->
+    <div data-bind="with: TradeListPageModel">
+    <h4 data-bind="if: TotalMatchCount == 0"></h4>
+
+    <div data-bind="if: TotalMatchCount != 0">
+        <table class="trade-list-table max-width">
+            <thead>
+                <tr>
+                    <th class="cursor-pointer" data-bind="click: Sort.bind($data, 0)">
+                        Item
+                    </th>
+                    <th class="hidden-xs">
+                        Trader
+                    </th>
+                    <th class="hidden-xs">
+                        Location
+                    </th>
+                    <th class="cursor-pointer" data-bind="click: Sort.bind($data, 1)">
+                        Price
+                    </th>
+                    <th class="cursor-pointer hidden-xs" data-bind="click: Sort.bind($data, 2)">
+                        Last Seen
+                    </th>
+                </tr>
+            </thead>
+
+            <tbody data-bind="foreach: TradeDetails">
+                <tr class="cursor-pointer" data-toggle="tooltip" data-bind="click: OpenDetailPage.bind($data),
+                       attr: { title: Message }" data-original-title="">
+                    <td data-bind="using: TradeAsset.Item">
+                        </div>
+
+                        <!--ko if: MasterWritInfo != null && MasterWritInfo.NumVoucher != null --><!--/ko-->
+                        <div>
+                            Level
+                            </span>
+                        </div>
+                    </td>
+                    <td class="hidden-xs">
+                        <div class="text-small-width" data-bind="text: PlayerID">@Frostden</div></td>
+                    <td>
+                        <div data-bind="text: StringResource['TraderLocation' + DBData.GuildKioskLocation[GuildKioskLocationID]]">Bangkorai: Evermore</div>
+                        <div data-bind="text: GuildName">Sheogorath Cheese Temple</div>
+                    </td>
+                    <td class="gold-amount bold" data-bind="using: TradeAsset">
+                        <span data-bind="localizedNumber: UnitPrice">20,000</span>
+                        </div>
+
+                        <span data-bind="localizedNumber: Amount">8</span>
+                        </div>
+                        <span data-bind="localizedNumber: TotalPrice">160,000</span>
+                        <td class="bold hidden-xs" data-bind="minutesElapsed: DiscoverUnixTime">Now</td>
+
+                </tr>
+                <tr class="row-separator"></tr>
+            
+                <tr class="cursor-pointer" data-toggle="tooltip" data-bind="click: OpenDetailPage.bind($data),
+                       attr: { title: Message }" data-original-title="">
+                    <td data-bind="using: TradeAsset.Item">
+                        </div>
+
+                        <!--ko if: MasterWritInfo != null && MasterWritInfo.NumVoucher != null --><!--/ko-->
+                        <div>
+                            Level
+                            </span>
+                        </div>
+                    </td>
+                    <td class="hidden-xs">
+                        <div class="text-small-width" data-bind="text: PlayerID">@Dragonlady99</div></td>
+                    <td>
+                        <div data-bind="text: StringResource['TraderLocation' + DBData.GuildKioskLocation[GuildKioskLocationID]]">Coldharbour: Hollow City</div>
+                        <div data-bind="text: GuildName">Fussels Teufel</div>
+                    </td>
+                    <td class="gold-amount bold" data-bind="using: TradeAsset">
+                        <span data-bind="localizedNumber: UnitPrice">20,808</span>
+                        </div>
+
+                        <span data-bind="localizedNumber: Amount">1</span>
+                        </div>
+                        <span data-bind="localizedNumber: TotalPrice">20,808</span>
+                        <td class="bold hidden-xs" data-bind="minutesElapsed: DiscoverUnixTime">13 Minute ago</td>
+
+                </tr>
+                <tr class="row-separator"></tr>
+            
+                <tr class="cursor-pointer" data-toggle="tooltip" data-bind="click: OpenDetailPage.bind($data),
+                       attr: { title: Message }" data-original-title="">
+                    <td data-bind="using: TradeAsset.Item">
+                        </div>
+
+                        <!--ko if: MasterWritInfo != null && MasterWritInfo.NumVoucher != null --><!--/ko-->
+                        <div>
+                            Level
+                            </span>
+                        </div>
+                    </td>
+                    <td class="hidden-xs">
+                        <div class="text-small-width" data-bind="text: PlayerID">@Dragonlady99</div></td>
+                    <td>
+                        <div data-bind="text: StringResource['TraderLocation' + DBData.GuildKioskLocation[GuildKioskLocationID]]">Coldharbour: Hollow City</div>
+                        <div data-bind="text: GuildName">Fussels Teufel</div>
+                    </td>
+                    <td class="gold-amount bold" data-bind="using: TradeAsset">
+                        <span data-bind="localizedNumber: UnitPrice">20,808</span>
+                        </div>
+
+                        <span data-bind="localizedNumber: Amount">1</span>
+                        </div>
+                        <span data-bind="localizedNumber: TotalPrice">20,808</span>
+                        <td class="bold hidden-xs" data-bind="minutesElapsed: DiscoverUnixTime">13 Minute ago</td>
+
+                </tr>
+                <tr class="row-separator"></tr>
+            
+                <tr class="cursor-pointer" data-toggle="tooltip" data-bind="click: OpenDetailPage.bind($data),
+                       attr: { title: Message }" data-original-title="">
+                    <td data-bind="using: TradeAsset.Item">
+                        </div>
+
+                        <!--ko if: MasterWritInfo != null && MasterWritInfo.NumVoucher != null --><!--/ko-->
+                        <div>
+                            Level
+                            </span>
+                        </div>
+                    </td>
+                    <td class="hidden-xs">
+                        <div class="text-small-width" data-bind="text: PlayerID">@Er0pyLLIka</div></td>
+                    <td>
+                        <div data-bind="text: StringResource['TraderLocation' + DBData.GuildKioskLocation[GuildKioskLocationID]]">Greenshade: Marbruk</div>
+                        <div data-bind="text: GuildName">DutyTrade</div>
+                    </td>
+                    <td class="gold-amount bold" data-bind="using: TradeAsset">
+                        <span data-bind="localizedNumber: UnitPrice">20,499</span>
+                        </div>
+
+                        <span data-bind="localizedNumber: Amount">1</span>
+                        </div>
+                        <span data-bind="localizedNumber: TotalPrice">20,499</span>
+                        <td class="bold hidden-xs" data-bind="minutesElapsed: DiscoverUnixTime">14 Minute ago</td>
+
+                </tr>
+                <tr class="row-separator"></tr>
+            
+                <tr class="cursor-pointer" data-toggle="tooltip" data-bind="click: OpenDetailPage.bind($data),
+                       attr: { title: Message }" data-original-title="">
+                    <td data-bind="using: TradeAsset.Item">
+                        </div>
+
+                        <!--ko if: MasterWritInfo != null && MasterWritInfo.NumVoucher != null --><!--/ko-->
+                        <div>
+                            Level
+                            </span>
+                        </div>
+                    </td>
+                    <td class="hidden-xs">
+                        <div class="text-small-width" data-bind="text: PlayerID">@Link54</div></td>
+                    <td>
+                        <div data-bind="text: StringResource['TraderLocation' + DBData.GuildKioskLocation[GuildKioskLocationID]]">Glenumbra: Daggerfall</div>
+                        <div data-bind="text: GuildName">Le Comptoir des Artisans</div>
+                    </td>
+                    <td class="gold-amount bold" data-bind="using: TradeAsset">
+                        <span data-bind="localizedNumber: UnitPrice">21,000</span>
+                        </div>
+
+                        <span data-bind="localizedNumber: Amount">2</span>
+                        </div>
+                        <span data-bind="localizedNumber: TotalPrice">42,000</span>
+                        <td class="bold hidden-xs" data-bind="minutesElapsed: DiscoverUnixTime">18 Minute ago</td>
+
+                </tr>
+                <tr class="row-separator"></tr>
+            
+                <tr class="cursor-pointer" data-toggle="tooltip" data-bind="click: OpenDetailPage.bind($data),
+                       attr: { title: Message }" data-original-title="">
+                    <td data-bind="using: TradeAsset.Item">
+                        </div>
+
+                        <!--ko if: MasterWritInfo != null && MasterWritInfo.NumVoucher != null --><!--/ko-->
+                        <div>
+                            Level
+                            </span>
+                        </div>
+                    </td>
+                    <td class="hidden-xs">
+                        <div class="text-small-width" data-bind="text: PlayerID">@Link54</div></td>
+                    <td>
+                        <div data-bind="text: StringResource['TraderLocation' + DBData.GuildKioskLocation[GuildKioskLocationID]]">Glenumbra: Daggerfall</div>
+                        <div data-bind="text: GuildName">Le Comptoir des Artisans</div>
+                    </td>
+                    <td class="gold-amount bold" data-bind="using: TradeAsset">
+                        <span data-bind="localizedNumber: UnitPrice">21,000</span>
+                        </div>
+
+                        <span data-bind="localizedNumber: Amount">2</span>
+                        </div>
+                        <span data-bind="localizedNumber: TotalPrice">42,000</span>
+                        <td class="bold hidden-xs" data-bind="minutesElapsed: DiscoverUnixTime">18 Minute ago</td>
+
+                </tr>
+                <tr class="row-separator"></tr>
+            
+                <tr class="cursor-pointer" data-toggle="tooltip" data-bind="click: OpenDetailPage.bind($data),
+                       attr: { title: Message }" data-original-title="">
+                    <td data-bind="using: TradeAsset.Item">
+                        </div>
+
+                        <!--ko if: MasterWritInfo != null && MasterWritInfo.NumVoucher != null --><!--/ko-->
+                        <div>
+                            Level
+                            </span>
+                        </div>
+                    </td>
+                    <td class="hidden-xs">
+                        <div class="text-small-width" data-bind="text: PlayerID">@Link54</div></td>
+                    <td>
+                        <div data-bind="text: StringResource['TraderLocation' + DBData.GuildKioskLocation[GuildKioskLocationID]]">Glenumbra: Daggerfall</div>
+                        <div data-bind="text: GuildName">Le Comptoir des Artisans</div>
+                    </td>
+                    <td class="gold-amount bold" data-bind="using: TradeAsset">
+                        <span data-bind="localizedNumber: UnitPrice">21,000</span>
+                        </div>
+
+                        <span data-bind="localizedNumber: Amount">2</span>
+                        </div>
+                        <span data-bind="localizedNumber: TotalPrice">42,000</span>
+                        <td class="bold hidden-xs" data-bind="minutesElapsed: DiscoverUnixTime">18 Minute ago</td>
+
+                </tr>
+                <tr class="row-separator"></tr>
+            
+                <tr class="cursor-pointer" data-toggle="tooltip" data-bind="click: OpenDetailPage.bind($data),
+                       attr: { title: Message }" data-original-title="">
+                    <td data-bind="using: TradeAsset.Item">
+                        </div>
+
+                        <!--ko if: MasterWritInfo != null && MasterWritInfo.NumVoucher != null --><!--/ko-->
+                        <div>
+                            Level
+                            </span>
+                        </div>
+                    </td>
+                    <td class="hidden-xs">
+                        <div class="text-small-width" data-bind="text: PlayerID">@Link54</div></td>
+                    <td>
+                        <div data-bind="text: StringResource['TraderLocation' + DBData.GuildKioskLocation[GuildKioskLocationID]]">Glenumbra: Daggerfall</div>
+                        <div data-bind="text: GuildName">Le Comptoir des Artisans</div>
+                    </td>
+                    <td class="gold-amount bold" data-bind="using: TradeAsset">
+                        <span data-bind="localizedNumber: UnitPrice">21,000</span>
+                        </div>
+
+                        <span data-bind="localizedNumber: Amount">2</span>
+                        </div>
+                        <span data-bind="localizedNumber: TotalPrice">42,000</span>
+                        <td class="bold hidden-xs" data-bind="minutesElapsed: DiscoverUnixTime">18 Minute ago</td>
+
+                </tr>
+                <tr class="row-separator"></tr>
+            
+                <tr class="cursor-pointer" data-toggle="tooltip" data-bind="click: OpenDetailPage.bind($data),
+                       attr: { title: Message }" data-original-title="">
+                    <td data-bind="using: TradeAsset.Item">
+                        </div>
+
+                        <!--ko if: MasterWritInfo != null && MasterWritInfo.NumVoucher != null --><!--/ko-->
+                        <div>
+                            Level
+                            </span>
+                        </div>
+                    </td>
+                    <td class="hidden-xs">
+                        <div class="text-small-width" data-bind="text: PlayerID">@Link54</div></td>
+                    <td>
+                        <div data-bind="text: StringResource['TraderLocation' + DBData.GuildKioskLocation[GuildKioskLocationID]]">Glenumbra: Daggerfall</div>
+                        <div data-bind="text: GuildName">Le Comptoir des Artisans</div>
+                    </td>
+                    <td class="gold-amount bold" data-bind="using: TradeAsset">
+                        <span data-bind="localizedNumber: UnitPrice">20,000</span>
+                        </div>
+
+                        <span data-bind="localizedNumber: Amount">2</span>
+                        </div>
+                        <span data-bind="localizedNumber: TotalPrice">40,000</span>
+                        <td class="bold hidden-xs" data-bind="minutesElapsed: DiscoverUnixTime">18 Minute ago</td>
+
+                </tr>
+                <tr class="row-separator"></tr>
+            
+                <tr class="cursor-pointer" data-toggle="tooltip" data-bind="click: OpenDetailPage.bind($data),
+                       attr: { title: Message }" data-original-title="">
+                    <td data-bind="using: TradeAsset.Item">
+                        </div>
+
+                        <!--ko if: MasterWritInfo != null && MasterWritInfo.NumVoucher != null --><!--/ko-->
+                        <div>
+                            Level
+                            </span>
+                        </div>
+                    </td>
+                    <td class="hidden-xs">
+                        <div class="text-small-width" data-bind="text: PlayerID">@Link54</div></td>
+                    <td>
+                        <div data-bind="text: StringResource['TraderLocation' + DBData.GuildKioskLocation[GuildKioskLocationID]]">Glenumbra: Daggerfall</div>
+                        <div data-bind="text: GuildName">Le Comptoir des Artisans</div>
+                    </td>
+                    <td class="gold-amount bold" data-bind="using: TradeAsset">
+                        <span data-bind="localizedNumber: UnitPrice">20,000</span>
+                        </div>
+
+                        <span data-bind="localizedNumber: Amount">2</span>
+                        </div>
+                        <span data-bind="localizedNumber: TotalPrice">40,000</span>
+                        <td class="bold hidden-xs" data-bind="minutesElapsed: DiscoverUnixTime">18 Minute ago</td>
+
+                </tr>
+                <tr class="row-separator"></tr>
+            </tbody>
+        </table>
+
+        <div class="align-center">
+    <ul class="pagination">
+        <li data-bind="css: { disabled : CurrentPage == 1 }" class="disabled">
+            <!--ko if: CurrentPage == 1 -->
+            <a>&lt;</a>
+            <!--/ko-->
+            <!--ko if: CurrentPage != 1 --><!--/ko-->
+        </li>
+
+        <!--ko if: ShowFirstPage --><!--/ko-->
+        <!--ko foreach: Pages-->
+        <li>
+            <!--ko if: $data == $parent.CurrentPage-->
+            <span class="active" data-bind="text: $data">1</span>
+            <!--/ko-->
+            <!--ko if: $data != $parent.CurrentPage--><!--/ko-->
+        </li>
+        
+        <li>
+            <!--ko if: $data == $parent.CurrentPage--><!--/ko-->
+            <!--ko if: $data != $parent.CurrentPage-->
+            <a data-bind="text: $data,
+                          attr: { href: $parent.GetUrlForPage($data) }" href="https://eu.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&amp;ItemID=6132&amp;ItemNamePattern=Perfect+Roe&amp;ItemCategory1ID=&amp;ItemTraitID=&amp;ItemQualityID=&amp;IsChampionPoint=false&amp;LevelMin=&amp;LevelMax=&amp;MasterWritVoucherMin=&amp;MasterWritVoucherMax=&amp;AmountMin=&amp;AmountMax=&amp;PriceMin=&amp;PriceMax=21000&amp;page=2">2</a>
+            <!--/ko-->
+        </li>
+        
+        <li>
+            <!--ko if: $data == $parent.CurrentPage--><!--/ko-->
+            <!--ko if: $data != $parent.CurrentPage-->
+            <a data-bind="text: $data,
+                          attr: { href: $parent.GetUrlForPage($data) }" href="https://eu.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&amp;ItemID=6132&amp;ItemNamePattern=Perfect+Roe&amp;ItemCategory1ID=&amp;ItemTraitID=&amp;ItemQualityID=&amp;IsChampionPoint=false&amp;LevelMin=&amp;LevelMax=&amp;MasterWritVoucherMin=&amp;MasterWritVoucherMax=&amp;AmountMin=&amp;AmountMax=&amp;PriceMin=&amp;PriceMax=21000&amp;page=3">3</a>
+            <!--/ko-->
+        </li>
+        
+        <li>
+            <!--ko if: $data == $parent.CurrentPage--><!--/ko-->
+            <!--ko if: $data != $parent.CurrentPage-->
+            <a data-bind="text: $data,
+                          attr: { href: $parent.GetUrlForPage($data) }" href="https://eu.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&amp;ItemID=6132&amp;ItemNamePattern=Perfect+Roe&amp;ItemCategory1ID=&amp;ItemTraitID=&amp;ItemQualityID=&amp;IsChampionPoint=false&amp;LevelMin=&amp;LevelMax=&amp;MasterWritVoucherMin=&amp;MasterWritVoucherMax=&amp;AmountMin=&amp;AmountMax=&amp;PriceMin=&amp;PriceMax=21000&amp;page=4">4</a>
+            <!--/ko-->
+        </li>
+        
+        <li>
+            <!--ko if: $data == $parent.CurrentPage--><!--/ko-->
+            <!--ko if: $data != $parent.CurrentPage-->
+            <a data-bind="text: $data,
+                          attr: { href: $parent.GetUrlForPage($data) }" href="https://eu.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&amp;ItemID=6132&amp;ItemNamePattern=Perfect+Roe&amp;ItemCategory1ID=&amp;ItemTraitID=&amp;ItemQualityID=&amp;IsChampionPoint=false&amp;LevelMin=&amp;LevelMax=&amp;MasterWritVoucherMin=&amp;MasterWritVoucherMax=&amp;AmountMin=&amp;AmountMax=&amp;PriceMin=&amp;PriceMax=21000&amp;page=5">5</a>
+            <!--/ko-->
+        </li>
+        
+        <li>
+            <!--ko if: $data == $parent.CurrentPage--><!--/ko-->
+            <!--ko if: $data != $parent.CurrentPage-->
+            <a data-bind="text: $data,
+                          attr: { href: $parent.GetUrlForPage($data) }" href="https://eu.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&amp;ItemID=6132&amp;ItemNamePattern=Perfect+Roe&amp;ItemCategory1ID=&amp;ItemTraitID=&amp;ItemQualityID=&amp;IsChampionPoint=false&amp;LevelMin=&amp;LevelMax=&amp;MasterWritVoucherMin=&amp;MasterWritVoucherMax=&amp;AmountMin=&amp;AmountMax=&amp;PriceMin=&amp;PriceMax=21000&amp;page=6">6</a>
+            <!--/ko-->
+        </li>
+        
+        <li>
+            <!--ko if: $data == $parent.CurrentPage--><!--/ko-->
+            <!--ko if: $data != $parent.CurrentPage-->
+            <a data-bind="text: $data,
+                          attr: { href: $parent.GetUrlForPage($data) }" href="https://eu.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&amp;ItemID=6132&amp;ItemNamePattern=Perfect+Roe&amp;ItemCategory1ID=&amp;ItemTraitID=&amp;ItemQualityID=&amp;IsChampionPoint=false&amp;LevelMin=&amp;LevelMax=&amp;MasterWritVoucherMin=&amp;MasterWritVoucherMax=&amp;AmountMin=&amp;AmountMax=&amp;PriceMin=&amp;PriceMax=21000&amp;page=7">7</a>
+            <!--/ko-->
+        </li>
+        
+        <li>
+            <!--ko if: $data == $parent.CurrentPage--><!--/ko-->
+            <!--ko if: $data != $parent.CurrentPage-->
+            <a data-bind="text: $data,
+                          attr: { href: $parent.GetUrlForPage($data) }" href="https://eu.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&amp;ItemID=6132&amp;ItemNamePattern=Perfect+Roe&amp;ItemCategory1ID=&amp;ItemTraitID=&amp;ItemQualityID=&amp;IsChampionPoint=false&amp;LevelMin=&amp;LevelMax=&amp;MasterWritVoucherMin=&amp;MasterWritVoucherMax=&amp;AmountMin=&amp;AmountMax=&amp;PriceMin=&amp;PriceMax=21000&amp;page=8">8</a>
+            <!--/ko-->
+        </li>
+        
+        <li>
+            <!--ko if: $data == $parent.CurrentPage--><!--/ko-->
+            <!--ko if: $data != $parent.CurrentPage-->
+            <a data-bind="text: $data,
+                          attr: { href: $parent.GetUrlForPage($data) }" href="https://eu.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&amp;ItemID=6132&amp;ItemNamePattern=Perfect+Roe&amp;ItemCategory1ID=&amp;ItemTraitID=&amp;ItemQualityID=&amp;IsChampionPoint=false&amp;LevelMin=&amp;LevelMax=&amp;MasterWritVoucherMin=&amp;MasterWritVoucherMax=&amp;AmountMin=&amp;AmountMax=&amp;PriceMin=&amp;PriceMax=21000&amp;page=9">9</a>
+            <!--/ko-->
+        </li>
+        
+        <li>
+            <!--ko if: $data == $parent.CurrentPage--><!--/ko-->
+            <!--ko if: $data != $parent.CurrentPage-->
+            <a data-bind="text: $data,
+                          attr: { href: $parent.GetUrlForPage($data) }" href="https://eu.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&amp;ItemID=6132&amp;ItemNamePattern=Perfect+Roe&amp;ItemCategory1ID=&amp;ItemTraitID=&amp;ItemQualityID=&amp;IsChampionPoint=false&amp;LevelMin=&amp;LevelMax=&amp;MasterWritVoucherMin=&amp;MasterWritVoucherMax=&amp;AmountMin=&amp;AmountMax=&amp;PriceMin=&amp;PriceMax=21000&amp;page=10">10</a>
+            <!--/ko-->
+        </li>
+        <!--/ko-->
+        <!--ko if: ShowLastPage -->
+        <li class="disabled">
+            <a class="hidden-sm hidden-xs">
+                ...
+            </a>
+        </li>
+        <li>
+            <a class="hidden-sm hidden-xs" data-bind="attr:{ href: GetUrlForPage(TotalPageCount) },
+                                                      text: TotalPageCount" href="https://eu.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&amp;ItemID=6132&amp;ItemNamePattern=Perfect+Roe&amp;ItemCategory1ID=&amp;ItemTraitID=&amp;ItemQualityID=&amp;IsChampionPoint=false&amp;LevelMin=&amp;LevelMax=&amp;MasterWritVoucherMin=&amp;MasterWritVoucherMax=&amp;AmountMin=&amp;AmountMax=&amp;PriceMin=&amp;PriceMax=21000&amp;page=15">15</a>
+        </li>
+        <!--/ko-->
+
+        <li data-bind="css: { disabled : CurrentPage >= TotalPageCount }">
+            <!--ko if: CurrentPage >= TotalPageCount --><!--/ko-->
+            <!--ko if: CurrentPage < TotalPageCount -->
+            <a data-bind="attr:{ href: GetUrlForPage(CurrentPage + 1) }" href="https://eu.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&amp;ItemID=6132&amp;ItemNamePattern=Perfect+Roe&amp;ItemCategory1ID=&amp;ItemTraitID=&amp;ItemQualityID=&amp;IsChampionPoint=false&amp;LevelMin=&amp;LevelMax=&amp;MasterWritVoucherMin=&amp;MasterWritVoucherMax=&amp;AmountMin=&amp;AmountMax=&amp;PriceMin=&amp;PriceMax=21000&amp;page=2">&gt;</a>
+            <!--/ko-->
+        </li>
+    </ul>
+</div>
+    </div>
+</div>
+    <!--/ko-->
+
+    <div class="modal fade" id="captcha-modal" role="dialog" data-backdrop="static" data-keyboard="false">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">
+                        ×
+                    </button>
+                    <h3 class="modal-title">
+                        Sorry but you need to complete the captcha test to continue
+                    </h3>
+                </div>
+                <div class="modal-body">
+                    <div id="g-recaptcha" class="g-recaptcha" data-sitekey="6LdlqLwZAAAAAFlFfnj_h6JUU-igcmWx46wHcdBf"></div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">
+                        Cancel
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div><div id="search-result-view">
+    <!--ko ifnot: IsRequestDone--><!--/ko-->
+    <!--ko if: IsRequestDone-->
+    <div data-bind="with: TradeListPageModel">
+    <h4 data-bind="if: TotalMatchCount == 0"></h4>
+
+    <div data-bind="if: TotalMatchCount != 0">
+        <table class="trade-list-table max-width">
+            <thead>
+                <tr>
+                    <th class="cursor-pointer" data-bind="click: Sort.bind($data, 0)">
+                        Item
+                    </th>
+                    <th class="hidden-xs">
+                        Trader
+                    </th>
+                    <th class="hidden-xs">
+                        Location
+                    </th>
+                    <th class="cursor-pointer" data-bind="click: Sort.bind($data, 1)">
+                        Price
+                    </th>
+                    <th class="cursor-pointer hidden-xs" data-bind="click: Sort.bind($data, 2)">
+                        Last Seen
+                    </th>
+                </tr>
+            </thead>
+
+            <tbody data-bind="foreach: TradeDetails">
+                <tr class="cursor-pointer" data-toggle="tooltip" data-bind="click: OpenDetailPage.bind($data),
+                       attr: { title: Message }" data-original-title="">
+                    <td data-bind="using: TradeAsset.Item">
+                        </div>
+
+                        <!--ko if: MasterWritInfo != null && MasterWritInfo.NumVoucher != null --><!--/ko-->
+                        <div>
+                            Level
+                            </span>
+                        </div>
+                    </td>
+                    <td class="hidden-xs">
+                        <div class="text-small-width" data-bind="text: PlayerID">@IceBear1987</div></td>
+                    <td>
+                        <div data-bind="text: StringResource['TraderLocation' + DBData.GuildKioskLocation[GuildKioskLocationID]]">Craglorn: Belkarth</div>
+                        <div data-bind="text: GuildName">The Traveling Merchant</div>
+                    </td>
+                    <td class="gold-amount bold" data-bind="using: TradeAsset">
+                        <span data-bind="localizedNumber: UnitPrice">31,500</span>
+                        </div>
+
+                        <span data-bind="localizedNumber: Amount">1</span>
+                        </div>
+                        <span data-bind="localizedNumber: TotalPrice">31,500</span>
+                        <td class="bold hidden-xs" data-bind="minutesElapsed: DiscoverUnixTime">13 Minute ago</td>
+
+                </tr>
+                <tr class="row-separator"></tr>
+            
+                <tr class="cursor-pointer" data-toggle="tooltip" data-bind="click: OpenDetailPage.bind($data),
+                       attr: { title: Message }" data-original-title="">
+                    <td data-bind="using: TradeAsset.Item">
+                        </div>
+
+                        <!--ko if: MasterWritInfo != null && MasterWritInfo.NumVoucher != null --><!--/ko-->
+                        <div>
+                            Level
+                            </span>
+                        </div>
+                    </td>
+                    <td class="hidden-xs">
+                        <div class="text-small-width" data-bind="text: PlayerID">@IceBear1987</div></td>
+                    <td>
+                        <div data-bind="text: StringResource['TraderLocation' + DBData.GuildKioskLocation[GuildKioskLocationID]]">Craglorn: Belkarth</div>
+                        <div data-bind="text: GuildName">The Traveling Merchant</div>
+                    </td>
+                    <td class="gold-amount bold" data-bind="using: TradeAsset">
+                        <span data-bind="localizedNumber: UnitPrice">31,500</span>
+                        </div>
+
+                        <span data-bind="localizedNumber: Amount">1</span>
+                        </div>
+                        <span data-bind="localizedNumber: TotalPrice">31,500</span>
+                        <td class="bold hidden-xs" data-bind="minutesElapsed: DiscoverUnixTime">13 Minute ago</td>
+
+                </tr>
+                <tr class="row-separator"></tr>
+            
+                <tr class="cursor-pointer" data-toggle="tooltip" data-bind="click: OpenDetailPage.bind($data),
+                       attr: { title: Message }" data-original-title="">
+                    <td data-bind="using: TradeAsset.Item">
+                        </div>
+
+                        <!--ko if: MasterWritInfo != null && MasterWritInfo.NumVoucher != null --><!--/ko-->
+                        <div>
+                            Level
+                            </span>
+                        </div>
+                    </td>
+                    <td class="hidden-xs">
+                        <div class="text-small-width" data-bind="text: PlayerID">@IceBear1987</div></td>
+                    <td>
+                        <div data-bind="text: StringResource['TraderLocation' + DBData.GuildKioskLocation[GuildKioskLocationID]]">Craglorn: Belkarth</div>
+                        <div data-bind="text: GuildName">The Traveling Merchant</div>
+                    </td>
+                    <td class="gold-amount bold" data-bind="using: TradeAsset">
+                        <span data-bind="localizedNumber: UnitPrice">31,500</span>
+                        </div>
+
+                        <span data-bind="localizedNumber: Amount">1</span>
+                        </div>
+                        <span data-bind="localizedNumber: TotalPrice">31,500</span>
+                        <td class="bold hidden-xs" data-bind="minutesElapsed: DiscoverUnixTime">13 Minute ago</td>
+
+                </tr>
+                <tr class="row-separator"></tr>
+            
+                <tr class="cursor-pointer" data-toggle="tooltip" data-bind="click: OpenDetailPage.bind($data),
+                       attr: { title: Message }" data-original-title="">
+                    <td data-bind="using: TradeAsset.Item">
+                        </div>
+
+                        <!--ko if: MasterWritInfo != null && MasterWritInfo.NumVoucher != null --><!--/ko-->
+                        <div>
+                            Level
+                            </span>
+                        </div>
+                    </td>
+                    <td class="hidden-xs">
+                        <div class="text-small-width" data-bind="text: PlayerID">@Cinbri</div></td>
+                    <td>
+                        <div data-bind="text: StringResource['TraderLocation' + DBData.GuildKioskLocation[GuildKioskLocationID]]">Craglorn: Belkarth</div>
+                        <div data-bind="text: GuildName">The Traveling Merchant</div>
+                    </td>
+                    <td class="gold-amount bold" data-bind="using: TradeAsset">
+                        <span data-bind="localizedNumber: UnitPrice">32,000</span>
+                        </div>
+
+                        <span data-bind="localizedNumber: Amount">1</span>
+                        </div>
+                        <span data-bind="localizedNumber: TotalPrice">32,000</span>
+                        <td class="bold hidden-xs" data-bind="minutesElapsed: DiscoverUnixTime">13 Minute ago</td>
+
+                </tr>
+                <tr class="row-separator"></tr>
+            
+                <tr class="cursor-pointer" data-toggle="tooltip" data-bind="click: OpenDetailPage.bind($data),
+                       attr: { title: Message }" data-original-title="">
+                    <td data-bind="using: TradeAsset.Item">
+                        </div>
+
+                        <!--ko if: MasterWritInfo != null && MasterWritInfo.NumVoucher != null --><!--/ko-->
+                        <div>
+                            Level
+                            </span>
+                        </div>
+                    </td>
+                    <td class="hidden-xs">
+                        <div class="text-small-width" data-bind="text: PlayerID">@Cinbri</div></td>
+                    <td>
+                        <div data-bind="text: StringResource['TraderLocation' + DBData.GuildKioskLocation[GuildKioskLocationID]]">Craglorn: Belkarth</div>
+                        <div data-bind="text: GuildName">The Traveling Merchant</div>
+                    </td>
+                    <td class="gold-amount bold" data-bind="using: TradeAsset">
+                        <span data-bind="localizedNumber: UnitPrice">32,000</span>
+                        </div>
+
+                        <span data-bind="localizedNumber: Amount">1</span>
+                        </div>
+                        <span data-bind="localizedNumber: TotalPrice">32,000</span>
+                        <td class="bold hidden-xs" data-bind="minutesElapsed: DiscoverUnixTime">13 Minute ago</td>
+
+                </tr>
+                <tr class="row-separator"></tr>
+            
+                <tr class="cursor-pointer" data-toggle="tooltip" data-bind="click: OpenDetailPage.bind($data),
+                       attr: { title: Message }" data-original-title="">
+                    <td data-bind="using: TradeAsset.Item">
+                        </div>
+
+                        <!--ko if: MasterWritInfo != null && MasterWritInfo.NumVoucher != null --><!--/ko-->
+                        <div>
+                            Level
+                            </span>
+                        </div>
+                    </td>
+                    <td class="hidden-xs">
+                        <div class="text-small-width" data-bind="text: PlayerID">@Gridi</div></td>
+                    <td>
+                        <div data-bind="text: StringResource['TraderLocation' + DBData.GuildKioskLocation[GuildKioskLocationID]]">Coldharbour: Hollow City</div>
+                        <div data-bind="text: GuildName">Fussels Teufel</div>
+                    </td>
+                    <td class="gold-amount bold" data-bind="using: TradeAsset">
+                        <span data-bind="localizedNumber: UnitPrice">31,000</span>
+                        </div>
+
+                        <span data-bind="localizedNumber: Amount">1</span>
+                        </div>
+                        <span data-bind="localizedNumber: TotalPrice">31,000</span>
+                        <td class="bold hidden-xs" data-bind="minutesElapsed: DiscoverUnixTime">13 Minute ago</td>
+
+                </tr>
+                <tr class="row-separator"></tr>
+            
+                <tr class="cursor-pointer" data-toggle="tooltip" data-bind="click: OpenDetailPage.bind($data),
+                       attr: { title: Message }" data-original-title="">
+                    <td data-bind="using: TradeAsset.Item">
+                        </div>
+
+                        <!--ko if: MasterWritInfo != null && MasterWritInfo.NumVoucher != null --><!--/ko-->
+                        <div>
+                            Level
+                            </span>
+                        </div>
+                    </td>
+                    <td class="hidden-xs">
+                        <div class="text-small-width" data-bind="text: PlayerID">@Gridi</div></td>
+                    <td>
+                        <div data-bind="text: StringResource['TraderLocation' + DBData.GuildKioskLocation[GuildKioskLocationID]]">Coldharbour: Hollow City</div>
+                        <div data-bind="text: GuildName">Fussels Teufel</div>
+                    </td>
+                    <td class="gold-amount bold" data-bind="using: TradeAsset">
+                        <span data-bind="localizedNumber: UnitPrice">31,000</span>
+                        </div>
+
+                        <span data-bind="localizedNumber: Amount">1</span>
+                        </div>
+                        <span data-bind="localizedNumber: TotalPrice">31,000</span>
+                        <td class="bold hidden-xs" data-bind="minutesElapsed: DiscoverUnixTime">13 Minute ago</td>
+
+                </tr>
+                <tr class="row-separator"></tr>
+            
+                <tr class="cursor-pointer" data-toggle="tooltip" data-bind="click: OpenDetailPage.bind($data),
+                       attr: { title: Message }" data-original-title="">
+                    <td data-bind="using: TradeAsset.Item">
+                        </div>
+
+                        <!--ko if: MasterWritInfo != null && MasterWritInfo.NumVoucher != null --><!--/ko-->
+                        <div>
+                            Level
+                            </span>
+                        </div>
+                    </td>
+                    <td class="hidden-xs">
+                        <div class="text-small-width" data-bind="text: PlayerID">@Cinbri</div></td>
+                    <td>
+                        <div data-bind="text: StringResource['TraderLocation' + DBData.GuildKioskLocation[GuildKioskLocationID]]">Craglorn: Belkarth</div>
+                        <div data-bind="text: GuildName">Pact Veteran Trade</div>
+                    </td>
+                    <td class="gold-amount bold" data-bind="using: TradeAsset">
+                        <span data-bind="localizedNumber: UnitPrice">32,000</span>
+                        </div>
+
+                        <span data-bind="localizedNumber: Amount">1</span>
+                        </div>
+                        <span data-bind="localizedNumber: TotalPrice">32,000</span>
+                        <td class="bold hidden-xs" data-bind="minutesElapsed: DiscoverUnixTime">13 Minute ago</td>
+
+                </tr>
+                <tr class="row-separator"></tr>
+            
+                <tr class="cursor-pointer" data-toggle="tooltip" data-bind="click: OpenDetailPage.bind($data),
+                       attr: { title: Message }" data-original-title="">
+                    <td data-bind="using: TradeAsset.Item">
+                        </div>
+
+                        <!--ko if: MasterWritInfo != null && MasterWritInfo.NumVoucher != null --><!--/ko-->
+                        <div>
+                            Level
+                            </span>
+                        </div>
+                    </td>
+                    <td class="hidden-xs">
+                        <div class="text-small-width" data-bind="text: PlayerID">@Cinbri</div></td>
+                    <td>
+                        <div data-bind="text: StringResource['TraderLocation' + DBData.GuildKioskLocation[GuildKioskLocationID]]">Craglorn: Belkarth</div>
+                        <div data-bind="text: GuildName">Pact Veteran Trade</div>
+                    </td>
+                    <td class="gold-amount bold" data-bind="using: TradeAsset">
+                        <span data-bind="localizedNumber: UnitPrice">32,000</span>
+                        </div>
+
+                        <span data-bind="localizedNumber: Amount">1</span>
+                        </div>
+                        <span data-bind="localizedNumber: TotalPrice">32,000</span>
+                        <td class="bold hidden-xs" data-bind="minutesElapsed: DiscoverUnixTime">13 Minute ago</td>
+
+                </tr>
+                <tr class="row-separator"></tr>
+            
+                <tr class="cursor-pointer" data-toggle="tooltip" data-bind="click: OpenDetailPage.bind($data),
+                       attr: { title: Message }" data-original-title="">
+                    <td data-bind="using: TradeAsset.Item">
+                        </div>
+
+                        <!--ko if: MasterWritInfo != null && MasterWritInfo.NumVoucher != null --><!--/ko-->
+                        <div>
+                            Level
+                            </span>
+                        </div>
+                    </td>
+                    <td class="hidden-xs">
+                        <div class="text-small-width" data-bind="text: PlayerID">@Cinbri</div></td>
+                    <td>
+                        <div data-bind="text: StringResource['TraderLocation' + DBData.GuildKioskLocation[GuildKioskLocationID]]">Craglorn: Belkarth</div>
+                        <div data-bind="text: GuildName">Pact Veteran Trade</div>
+                    </td>
+                    <td class="gold-amount bold" data-bind="using: TradeAsset">
+                        <span data-bind="localizedNumber: UnitPrice">32,000</span>
+                        </div>
+
+                        <span data-bind="localizedNumber: Amount">1</span>
+                        </div>
+                        <span data-bind="localizedNumber: TotalPrice">32,000</span>
+                        <td class="bold hidden-xs" data-bind="minutesElapsed: DiscoverUnixTime">13 Minute ago</td>
+
+                </tr>
+                <tr class="row-separator"></tr>
+            </tbody>
+        </table>
+
+        <div class="align-center">
+    <ul class="pagination">
+        <li data-bind="css: { disabled : CurrentPage == 1 }" class="disabled">
+            <!--ko if: CurrentPage == 1 -->
+            <a>&lt;</a>
+            <!--/ko-->
+            <!--ko if: CurrentPage != 1 --><!--/ko-->
+        </li>
+
+        <!--ko if: ShowFirstPage --><!--/ko-->
+        <!--ko foreach: Pages-->
+        <li>
+            <!--ko if: $data == $parent.CurrentPage-->
+            <span class="active" data-bind="text: $data">1</span>
+            <!--/ko-->
+            <!--ko if: $data != $parent.CurrentPage--><!--/ko-->
+        </li>
+        
+        <li>
+            <!--ko if: $data == $parent.CurrentPage--><!--/ko-->
+            <!--ko if: $data != $parent.CurrentPage-->
+            <a data-bind="text: $data,
+                          attr: { href: $parent.GetUrlForPage($data) }" href="https://eu.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&amp;ItemID=4794&amp;ItemNamePattern=Hakeijo&amp;ItemCategory1ID=&amp;ItemTraitID=&amp;ItemQualityID=&amp;IsChampionPoint=false&amp;LevelMin=&amp;LevelMax=&amp;MasterWritVoucherMin=&amp;MasterWritVoucherMax=&amp;AmountMin=&amp;AmountMax=&amp;PriceMin=&amp;PriceMax=32500&amp;page=2">2</a>
+            <!--/ko-->
+        </li>
+        
+        <li>
+            <!--ko if: $data == $parent.CurrentPage--><!--/ko-->
+            <!--ko if: $data != $parent.CurrentPage-->
+            <a data-bind="text: $data,
+                          attr: { href: $parent.GetUrlForPage($data) }" href="https://eu.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&amp;ItemID=4794&amp;ItemNamePattern=Hakeijo&amp;ItemCategory1ID=&amp;ItemTraitID=&amp;ItemQualityID=&amp;IsChampionPoint=false&amp;LevelMin=&amp;LevelMax=&amp;MasterWritVoucherMin=&amp;MasterWritVoucherMax=&amp;AmountMin=&amp;AmountMax=&amp;PriceMin=&amp;PriceMax=32500&amp;page=3">3</a>
+            <!--/ko-->
+        </li>
+        
+        <li>
+            <!--ko if: $data == $parent.CurrentPage--><!--/ko-->
+            <!--ko if: $data != $parent.CurrentPage-->
+            <a data-bind="text: $data,
+                          attr: { href: $parent.GetUrlForPage($data) }" href="https://eu.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&amp;ItemID=4794&amp;ItemNamePattern=Hakeijo&amp;ItemCategory1ID=&amp;ItemTraitID=&amp;ItemQualityID=&amp;IsChampionPoint=false&amp;LevelMin=&amp;LevelMax=&amp;MasterWritVoucherMin=&amp;MasterWritVoucherMax=&amp;AmountMin=&amp;AmountMax=&amp;PriceMin=&amp;PriceMax=32500&amp;page=4">4</a>
+            <!--/ko-->
+        </li>
+        
+        <li>
+            <!--ko if: $data == $parent.CurrentPage--><!--/ko-->
+            <!--ko if: $data != $parent.CurrentPage-->
+            <a data-bind="text: $data,
+                          attr: { href: $parent.GetUrlForPage($data) }" href="https://eu.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&amp;ItemID=4794&amp;ItemNamePattern=Hakeijo&amp;ItemCategory1ID=&amp;ItemTraitID=&amp;ItemQualityID=&amp;IsChampionPoint=false&amp;LevelMin=&amp;LevelMax=&amp;MasterWritVoucherMin=&amp;MasterWritVoucherMax=&amp;AmountMin=&amp;AmountMax=&amp;PriceMin=&amp;PriceMax=32500&amp;page=5">5</a>
+            <!--/ko-->
+        </li>
+        
+        <li>
+            <!--ko if: $data == $parent.CurrentPage--><!--/ko-->
+            <!--ko if: $data != $parent.CurrentPage-->
+            <a data-bind="text: $data,
+                          attr: { href: $parent.GetUrlForPage($data) }" href="https://eu.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&amp;ItemID=4794&amp;ItemNamePattern=Hakeijo&amp;ItemCategory1ID=&amp;ItemTraitID=&amp;ItemQualityID=&amp;IsChampionPoint=false&amp;LevelMin=&amp;LevelMax=&amp;MasterWritVoucherMin=&amp;MasterWritVoucherMax=&amp;AmountMin=&amp;AmountMax=&amp;PriceMin=&amp;PriceMax=32500&amp;page=6">6</a>
+            <!--/ko-->
+        </li>
+        
+        <li>
+            <!--ko if: $data == $parent.CurrentPage--><!--/ko-->
+            <!--ko if: $data != $parent.CurrentPage-->
+            <a data-bind="text: $data,
+                          attr: { href: $parent.GetUrlForPage($data) }" href="https://eu.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&amp;ItemID=4794&amp;ItemNamePattern=Hakeijo&amp;ItemCategory1ID=&amp;ItemTraitID=&amp;ItemQualityID=&amp;IsChampionPoint=false&amp;LevelMin=&amp;LevelMax=&amp;MasterWritVoucherMin=&amp;MasterWritVoucherMax=&amp;AmountMin=&amp;AmountMax=&amp;PriceMin=&amp;PriceMax=32500&amp;page=7">7</a>
+            <!--/ko-->
+        </li>
+        
+        <li>
+            <!--ko if: $data == $parent.CurrentPage--><!--/ko-->
+            <!--ko if: $data != $parent.CurrentPage-->
+            <a data-bind="text: $data,
+                          attr: { href: $parent.GetUrlForPage($data) }" href="https://eu.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&amp;ItemID=4794&amp;ItemNamePattern=Hakeijo&amp;ItemCategory1ID=&amp;ItemTraitID=&amp;ItemQualityID=&amp;IsChampionPoint=false&amp;LevelMin=&amp;LevelMax=&amp;MasterWritVoucherMin=&amp;MasterWritVoucherMax=&amp;AmountMin=&amp;AmountMax=&amp;PriceMin=&amp;PriceMax=32500&amp;page=8">8</a>
+            <!--/ko-->
+        </li>
+        
+        <li>
+            <!--ko if: $data == $parent.CurrentPage--><!--/ko-->
+            <!--ko if: $data != $parent.CurrentPage-->
+            <a data-bind="text: $data,
+                          attr: { href: $parent.GetUrlForPage($data) }" href="https://eu.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&amp;ItemID=4794&amp;ItemNamePattern=Hakeijo&amp;ItemCategory1ID=&amp;ItemTraitID=&amp;ItemQualityID=&amp;IsChampionPoint=false&amp;LevelMin=&amp;LevelMax=&amp;MasterWritVoucherMin=&amp;MasterWritVoucherMax=&amp;AmountMin=&amp;AmountMax=&amp;PriceMin=&amp;PriceMax=32500&amp;page=9">9</a>
+            <!--/ko-->
+        </li>
+        
+        <li>
+            <!--ko if: $data == $parent.CurrentPage--><!--/ko-->
+            <!--ko if: $data != $parent.CurrentPage-->
+            <a data-bind="text: $data,
+                          attr: { href: $parent.GetUrlForPage($data) }" href="https://eu.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&amp;ItemID=4794&amp;ItemNamePattern=Hakeijo&amp;ItemCategory1ID=&amp;ItemTraitID=&amp;ItemQualityID=&amp;IsChampionPoint=false&amp;LevelMin=&amp;LevelMax=&amp;MasterWritVoucherMin=&amp;MasterWritVoucherMax=&amp;AmountMin=&amp;AmountMax=&amp;PriceMin=&amp;PriceMax=32500&amp;page=10">10</a>
+            <!--/ko-->
+        </li>
+        <!--/ko-->
+        <!--ko if: ShowLastPage -->
+        <li class="disabled">
+            <a class="hidden-sm hidden-xs">
+                ...
+            </a>
+        </li>
+        <li>
+            <a class="hidden-sm hidden-xs" data-bind="attr:{ href: GetUrlForPage(TotalPageCount) },
+                                                      text: TotalPageCount" href="https://eu.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&amp;ItemID=4794&amp;ItemNamePattern=Hakeijo&amp;ItemCategory1ID=&amp;ItemTraitID=&amp;ItemQualityID=&amp;IsChampionPoint=false&amp;LevelMin=&amp;LevelMax=&amp;MasterWritVoucherMin=&amp;MasterWritVoucherMax=&amp;AmountMin=&amp;AmountMax=&amp;PriceMin=&amp;PriceMax=32500&amp;page=35">35</a>
+        </li>
+        <!--/ko-->
+
+        <li data-bind="css: { disabled : CurrentPage >= TotalPageCount }">
+            <!--ko if: CurrentPage >= TotalPageCount --><!--/ko-->
+            <!--ko if: CurrentPage < TotalPageCount -->
+            <a data-bind="attr:{ href: GetUrlForPage(CurrentPage + 1) }" href="https://eu.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&amp;ItemID=4794&amp;ItemNamePattern=Hakeijo&amp;ItemCategory1ID=&amp;ItemTraitID=&amp;ItemQualityID=&amp;IsChampionPoint=false&amp;LevelMin=&amp;LevelMax=&amp;MasterWritVoucherMin=&amp;MasterWritVoucherMax=&amp;AmountMin=&amp;AmountMax=&amp;PriceMin=&amp;PriceMax=32500&amp;page=2">&gt;</a>
+            <!--/ko-->
+        </li>
+    </ul>
+</div>
+    </div>
+</div>
+    <!--/ko-->
+
+    <div class="modal fade" id="captcha-modal" role="dialog" data-backdrop="static" data-keyboard="false">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">
+                        ×
+                    </button>
+                    <h3 class="modal-title">
+                        Sorry but you need to complete the captcha test to continue
+                    </h3>
+                </div>
+                <div class="modal-body">
+                    <div id="g-recaptcha" class="g-recaptcha" data-sitekey="6LdlqLwZAAAAAFlFfnj_h6JUU-igcmWx46wHcdBf"></div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">
+                        Cancel
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div><div id="search-result-view">
+    <!--ko ifnot: IsRequestDone--><!--/ko-->
+    <!--ko if: IsRequestDone-->
+    <div data-bind="with: TradeListPageModel">
+    <h4 data-bind="if: TotalMatchCount == 0"></h4>
+
+    <div data-bind="if: TotalMatchCount != 0">
+        <table class="trade-list-table max-width">
+            <thead>
+                <tr>
+                    <th class="cursor-pointer" data-bind="click: Sort.bind($data, 0)">
+                        Item
+                    </th>
+                    <th class="hidden-xs">
+                        Trader
+                    </th>
+                    <th class="hidden-xs">
+                        Location
+                    </th>
+                    <th class="cursor-pointer" data-bind="click: Sort.bind($data, 1)">
+                        Price
+                    </th>
+                    <th class="cursor-pointer hidden-xs" data-bind="click: Sort.bind($data, 2)">
+                        Last Seen
+                    </th>
+                </tr>
+            </thead>
+
+            <tbody data-bind="foreach: TradeDetails">
+                <tr class="cursor-pointer" data-toggle="tooltip" data-bind="click: OpenDetailPage.bind($data),
+                       attr: { title: Message }" data-original-title="">
+                    <td data-bind="using: TradeAsset.Item">
+                        </div>
+
+                        <!--ko if: MasterWritInfo != null && MasterWritInfo.NumVoucher != null --><!--/ko-->
+                        <div>
+                            Level
+                            </span>
+                        </div>
+                    </td>
+                    <td class="hidden-xs">
+                        <div class="text-small-width" data-bind="text: PlayerID">@purloinedshadow</div></td>
+                    <td>
+                        <div data-bind="text: StringResource['TraderLocation' + DBData.GuildKioskLocation[GuildKioskLocationID]]">Malabal Tor: Baandari Tradepost</div>
+                        <div data-bind="text: GuildName">Night-Watch-Trading</div>
+                    </td>
+                    <td class="gold-amount bold" data-bind="using: TradeAsset">
+                        <span data-bind="localizedNumber: UnitPrice">12,000</span>
+                        </div>
+
+                        <span data-bind="localizedNumber: Amount">8</span>
+                        </div>
+                        <span data-bind="localizedNumber: TotalPrice">96,000</span>
+                        <td class="bold hidden-xs" data-bind="minutesElapsed: DiscoverUnixTime">8 Minute ago</td>
+
+                </tr>
+                <tr class="row-separator"></tr>
+            
+                <tr class="cursor-pointer" data-toggle="tooltip" data-bind="click: OpenDetailPage.bind($data),
+                       attr: { title: Message }" data-original-title="">
+                    <td data-bind="using: TradeAsset.Item">
+                        </div>
+
+                        <!--ko if: MasterWritInfo != null && MasterWritInfo.NumVoucher != null --><!--/ko-->
+                        <div>
+                            Level
+                            </span>
+                        </div>
+                    </td>
+                    <td class="hidden-xs">
+                        <div class="text-small-width" data-bind="text: PlayerID">@Salogdar</div></td>
+                    <td>
+                        <div data-bind="text: StringResource['TraderLocation' + DBData.GuildKioskLocation[GuildKioskLocationID]]">Greenshade: Marbruk</div>
+                        <div data-bind="text: GuildName">Akaviri Trade House</div>
+                    </td>
+                    <td class="gold-amount bold" data-bind="using: TradeAsset">
+                        <span data-bind="localizedNumber: UnitPrice">12,000</span>
+                        </div>
+
+                        <span data-bind="localizedNumber: Amount">1</span>
+                        </div>
+                        <span data-bind="localizedNumber: TotalPrice">12,000</span>
+                        <td class="bold hidden-xs" data-bind="minutesElapsed: DiscoverUnixTime">18 Minute ago</td>
+
+                </tr>
+                <tr class="row-separator"></tr>
+            
+                <tr class="cursor-pointer" data-toggle="tooltip" data-bind="click: OpenDetailPage.bind($data),
+                       attr: { title: Message }" data-original-title="">
+                    <td data-bind="using: TradeAsset.Item">
+                        </div>
+
+                        <!--ko if: MasterWritInfo != null && MasterWritInfo.NumVoucher != null --><!--/ko-->
+                        <div>
+                            Level
+                            </span>
+                        </div>
+                    </td>
+                    <td class="hidden-xs">
+                        <div class="text-small-width" data-bind="text: PlayerID">@Salogdar</div></td>
+                    <td>
+                        <div data-bind="text: StringResource['TraderLocation' + DBData.GuildKioskLocation[GuildKioskLocationID]]">Greenshade: Marbruk</div>
+                        <div data-bind="text: GuildName">Akaviri Trade House</div>
+                    </td>
+                    <td class="gold-amount bold" data-bind="using: TradeAsset">
+                        <span data-bind="localizedNumber: UnitPrice">12,000</span>
+                        </div>
+
+                        <span data-bind="localizedNumber: Amount">1</span>
+                        </div>
+                        <span data-bind="localizedNumber: TotalPrice">12,000</span>
+                        <td class="bold hidden-xs" data-bind="minutesElapsed: DiscoverUnixTime">18 Minute ago</td>
+
+                </tr>
+                <tr class="row-separator"></tr>
+            
+                <tr class="cursor-pointer" data-toggle="tooltip" data-bind="click: OpenDetailPage.bind($data),
+                       attr: { title: Message }" data-original-title="">
+                    <td data-bind="using: TradeAsset.Item">
+                        </div>
+
+                        <!--ko if: MasterWritInfo != null && MasterWritInfo.NumVoucher != null --><!--/ko-->
+                        <div>
+                            Level
+                            </span>
+                        </div>
+                    </td>
+                    <td class="hidden-xs">
+                        <div class="text-small-width" data-bind="text: PlayerID">@Salogdar</div></td>
+                    <td>
+                        <div data-bind="text: StringResource['TraderLocation' + DBData.GuildKioskLocation[GuildKioskLocationID]]">Greenshade: Marbruk</div>
+                        <div data-bind="text: GuildName">Akaviri Trade House</div>
+                    </td>
+                    <td class="gold-amount bold" data-bind="using: TradeAsset">
+                        <span data-bind="localizedNumber: UnitPrice">12,000</span>
+                        </div>
+
+                        <span data-bind="localizedNumber: Amount">1</span>
+                        </div>
+                        <span data-bind="localizedNumber: TotalPrice">12,000</span>
+                        <td class="bold hidden-xs" data-bind="minutesElapsed: DiscoverUnixTime">18 Minute ago</td>
+
+                </tr>
+                <tr class="row-separator"></tr>
+            
+                <tr class="cursor-pointer" data-toggle="tooltip" data-bind="click: OpenDetailPage.bind($data),
+                       attr: { title: Message }" data-original-title="">
+                    <td data-bind="using: TradeAsset.Item">
+                        </div>
+
+                        <!--ko if: MasterWritInfo != null && MasterWritInfo.NumVoucher != null --><!--/ko-->
+                        <div>
+                            Level
+                            </span>
+                        </div>
+                    </td>
+                    <td class="hidden-xs">
+                        <div class="text-small-width" data-bind="text: PlayerID">@Salogdar</div></td>
+                    <td>
+                        <div data-bind="text: StringResource['TraderLocation' + DBData.GuildKioskLocation[GuildKioskLocationID]]">Greenshade: Marbruk</div>
+                        <div data-bind="text: GuildName">Akaviri Trade House</div>
+                    </td>
+                    <td class="gold-amount bold" data-bind="using: TradeAsset">
+                        <span data-bind="localizedNumber: UnitPrice">12,000</span>
+                        </div>
+
+                        <span data-bind="localizedNumber: Amount">1</span>
+                        </div>
+                        <span data-bind="localizedNumber: TotalPrice">12,000</span>
+                        <td class="bold hidden-xs" data-bind="minutesElapsed: DiscoverUnixTime">18 Minute ago</td>
+
+                </tr>
+                <tr class="row-separator"></tr>
+            
+                <tr class="cursor-pointer" data-toggle="tooltip" data-bind="click: OpenDetailPage.bind($data),
+                       attr: { title: Message }" data-original-title="">
+                    <td data-bind="using: TradeAsset.Item">
+                        </div>
+
+                        <!--ko if: MasterWritInfo != null && MasterWritInfo.NumVoucher != null --><!--/ko-->
+                        <div>
+                            Level
+                            </span>
+                        </div>
+                    </td>
+                    <td class="hidden-xs">
+                        <div class="text-small-width" data-bind="text: PlayerID">@Salogdar</div></td>
+                    <td>
+                        <div data-bind="text: StringResource['TraderLocation' + DBData.GuildKioskLocation[GuildKioskLocationID]]">Greenshade: Marbruk</div>
+                        <div data-bind="text: GuildName">Akaviri Trade House</div>
+                    </td>
+                    <td class="gold-amount bold" data-bind="using: TradeAsset">
+                        <span data-bind="localizedNumber: UnitPrice">12,000</span>
+                        </div>
+
+                        <span data-bind="localizedNumber: Amount">1</span>
+                        </div>
+                        <span data-bind="localizedNumber: TotalPrice">12,000</span>
+                        <td class="bold hidden-xs" data-bind="minutesElapsed: DiscoverUnixTime">18 Minute ago</td>
+
+                </tr>
+                <tr class="row-separator"></tr>
+            
+                <tr class="cursor-pointer" data-toggle="tooltip" data-bind="click: OpenDetailPage.bind($data),
+                       attr: { title: Message }" data-original-title="">
+                    <td data-bind="using: TradeAsset.Item">
+                        </div>
+
+                        <!--ko if: MasterWritInfo != null && MasterWritInfo.NumVoucher != null --><!--/ko-->
+                        <div>
+                            Level
+                            </span>
+                        </div>
+                    </td>
+                    <td class="hidden-xs">
+                        <div class="text-small-width" data-bind="text: PlayerID">@Salogdar</div></td>
+                    <td>
+                        <div data-bind="text: StringResource['TraderLocation' + DBData.GuildKioskLocation[GuildKioskLocationID]]">Greenshade: Marbruk</div>
+                        <div data-bind="text: GuildName">Akaviri Trade House</div>
+                    </td>
+                    <td class="gold-amount bold" data-bind="using: TradeAsset">
+                        <span data-bind="localizedNumber: UnitPrice">12,000</span>
+                        </div>
+
+                        <span data-bind="localizedNumber: Amount">1</span>
+                        </div>
+                        <span data-bind="localizedNumber: TotalPrice">12,000</span>
+                        <td class="bold hidden-xs" data-bind="minutesElapsed: DiscoverUnixTime">18 Minute ago</td>
+
+                </tr>
+                <tr class="row-separator"></tr>
+            
+                <tr class="cursor-pointer" data-toggle="tooltip" data-bind="click: OpenDetailPage.bind($data),
+                       attr: { title: Message }" data-original-title="">
+                    <td data-bind="using: TradeAsset.Item">
+                        </div>
+
+                        <!--ko if: MasterWritInfo != null && MasterWritInfo.NumVoucher != null --><!--/ko-->
+                        <div>
+                            Level
+                            </span>
+                        </div>
+                    </td>
+                    <td class="hidden-xs">
+                        <div class="text-small-width" data-bind="text: PlayerID">@Salogdar</div></td>
+                    <td>
+                        <div data-bind="text: StringResource['TraderLocation' + DBData.GuildKioskLocation[GuildKioskLocationID]]">Greenshade: Marbruk</div>
+                        <div data-bind="text: GuildName">Akaviri Trade House</div>
+                    </td>
+                    <td class="gold-amount bold" data-bind="using: TradeAsset">
+                        <span data-bind="localizedNumber: UnitPrice">12,000</span>
+                        </div>
+
+                        <span data-bind="localizedNumber: Amount">1</span>
+                        </div>
+                        <span data-bind="localizedNumber: TotalPrice">12,000</span>
+                        <td class="bold hidden-xs" data-bind="minutesElapsed: DiscoverUnixTime">18 Minute ago</td>
+
+                </tr>
+                <tr class="row-separator"></tr>
+            
+                <tr class="cursor-pointer" data-toggle="tooltip" data-bind="click: OpenDetailPage.bind($data),
+                       attr: { title: Message }" data-original-title="">
+                    <td data-bind="using: TradeAsset.Item">
+                        </div>
+
+                        <!--ko if: MasterWritInfo != null && MasterWritInfo.NumVoucher != null --><!--/ko-->
+                        <div>
+                            Level
+                            </span>
+                        </div>
+                    </td>
+                    <td class="hidden-xs">
+                        <div class="text-small-width" data-bind="text: PlayerID">@quatraine</div></td>
+                    <td>
+                        <div data-bind="text: StringResource['TraderLocation' + DBData.GuildKioskLocation[GuildKioskLocationID]]">Deshaan: Mournhold</div>
+                        <div data-bind="text: GuildName">Nirn Traders</div>
+                    </td>
+                    <td class="gold-amount bold" data-bind="using: TradeAsset">
+                        <span data-bind="localizedNumber: UnitPrice">9,000</span>
+                        </div>
+
+                        <span data-bind="localizedNumber: Amount">1</span>
+                        </div>
+                        <span data-bind="localizedNumber: TotalPrice">9,000</span>
+                        <td class="bold hidden-xs" data-bind="minutesElapsed: DiscoverUnixTime">20 Minute ago</td>
+
+                </tr>
+                <tr class="row-separator"></tr>
+            
+                <tr class="cursor-pointer" data-toggle="tooltip" data-bind="click: OpenDetailPage.bind($data),
+                       attr: { title: Message }" data-original-title="">
+                    <td data-bind="using: TradeAsset.Item">
+                        </div>
+
+                        <!--ko if: MasterWritInfo != null && MasterWritInfo.NumVoucher != null --><!--/ko-->
+                        <div>
+                            Level
+                            </span>
+                        </div>
+                    </td>
+                    <td class="hidden-xs">
+                        <div class="text-small-width" data-bind="text: PlayerID">@Cryfalcon</div></td>
+                    <td>
+                        <div data-bind="text: StringResource['TraderLocation' + DBData.GuildKioskLocation[GuildKioskLocationID]]">Summerset: Alinor</div>
+                        <div data-bind="text: GuildName">Skywatch Club</div>
+                    </td>
+                    <td class="gold-amount bold" data-bind="using: TradeAsset">
+                        <span data-bind="localizedNumber: UnitPrice">9,075</span>
+                        </div>
+
+                        <span data-bind="localizedNumber: Amount">8</span>
+                        </div>
+                        <span data-bind="localizedNumber: TotalPrice">72,600</span>
+                        <td class="bold hidden-xs" data-bind="minutesElapsed: DiscoverUnixTime">34 Minute ago</td>
+
+                </tr>
+                <tr class="row-separator"></tr>
+            </tbody>
+        </table>
+
+        <div class="align-center">
+    <ul class="pagination">
+        <li data-bind="css: { disabled : CurrentPage == 1 }" class="disabled">
+            <!--ko if: CurrentPage == 1 -->
+            <a>&lt;</a>
+            <!--/ko-->
+            <!--ko if: CurrentPage != 1 --><!--/ko-->
+        </li>
+
+        <!--ko if: ShowFirstPage --><!--/ko-->
+        <!--ko foreach: Pages-->
+        <li>
+            <!--ko if: $data == $parent.CurrentPage-->
+            <span class="active" data-bind="text: $data">1</span>
+            <!--/ko-->
+            <!--ko if: $data != $parent.CurrentPage--><!--/ko-->
+        </li>
+        
+        <li>
+            <!--ko if: $data == $parent.CurrentPage--><!--/ko-->
+            <!--ko if: $data != $parent.CurrentPage-->
+            <a data-bind="text: $data,
+                          attr: { href: $parent.GetUrlForPage($data) }" href="https://eu.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&amp;ItemID=211&amp;ItemNamePattern=Dreugh+Wax&amp;ItemCategory1ID=&amp;ItemTraitID=&amp;ItemQualityID=&amp;IsChampionPoint=false&amp;LevelMin=&amp;LevelMax=&amp;MasterWritVoucherMin=&amp;MasterWritVoucherMax=&amp;AmountMin=&amp;AmountMax=&amp;PriceMin=&amp;PriceMax=12000&amp;page=2">2</a>
+            <!--/ko-->
+        </li>
+        
+        <li>
+            <!--ko if: $data == $parent.CurrentPage--><!--/ko-->
+            <!--ko if: $data != $parent.CurrentPage-->
+            <a data-bind="text: $data,
+                          attr: { href: $parent.GetUrlForPage($data) }" href="https://eu.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&amp;ItemID=211&amp;ItemNamePattern=Dreugh+Wax&amp;ItemCategory1ID=&amp;ItemTraitID=&amp;ItemQualityID=&amp;IsChampionPoint=false&amp;LevelMin=&amp;LevelMax=&amp;MasterWritVoucherMin=&amp;MasterWritVoucherMax=&amp;AmountMin=&amp;AmountMax=&amp;PriceMin=&amp;PriceMax=12000&amp;page=3">3</a>
+            <!--/ko-->
+        </li>
+        
+        <li>
+            <!--ko if: $data == $parent.CurrentPage--><!--/ko-->
+            <!--ko if: $data != $parent.CurrentPage-->
+            <a data-bind="text: $data,
+                          attr: { href: $parent.GetUrlForPage($data) }" href="https://eu.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&amp;ItemID=211&amp;ItemNamePattern=Dreugh+Wax&amp;ItemCategory1ID=&amp;ItemTraitID=&amp;ItemQualityID=&amp;IsChampionPoint=false&amp;LevelMin=&amp;LevelMax=&amp;MasterWritVoucherMin=&amp;MasterWritVoucherMax=&amp;AmountMin=&amp;AmountMax=&amp;PriceMin=&amp;PriceMax=12000&amp;page=4">4</a>
+            <!--/ko-->
+        </li>
+        
+        <li>
+            <!--ko if: $data == $parent.CurrentPage--><!--/ko-->
+            <!--ko if: $data != $parent.CurrentPage-->
+            <a data-bind="text: $data,
+                          attr: { href: $parent.GetUrlForPage($data) }" href="https://eu.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&amp;ItemID=211&amp;ItemNamePattern=Dreugh+Wax&amp;ItemCategory1ID=&amp;ItemTraitID=&amp;ItemQualityID=&amp;IsChampionPoint=false&amp;LevelMin=&amp;LevelMax=&amp;MasterWritVoucherMin=&amp;MasterWritVoucherMax=&amp;AmountMin=&amp;AmountMax=&amp;PriceMin=&amp;PriceMax=12000&amp;page=5">5</a>
+            <!--/ko-->
+        </li>
+        
+        <li>
+            <!--ko if: $data == $parent.CurrentPage--><!--/ko-->
+            <!--ko if: $data != $parent.CurrentPage-->
+            <a data-bind="text: $data,
+                          attr: { href: $parent.GetUrlForPage($data) }" href="https://eu.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&amp;ItemID=211&amp;ItemNamePattern=Dreugh+Wax&amp;ItemCategory1ID=&amp;ItemTraitID=&amp;ItemQualityID=&amp;IsChampionPoint=false&amp;LevelMin=&amp;LevelMax=&amp;MasterWritVoucherMin=&amp;MasterWritVoucherMax=&amp;AmountMin=&amp;AmountMax=&amp;PriceMin=&amp;PriceMax=12000&amp;page=6">6</a>
+            <!--/ko-->
+        </li>
+        
+        <li>
+            <!--ko if: $data == $parent.CurrentPage--><!--/ko-->
+            <!--ko if: $data != $parent.CurrentPage-->
+            <a data-bind="text: $data,
+                          attr: { href: $parent.GetUrlForPage($data) }" href="https://eu.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&amp;ItemID=211&amp;ItemNamePattern=Dreugh+Wax&amp;ItemCategory1ID=&amp;ItemTraitID=&amp;ItemQualityID=&amp;IsChampionPoint=false&amp;LevelMin=&amp;LevelMax=&amp;MasterWritVoucherMin=&amp;MasterWritVoucherMax=&amp;AmountMin=&amp;AmountMax=&amp;PriceMin=&amp;PriceMax=12000&amp;page=7">7</a>
+            <!--/ko-->
+        </li>
+        
+        <li>
+            <!--ko if: $data == $parent.CurrentPage--><!--/ko-->
+            <!--ko if: $data != $parent.CurrentPage-->
+            <a data-bind="text: $data,
+                          attr: { href: $parent.GetUrlForPage($data) }" href="https://eu.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&amp;ItemID=211&amp;ItemNamePattern=Dreugh+Wax&amp;ItemCategory1ID=&amp;ItemTraitID=&amp;ItemQualityID=&amp;IsChampionPoint=false&amp;LevelMin=&amp;LevelMax=&amp;MasterWritVoucherMin=&amp;MasterWritVoucherMax=&amp;AmountMin=&amp;AmountMax=&amp;PriceMin=&amp;PriceMax=12000&amp;page=8">8</a>
+            <!--/ko-->
+        </li>
+        
+        <li>
+            <!--ko if: $data == $parent.CurrentPage--><!--/ko-->
+            <!--ko if: $data != $parent.CurrentPage-->
+            <a data-bind="text: $data,
+                          attr: { href: $parent.GetUrlForPage($data) }" href="https://eu.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&amp;ItemID=211&amp;ItemNamePattern=Dreugh+Wax&amp;ItemCategory1ID=&amp;ItemTraitID=&amp;ItemQualityID=&amp;IsChampionPoint=false&amp;LevelMin=&amp;LevelMax=&amp;MasterWritVoucherMin=&amp;MasterWritVoucherMax=&amp;AmountMin=&amp;AmountMax=&amp;PriceMin=&amp;PriceMax=12000&amp;page=9">9</a>
+            <!--/ko-->
+        </li>
+        
+        <li>
+            <!--ko if: $data == $parent.CurrentPage--><!--/ko-->
+            <!--ko if: $data != $parent.CurrentPage-->
+            <a data-bind="text: $data,
+                          attr: { href: $parent.GetUrlForPage($data) }" href="https://eu.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&amp;ItemID=211&amp;ItemNamePattern=Dreugh+Wax&amp;ItemCategory1ID=&amp;ItemTraitID=&amp;ItemQualityID=&amp;IsChampionPoint=false&amp;LevelMin=&amp;LevelMax=&amp;MasterWritVoucherMin=&amp;MasterWritVoucherMax=&amp;AmountMin=&amp;AmountMax=&amp;PriceMin=&amp;PriceMax=12000&amp;page=10">10</a>
+            <!--/ko-->
+        </li>
+        <!--/ko-->
+        <!--ko if: ShowLastPage -->
+        <li class="disabled">
+            <a class="hidden-sm hidden-xs">
+                ...
+            </a>
+        </li>
+        <li>
+            <a class="hidden-sm hidden-xs" data-bind="attr:{ href: GetUrlForPage(TotalPageCount) },
+                                                      text: TotalPageCount" href="https://eu.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&amp;ItemID=211&amp;ItemNamePattern=Dreugh+Wax&amp;ItemCategory1ID=&amp;ItemTraitID=&amp;ItemQualityID=&amp;IsChampionPoint=false&amp;LevelMin=&amp;LevelMax=&amp;MasterWritVoucherMin=&amp;MasterWritVoucherMax=&amp;AmountMin=&amp;AmountMax=&amp;PriceMin=&amp;PriceMax=12000&amp;page=11">11</a>
+        </li>
+        <!--/ko-->
+
+        <li data-bind="css: { disabled : CurrentPage >= TotalPageCount }">
+            <!--ko if: CurrentPage >= TotalPageCount --><!--/ko-->
+            <!--ko if: CurrentPage < TotalPageCount -->
+            <a data-bind="attr:{ href: GetUrlForPage(CurrentPage + 1) }" href="https://eu.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&amp;ItemID=211&amp;ItemNamePattern=Dreugh+Wax&amp;ItemCategory1ID=&amp;ItemTraitID=&amp;ItemQualityID=&amp;IsChampionPoint=false&amp;LevelMin=&amp;LevelMax=&amp;MasterWritVoucherMin=&amp;MasterWritVoucherMax=&amp;AmountMin=&amp;AmountMax=&amp;PriceMin=&amp;PriceMax=12000&amp;page=2">&gt;</a>
+            <!--/ko-->
+        </li>
+    </ul>
+</div>
+    </div>
+</div>
+    <!--/ko-->
+
+    <div class="modal fade" id="captcha-modal" role="dialog" data-backdrop="static" data-keyboard="false">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">
+                        ×
+                    </button>
+                    <h3 class="modal-title">
+                        Sorry but you need to complete the captcha test to continue
+                    </h3>
+                </div>
+                <div class="modal-body">
+                    <div id="g-recaptcha" class="g-recaptcha" data-sitekey="6LdlqLwZAAAAAFlFfnj_h6JUU-igcmWx46wHcdBf"></div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">
+                        Cancel
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div><div id="search-result-view">
+    <!--ko ifnot: IsRequestDone--><!--/ko-->
+    <!--ko if: IsRequestDone-->
+    <div data-bind="with: TradeListPageModel">
+    <h4 data-bind="if: TotalMatchCount == 0"></h4>
+
+    <div data-bind="if: TotalMatchCount != 0">
+        <table class="trade-list-table max-width">
+            <thead>
+                <tr>
+                    <th class="cursor-pointer" data-bind="click: Sort.bind($data, 0)">
+                        Item
+                    </th>
+                    <th class="hidden-xs">
+                        Trader
+                    </th>
+                    <th class="hidden-xs">
+                        Location
+                    </th>
+                    <th class="cursor-pointer" data-bind="click: Sort.bind($data, 1)">
+                        Price
+                    </th>
+                    <th class="cursor-pointer hidden-xs" data-bind="click: Sort.bind($data, 2)">
+                        Last Seen
+                    </th>
+                </tr>
+            </thead>
+
+            <tbody data-bind="foreach: TradeDetails">
+                <tr class="cursor-pointer" data-toggle="tooltip" data-bind="click: OpenDetailPage.bind($data),
+                       attr: { title: Message }" data-original-title="">
+                    <td data-bind="using: TradeAsset.Item">
+                        </div>
+
+                        <!--ko if: MasterWritInfo != null && MasterWritInfo.NumVoucher != null --><!--/ko-->
+                        <div>
+                            Level
+                            </span>
+                        </div>
+                    </td>
+                    <td class="hidden-xs">
+                        <div class="text-small-width" data-bind="text: PlayerID">@debellare</div></td>
+                    <td>
+                        <div data-bind="text: StringResource['TraderLocation' + DBData.GuildKioskLocation[GuildKioskLocationID]]">Vvardenfell: Vivec City's Outlaw Refuge</div>
+                        <div data-bind="text: GuildName">Rimmen Skooma Dealers</div>
+                    </td>
+                    <td class="gold-amount bold" data-bind="using: TradeAsset">
+                        <span data-bind="localizedNumber: UnitPrice">6,000</span>
+                        </div>
+
+                        <span data-bind="localizedNumber: Amount">8</span>
+                        </div>
+                        <span data-bind="localizedNumber: TotalPrice">48,000</span>
+                        <td class="bold hidden-xs" data-bind="minutesElapsed: DiscoverUnixTime">Now</td>
+
+                </tr>
+                <tr class="row-separator"></tr>
+            
+                <tr class="cursor-pointer" data-toggle="tooltip" data-bind="click: OpenDetailPage.bind($data),
+                       attr: { title: Message }" data-original-title="">
+                    <td data-bind="using: TradeAsset.Item">
+                        </div>
+
+                        <!--ko if: MasterWritInfo != null && MasterWritInfo.NumVoucher != null --><!--/ko-->
+                        <div>
+                            Level
+                            </span>
+                        </div>
+                    </td>
+                    <td class="hidden-xs">
+                        <div class="text-small-width" data-bind="text: PlayerID">@debellare</div></td>
+                    <td>
+                        <div data-bind="text: StringResource['TraderLocation' + DBData.GuildKioskLocation[GuildKioskLocationID]]">Vvardenfell: Vivec City's Outlaw Refuge</div>
+                        <div data-bind="text: GuildName">Rimmen Skooma Dealers</div>
+                    </td>
+                    <td class="gold-amount bold" data-bind="using: TradeAsset">
+                        <span data-bind="localizedNumber: UnitPrice">6,000</span>
+                        </div>
+
+                        <span data-bind="localizedNumber: Amount">8</span>
+                        </div>
+                        <span data-bind="localizedNumber: TotalPrice">48,000</span>
+                        <td class="bold hidden-xs" data-bind="minutesElapsed: DiscoverUnixTime">Now</td>
+
+                </tr>
+                <tr class="row-separator"></tr>
+            
+                <tr class="cursor-pointer" data-toggle="tooltip" data-bind="click: OpenDetailPage.bind($data),
+                       attr: { title: Message }" data-original-title="">
+                    <td data-bind="using: TradeAsset.Item">
+                        </div>
+
+                        <!--ko if: MasterWritInfo != null && MasterWritInfo.NumVoucher != null --><!--/ko-->
+                        <div>
+                            Level
+                            </span>
+                        </div>
+                    </td>
+                    <td class="hidden-xs">
+                        <div class="text-small-width" data-bind="text: PlayerID">@Grinder.666</div></td>
+                    <td>
+                        <div data-bind="text: StringResource['TraderLocation' + DBData.GuildKioskLocation[GuildKioskLocationID]]">Bangkorai: Evermore</div>
+                        <div data-bind="text: GuildName">Die-Götter-der-Schatten</div>
+                    </td>
+                    <td class="gold-amount bold" data-bind="using: TradeAsset">
+                        <span data-bind="localizedNumber: UnitPrice">5,999</span>
+                        </div>
+
+                        <span data-bind="localizedNumber: Amount">6</span>
+                        </div>
+                        <span data-bind="localizedNumber: TotalPrice">35,994</span>
+                        <td class="bold hidden-xs" data-bind="minutesElapsed: DiscoverUnixTime">5 Minute ago</td>
+
+                </tr>
+                <tr class="row-separator"></tr>
+            
+                <tr class="cursor-pointer" data-toggle="tooltip" data-bind="click: OpenDetailPage.bind($data),
+                       attr: { title: Message }" data-original-title="">
+                    <td data-bind="using: TradeAsset.Item">
+                        </div>
+
+                        <!--ko if: MasterWritInfo != null && MasterWritInfo.NumVoucher != null --><!--/ko-->
+                        <div>
+                            Level
+                            </span>
+                        </div>
+                    </td>
+                    <td class="hidden-xs">
+                        <div class="text-small-width" data-bind="text: PlayerID">@Grinder.666</div></td>
+                    <td>
+                        <div data-bind="text: StringResource['TraderLocation' + DBData.GuildKioskLocation[GuildKioskLocationID]]">Bangkorai: Evermore</div>
+                        <div data-bind="text: GuildName">Die-Götter-der-Schatten</div>
+                    </td>
+                    <td class="gold-amount bold" data-bind="using: TradeAsset">
+                        <span data-bind="localizedNumber: UnitPrice">5,999</span>
+                        </div>
+
+                        <span data-bind="localizedNumber: Amount">8</span>
+                        </div>
+                        <span data-bind="localizedNumber: TotalPrice">47,992</span>
+                        <td class="bold hidden-xs" data-bind="minutesElapsed: DiscoverUnixTime">5 Minute ago</td>
+
+                </tr>
+                <tr class="row-separator"></tr>
+            
+                <tr class="cursor-pointer" data-toggle="tooltip" data-bind="click: OpenDetailPage.bind($data),
+                       attr: { title: Message }" data-original-title="">
+                    <td data-bind="using: TradeAsset.Item">
+                        </div>
+
+                        <!--ko if: MasterWritInfo != null && MasterWritInfo.NumVoucher != null --><!--/ko-->
+                        <div>
+                            Level
+                            </span>
+                        </div>
+                    </td>
+                    <td class="hidden-xs">
+                        <div class="text-small-width" data-bind="text: PlayerID">@IXDeLaSoulXI</div></td>
+                    <td>
+                        <div data-bind="text: StringResource['TraderLocation' + DBData.GuildKioskLocation[GuildKioskLocationID]]">Coldharbour: Hollow City</div>
+                        <div data-bind="text: GuildName">Fussels Teufel</div>
+                    </td>
+                    <td class="gold-amount bold" data-bind="using: TradeAsset">
+                        <span data-bind="localizedNumber: UnitPrice">5,500</span>
+                        </div>
+
+                        <span data-bind="localizedNumber: Amount">1</span>
+                        </div>
+                        <span data-bind="localizedNumber: TotalPrice">5,500</span>
+                        <td class="bold hidden-xs" data-bind="minutesElapsed: DiscoverUnixTime">7 Minute ago</td>
+
+                </tr>
+                <tr class="row-separator"></tr>
+            
+                <tr class="cursor-pointer" data-toggle="tooltip" data-bind="click: OpenDetailPage.bind($data),
+                       attr: { title: Message }" data-original-title="">
+                    <td data-bind="using: TradeAsset.Item">
+                        </div>
+
+                        <!--ko if: MasterWritInfo != null && MasterWritInfo.NumVoucher != null --><!--/ko-->
+                        <div>
+                            Level
+                            </span>
+                        </div>
+                    </td>
+                    <td class="hidden-xs">
+                        <div class="text-small-width" data-bind="text: PlayerID">@Ksheartless</div></td>
+                    <td>
+                        <div data-bind="text: StringResource['TraderLocation' + DBData.GuildKioskLocation[GuildKioskLocationID]]">Malabal Tor: Baandari Tradepost</div>
+                        <div data-bind="text: GuildName">Night-Watch-Trading</div>
+                    </td>
+                    <td class="gold-amount bold" data-bind="using: TradeAsset">
+                        <span data-bind="localizedNumber: UnitPrice">6,000</span>
+                        </div>
+
+                        <span data-bind="localizedNumber: Amount">2</span>
+                        </div>
+                        <span data-bind="localizedNumber: TotalPrice">12,000</span>
+                        <td class="bold hidden-xs" data-bind="minutesElapsed: DiscoverUnixTime">8 Minute ago</td>
+
+                </tr>
+                <tr class="row-separator"></tr>
+            
+                <tr class="cursor-pointer" data-toggle="tooltip" data-bind="click: OpenDetailPage.bind($data),
+                       attr: { title: Message }" data-original-title="">
+                    <td data-bind="using: TradeAsset.Item">
+                        </div>
+
+                        <!--ko if: MasterWritInfo != null && MasterWritInfo.NumVoucher != null --><!--/ko-->
+                        <div>
+                            Level
+                            </span>
+                        </div>
+                    </td>
+                    <td class="hidden-xs">
+                        <div class="text-small-width" data-bind="text: PlayerID">@Ksheartless</div></td>
+                    <td>
+                        <div data-bind="text: StringResource['TraderLocation' + DBData.GuildKioskLocation[GuildKioskLocationID]]">Malabal Tor: Baandari Tradepost</div>
+                        <div data-bind="text: GuildName">Night-Watch-Trading</div>
+                    </td>
+                    <td class="gold-amount bold" data-bind="using: TradeAsset">
+                        <span data-bind="localizedNumber: UnitPrice">6,000</span>
+                        </div>
+
+                        <span data-bind="localizedNumber: Amount">1</span>
+                        </div>
+                        <span data-bind="localizedNumber: TotalPrice">6,000</span>
+                        <td class="bold hidden-xs" data-bind="minutesElapsed: DiscoverUnixTime">8 Minute ago</td>
+
+                </tr>
+                <tr class="row-separator"></tr>
+            
+                <tr class="cursor-pointer" data-toggle="tooltip" data-bind="click: OpenDetailPage.bind($data),
+                       attr: { title: Message }" data-original-title="">
+                    <td data-bind="using: TradeAsset.Item">
+                        </div>
+
+                        <!--ko if: MasterWritInfo != null && MasterWritInfo.NumVoucher != null --><!--/ko-->
+                        <div>
+                            Level
+                            </span>
+                        </div>
+                    </td>
+                    <td class="hidden-xs">
+                        <div class="text-small-width" data-bind="text: PlayerID">@BudShiva</div></td>
+                    <td>
+                        <div data-bind="text: StringResource['TraderLocation' + DBData.GuildKioskLocation[GuildKioskLocationID]]">Craglorn: Belkarth</div>
+                        <div data-bind="text: GuildName">Pact Veteran Trade</div>
+                    </td>
+                    <td class="gold-amount bold" data-bind="using: TradeAsset">
+                        <span data-bind="localizedNumber: UnitPrice">5,500</span>
+                        </div>
+
+                        <span data-bind="localizedNumber: Amount">8</span>
+                        </div>
+                        <span data-bind="localizedNumber: TotalPrice">44,000</span>
+                        <td class="bold hidden-xs" data-bind="minutesElapsed: DiscoverUnixTime">13 Minute ago</td>
+
+                </tr>
+                <tr class="row-separator"></tr>
+            
+                <tr class="cursor-pointer" data-toggle="tooltip" data-bind="click: OpenDetailPage.bind($data),
+                       attr: { title: Message }" data-original-title="">
+                    <td data-bind="using: TradeAsset.Item">
+                        </div>
+
+                        <!--ko if: MasterWritInfo != null && MasterWritInfo.NumVoucher != null --><!--/ko-->
+                        <div>
+                            Level
+                            </span>
+                        </div>
+                    </td>
+                    <td class="hidden-xs">
+                        <div class="text-small-width" data-bind="text: PlayerID">@Moonlight-777</div></td>
+                    <td>
+                        <div data-bind="text: StringResource['TraderLocation' + DBData.GuildKioskLocation[GuildKioskLocationID]]">Craglorn: Belkarth</div>
+                        <div data-bind="text: GuildName">Pact Veteran Trade</div>
+                    </td>
+                    <td class="gold-amount bold" data-bind="using: TradeAsset">
+                        <span data-bind="localizedNumber: UnitPrice">6,000</span>
+                        </div>
+
+                        <span data-bind="localizedNumber: Amount">8</span>
+                        </div>
+                        <span data-bind="localizedNumber: TotalPrice">48,000</span>
+                        <td class="bold hidden-xs" data-bind="minutesElapsed: DiscoverUnixTime">13 Minute ago</td>
+
+                </tr>
+                <tr class="row-separator"></tr>
+            
+                <tr class="cursor-pointer" data-toggle="tooltip" data-bind="click: OpenDetailPage.bind($data),
+                       attr: { title: Message }" data-original-title="">
+                    <td data-bind="using: TradeAsset.Item">
+                        </div>
+
+                        <!--ko if: MasterWritInfo != null && MasterWritInfo.NumVoucher != null --><!--/ko-->
+                        <div>
+                            Level
+                            </span>
+                        </div>
+                    </td>
+                    <td class="hidden-xs">
+                        <div class="text-small-width" data-bind="text: PlayerID">@Moonlight-777</div></td>
+                    <td>
+                        <div data-bind="text: StringResource['TraderLocation' + DBData.GuildKioskLocation[GuildKioskLocationID]]">Craglorn: Belkarth</div>
+                        <div data-bind="text: GuildName">Pact Veteran Trade</div>
+                    </td>
+                    <td class="gold-amount bold" data-bind="using: TradeAsset">
+                        <span data-bind="localizedNumber: UnitPrice">6,000</span>
+                        </div>
+
+                        <span data-bind="localizedNumber: Amount">8</span>
+                        </div>
+                        <span data-bind="localizedNumber: TotalPrice">48,000</span>
+                        <td class="bold hidden-xs" data-bind="minutesElapsed: DiscoverUnixTime">13 Minute ago</td>
+
+                </tr>
+                <tr class="row-separator"></tr>
+            </tbody>
+        </table>
+
+        <div class="align-center">
+    <ul class="pagination">
+        <li data-bind="css: { disabled : CurrentPage == 1 }" class="disabled">
+            <!--ko if: CurrentPage == 1 -->
+            <a>&lt;</a>
+            <!--/ko-->
+            <!--ko if: CurrentPage != 1 --><!--/ko-->
+        </li>
+
+        <!--ko if: ShowFirstPage --><!--/ko-->
+        <!--ko foreach: Pages-->
+        <li>
+            <!--ko if: $data == $parent.CurrentPage-->
+            <span class="active" data-bind="text: $data">1</span>
+            <!--/ko-->
+            <!--ko if: $data != $parent.CurrentPage--><!--/ko-->
+        </li>
+        
+        <li>
+            <!--ko if: $data == $parent.CurrentPage--><!--/ko-->
+            <!--ko if: $data != $parent.CurrentPage-->
+            <a data-bind="text: $data,
+                          attr: { href: $parent.GetUrlForPage($data) }" href="https://eu.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&amp;ItemID=5687&amp;ItemNamePattern=Tempering+Alloy&amp;ItemCategory1ID=&amp;ItemTraitID=&amp;ItemQualityID=&amp;IsChampionPoint=false&amp;LevelMin=&amp;LevelMax=&amp;MasterWritVoucherMin=&amp;MasterWritVoucherMax=&amp;AmountMin=&amp;AmountMax=&amp;PriceMin=&amp;PriceMax=6000&amp;page=2">2</a>
+            <!--/ko-->
+        </li>
+        
+        <li>
+            <!--ko if: $data == $parent.CurrentPage--><!--/ko-->
+            <!--ko if: $data != $parent.CurrentPage-->
+            <a data-bind="text: $data,
+                          attr: { href: $parent.GetUrlForPage($data) }" href="https://eu.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&amp;ItemID=5687&amp;ItemNamePattern=Tempering+Alloy&amp;ItemCategory1ID=&amp;ItemTraitID=&amp;ItemQualityID=&amp;IsChampionPoint=false&amp;LevelMin=&amp;LevelMax=&amp;MasterWritVoucherMin=&amp;MasterWritVoucherMax=&amp;AmountMin=&amp;AmountMax=&amp;PriceMin=&amp;PriceMax=6000&amp;page=3">3</a>
+            <!--/ko-->
+        </li>
+        
+        <li>
+            <!--ko if: $data == $parent.CurrentPage--><!--/ko-->
+            <!--ko if: $data != $parent.CurrentPage-->
+            <a data-bind="text: $data,
+                          attr: { href: $parent.GetUrlForPage($data) }" href="https://eu.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&amp;ItemID=5687&amp;ItemNamePattern=Tempering+Alloy&amp;ItemCategory1ID=&amp;ItemTraitID=&amp;ItemQualityID=&amp;IsChampionPoint=false&amp;LevelMin=&amp;LevelMax=&amp;MasterWritVoucherMin=&amp;MasterWritVoucherMax=&amp;AmountMin=&amp;AmountMax=&amp;PriceMin=&amp;PriceMax=6000&amp;page=4">4</a>
+            <!--/ko-->
+        </li>
+        
+        <li>
+            <!--ko if: $data == $parent.CurrentPage--><!--/ko-->
+            <!--ko if: $data != $parent.CurrentPage-->
+            <a data-bind="text: $data,
+                          attr: { href: $parent.GetUrlForPage($data) }" href="https://eu.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&amp;ItemID=5687&amp;ItemNamePattern=Tempering+Alloy&amp;ItemCategory1ID=&amp;ItemTraitID=&amp;ItemQualityID=&amp;IsChampionPoint=false&amp;LevelMin=&amp;LevelMax=&amp;MasterWritVoucherMin=&amp;MasterWritVoucherMax=&amp;AmountMin=&amp;AmountMax=&amp;PriceMin=&amp;PriceMax=6000&amp;page=5">5</a>
+            <!--/ko-->
+        </li>
+        
+        <li>
+            <!--ko if: $data == $parent.CurrentPage--><!--/ko-->
+            <!--ko if: $data != $parent.CurrentPage-->
+            <a data-bind="text: $data,
+                          attr: { href: $parent.GetUrlForPage($data) }" href="https://eu.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&amp;ItemID=5687&amp;ItemNamePattern=Tempering+Alloy&amp;ItemCategory1ID=&amp;ItemTraitID=&amp;ItemQualityID=&amp;IsChampionPoint=false&amp;LevelMin=&amp;LevelMax=&amp;MasterWritVoucherMin=&amp;MasterWritVoucherMax=&amp;AmountMin=&amp;AmountMax=&amp;PriceMin=&amp;PriceMax=6000&amp;page=6">6</a>
+            <!--/ko-->
+        </li>
+        
+        <li>
+            <!--ko if: $data == $parent.CurrentPage--><!--/ko-->
+            <!--ko if: $data != $parent.CurrentPage-->
+            <a data-bind="text: $data,
+                          attr: { href: $parent.GetUrlForPage($data) }" href="https://eu.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&amp;ItemID=5687&amp;ItemNamePattern=Tempering+Alloy&amp;ItemCategory1ID=&amp;ItemTraitID=&amp;ItemQualityID=&amp;IsChampionPoint=false&amp;LevelMin=&amp;LevelMax=&amp;MasterWritVoucherMin=&amp;MasterWritVoucherMax=&amp;AmountMin=&amp;AmountMax=&amp;PriceMin=&amp;PriceMax=6000&amp;page=7">7</a>
+            <!--/ko-->
+        </li>
+        
+        <li>
+            <!--ko if: $data == $parent.CurrentPage--><!--/ko-->
+            <!--ko if: $data != $parent.CurrentPage-->
+            <a data-bind="text: $data,
+                          attr: { href: $parent.GetUrlForPage($data) }" href="https://eu.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&amp;ItemID=5687&amp;ItemNamePattern=Tempering+Alloy&amp;ItemCategory1ID=&amp;ItemTraitID=&amp;ItemQualityID=&amp;IsChampionPoint=false&amp;LevelMin=&amp;LevelMax=&amp;MasterWritVoucherMin=&amp;MasterWritVoucherMax=&amp;AmountMin=&amp;AmountMax=&amp;PriceMin=&amp;PriceMax=6000&amp;page=8">8</a>
+            <!--/ko-->
+        </li>
+        
+        <li>
+            <!--ko if: $data == $parent.CurrentPage--><!--/ko-->
+            <!--ko if: $data != $parent.CurrentPage-->
+            <a data-bind="text: $data,
+                          attr: { href: $parent.GetUrlForPage($data) }" href="https://eu.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&amp;ItemID=5687&amp;ItemNamePattern=Tempering+Alloy&amp;ItemCategory1ID=&amp;ItemTraitID=&amp;ItemQualityID=&amp;IsChampionPoint=false&amp;LevelMin=&amp;LevelMax=&amp;MasterWritVoucherMin=&amp;MasterWritVoucherMax=&amp;AmountMin=&amp;AmountMax=&amp;PriceMin=&amp;PriceMax=6000&amp;page=9">9</a>
+            <!--/ko-->
+        </li>
+        
+        <li>
+            <!--ko if: $data == $parent.CurrentPage--><!--/ko-->
+            <!--ko if: $data != $parent.CurrentPage-->
+            <a data-bind="text: $data,
+                          attr: { href: $parent.GetUrlForPage($data) }" href="https://eu.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&amp;ItemID=5687&amp;ItemNamePattern=Tempering+Alloy&amp;ItemCategory1ID=&amp;ItemTraitID=&amp;ItemQualityID=&amp;IsChampionPoint=false&amp;LevelMin=&amp;LevelMax=&amp;MasterWritVoucherMin=&amp;MasterWritVoucherMax=&amp;AmountMin=&amp;AmountMax=&amp;PriceMin=&amp;PriceMax=6000&amp;page=10">10</a>
+            <!--/ko-->
+        </li>
+        <!--/ko-->
+        <!--ko if: ShowLastPage -->
+        <li class="disabled">
+            <a class="hidden-sm hidden-xs">
+                ...
+            </a>
+        </li>
+        <li>
+            <a class="hidden-sm hidden-xs" data-bind="attr:{ href: GetUrlForPage(TotalPageCount) },
+                                                      text: TotalPageCount" href="https://eu.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&amp;ItemID=5687&amp;ItemNamePattern=Tempering+Alloy&amp;ItemCategory1ID=&amp;ItemTraitID=&amp;ItemQualityID=&amp;IsChampionPoint=false&amp;LevelMin=&amp;LevelMax=&amp;MasterWritVoucherMin=&amp;MasterWritVoucherMax=&amp;AmountMin=&amp;AmountMax=&amp;PriceMin=&amp;PriceMax=6000&amp;page=59">59</a>
+        </li>
+        <!--/ko-->
+
+        <li data-bind="css: { disabled : CurrentPage >= TotalPageCount }">
+            <!--ko if: CurrentPage >= TotalPageCount --><!--/ko-->
+            <!--ko if: CurrentPage < TotalPageCount -->
+            <a data-bind="attr:{ href: GetUrlForPage(CurrentPage + 1) }" href="https://eu.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&amp;ItemID=5687&amp;ItemNamePattern=Tempering+Alloy&amp;ItemCategory1ID=&amp;ItemTraitID=&amp;ItemQualityID=&amp;IsChampionPoint=false&amp;LevelMin=&amp;LevelMax=&amp;MasterWritVoucherMin=&amp;MasterWritVoucherMax=&amp;AmountMin=&amp;AmountMax=&amp;PriceMin=&amp;PriceMax=6000&amp;page=2">&gt;</a>
+            <!--/ko-->
+        </li>
+    </ul>
+</div>
+    </div>
+</div>
+    <!--/ko-->
+
+    <div class="modal fade" id="captcha-modal" role="dialog" data-backdrop="static" data-keyboard="false">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">
+                        ×
+                    </button>
+                    <h3 class="modal-title">
+                        Sorry but you need to complete the captcha test to continue
+                    </h3>
+                </div>
+                <div class="modal-body">
+                    <div id="g-recaptcha" class="g-recaptcha" data-sitekey="6LdlqLwZAAAAAFlFfnj_h6JUU-igcmWx46wHcdBf"></div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">
+                        Cancel
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

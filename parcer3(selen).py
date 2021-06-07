@@ -1,8 +1,15 @@
-import random
+import sqlite3
 
-itemst = ['Chromium Plating', 'Zircon Plating', 'Potent Nirncrux', 'Perfect Roe', 'Hakeijo', 'Dreugh Wax', 'Tempering Alloy']
+sql_conn = sqlite3.connect('tts_urls.sqlite')
+cursor = sql_conn.cursor()
+itemst = []
 
-f = open("ttspage5.html", "r")
+for element in cursor.execute('SELECT items.item_name FROM items;'):
+	itemst.append(element[0])
+
+print(itemst)
+
+f = open("ttspage6.html", "r")
 t1 = f.read().split('"')
 f.close()
 

@@ -907,3 +907,77 @@ JavaScript error: https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js
 JavaScript error: https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js, line 66: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=0
 JavaScript error: https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js, line 66: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=0
 1622715824607	Marionette	INFO	Stopped listening on port 35339
+1622840096559	geckodriver	INFO	Listening on 127.0.0.1:34771
+1622840097549	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileiY5YpK"
+1622840097990	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1622840100098	Marionette	INFO	Listening on port 35819
+1622840100197	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js, line 66: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=0
+JavaScript warning: https://eu.tamrieltradecentre.com/bundles/General?v=Bj7ipGezryOMRLdyqbGo6fcHveyQPgl_apMbayfR4rg1, line 61: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js, line 66: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=0
+JavaScript warning: https://eu.tamrieltradecentre.com/bundles/General?v=Bj7ipGezryOMRLdyqbGo6fcHveyQPgl_apMbayfR4rg1, line 61: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js, line 66: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=0
+JavaScript warning: https://eu.tamrieltradecentre.com/bundles/General?v=Bj7ipGezryOMRLdyqbGo6fcHveyQPgl_apMbayfR4rg1, line 61: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js, line 66: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=0
+JavaScript warning: https://eu.tamrieltradecentre.com/bundles/General?v=Bj7ipGezryOMRLdyqbGo6fcHveyQPgl_apMbayfR4rg1, line 61: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js, line 66: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=0
+JavaScript error: https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js, line 66: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=0
+JavaScript error: https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js, line 66: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=0
+JavaScript error: https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js, line 66: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=0
+1622840151568	Marionette	INFO	Stopped listening on port 35819
+1622886507374	geckodriver	INFO	Listening on 127.0.0.1:40125
+1622886508350	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileSGmnjm"
+1622886509080	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1622886512563	Marionette	INFO	Listening on port 33533
+1622886512652	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js, line 66: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=0
+JavaScript warning: https://eu.tamrieltradecentre.com/bundles/General?v=Bj7ipGezryOMRLdyqbGo6fcHveyQPgl_apMbayfR4rg1, line 61: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js, line 66: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=0
+JavaScript warning: https://eu.tamrieltradecentre.com/bundles/General?v=Bj7ipGezryOMRLdyqbGo6fcHveyQPgl_apMbayfR4rg1, line 61: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js, line 66: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=0
+JavaScript warning: https://eu.tamrieltradecentre.com/bundles/General?v=Bj7ipGezryOMRLdyqbGo6fcHveyQPgl_apMbayfR4rg1, line 61: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js, line 66: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=0
+JavaScript warning: https://eu.tamrieltradecentre.com/bundles/General?v=Bj7ipGezryOMRLdyqbGo6fcHveyQPgl_apMbayfR4rg1, line 61: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js, line 66: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=0
+JavaScript error: https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js, line 66: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=0
+JavaScript error: https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js, line 66: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=0
+JavaScript error: https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js, line 66: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=0
+JavaScript error: https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js, line 66: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=0
+1622886573686	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1622886575913	Marionette	INFO	Stopped listening on port 33533
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x230032,name=PBrowser::Msg___delete__) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1623096084420	geckodriver	INFO	Listening on 127.0.0.1:59175
+1623096085319	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileabvXGl"
+1623096085775	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1623096088206	Marionette	INFO	Listening on port 42795
+1623096088288	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js, line 66: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=0
+JavaScript warning: https://eu.tamrieltradecentre.com/bundles/General?v=Bj7ipGezryOMRLdyqbGo6fcHveyQPgl_apMbayfR4rg1, line 61: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js, line 66: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=0
+JavaScript warning: https://eu.tamrieltradecentre.com/bundles/General?v=Bj7ipGezryOMRLdyqbGo6fcHveyQPgl_apMbayfR4rg1, line 61: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1623096100137	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript error: https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js, line 66: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=0
+JavaScript warning: https://eu.tamrieltradecentre.com/bundles/General?v=Bj7ipGezryOMRLdyqbGo6fcHveyQPgl_apMbayfR4rg1, line 61: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js, line 66: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=0
+JavaScript warning: https://eu.tamrieltradecentre.com/bundles/General?v=Bj7ipGezryOMRLdyqbGo6fcHveyQPgl_apMbayfR4rg1, line 61: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js, line 66: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=0
+JavaScript error: https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js, line 66: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=0
+JavaScript error: https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js, line 66: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=0
+1623096133174	Marionette	INFO	Stopped listening on port 42795
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+

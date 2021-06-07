@@ -6,14 +6,24 @@ from selenium.webdriver.chrome.options import Options
 from fake_useragent import UserAgent
 import random
 import time
+import sqlite3
 
-pages_dict = {"Chronium Plating":"https://eu.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&ItemID=18124&ItemNamePattern=Chromium+Plating&ItemCategory1ID=&ItemTraitID=&ItemQualityID=&IsChampionPoint=false&LevelMin=&LevelMax=&MasterWritVoucherMin=&MasterWritVoucherMax=&AmountMin=&AmountMax=&PriceMin=&PriceMax=130000", 
- "Zircon plating":"https://eu.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&ItemID=17799&ItemNamePattern=Zircon+Plating&ItemCategory1ID=&ItemTraitID=&ItemQualityID=&IsChampionPoint=false&LevelMin=&LevelMax=&MasterWritVoucherMin=&MasterWritVoucherMax=&AmountMin=&AmountMax=&PriceMin=&PriceMax=35000", 
- "Potent Nirncrux":"https://eu.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&ItemID=3790&ItemNamePattern=Potent+Nirncrux&ItemCategory1ID=&ItemTraitID=&ItemQualityID=&IsChampionPoint=false&LevelMin=&LevelMax=&MasterWritVoucherMin=&MasterWritVoucherMax=&AmountMin=&AmountMax=&PriceMin=&PriceMax=21000", 
- "Prefect Roe":"https://eu.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&ItemID=6132&ItemNamePattern=Perfect+Roe&ItemCategory1ID=&ItemTraitID=&ItemQualityID=&IsChampionPoint=false&LevelMin=&LevelMax=&MasterWritVoucherMin=&MasterWritVoucherMax=&AmountMin=&AmountMax=&PriceMin=&PriceMax=21000",
- "Hakejio":"https://eu.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&ItemID=4794&ItemNamePattern=Hakeijo&ItemCategory1ID=&ItemTraitID=&ItemQualityID=&IsChampionPoint=false&LevelMin=&LevelMax=&MasterWritVoucherMin=&MasterWritVoucherMax=&AmountMin=&AmountMax=&PriceMin=&PriceMax=32500", 
- "Dreugh Wax":"https://eu.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&ItemID=211&ItemNamePattern=Dreugh+Wax&ItemCategory1ID=&ItemTraitID=&ItemQualityID=&IsChampionPoint=false&LevelMin=&LevelMax=&MasterWritVoucherMin=&MasterWritVoucherMax=&AmountMin=&AmountMax=&PriceMin=&PriceMax=12000", 
- "Tempering Alloy":"https://eu.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&ItemID=5687&ItemNamePattern=Tempering+Alloy&ItemCategory1ID=&ItemTraitID=&ItemQualityID=&IsChampionPoint=false&LevelMin=&LevelMax=&MasterWritVoucherMin=&MasterWritVoucherMax=&AmountMin=&AmountMax=&PriceMin=&PriceMax=6000"}
+#getting data from tts_urls.sqlite to form dict for farther web requests
+sql_conn = sqlite3.connect('tts_urls.sqlite')
+cursor = sql_conn.cursor()
+
+pages_dict = {}
+urls_list = []
+p = 0
+
+for element in cursor.execute('SELECT urls.url || items.item_price FROM urls INNER JOIN items ON item_name = url_name;'):
+	urls_list.append(element[0])
+
+for element in cursor.execute('SELECT items.item_name FROM items;'):
+	pages_dict[element[0]] = urls_list[p]
+	p+=1
+
+print(pages_dict)
 
 def get_pages(pages_dict):
 	'''This func's job is getting web pages source cod WITH dynamic data suppplied from
@@ -56,7 +66,7 @@ def get_pages(pages_dict):
 	driver.maximize_window()
 	
 	j = 0
-	
+	f = open("ttspage6.html", "w")
 	for i in pages_dict:
 		ttspage = "div>"
 		while len(ttspage.split("div")) < 100:
@@ -68,7 +78,7 @@ def get_pages(pages_dict):
 			time.sleep(random.uniform(1, 2))
 			print("--- %s seconds ---" % (time.time() - start_time))
 			driver.get(pages_dict.get(i))
-			time.sleep(random.uniform(1, 2))
+			time.sleep(random.uniform(2, 3))
 			print("--- %s seconds ---" % (time.time() - start_time))
 			#cut the page to get only half after <search-result-view>
 			element = driver.find_element_by_id("search-result-view")
@@ -77,11 +87,14 @@ def get_pages(pages_dict):
 			#print(ttspage)
 			print(len(ttspage.split("div")), j)
 			j += 1
+			#this if statement is added ONLY to give possibility and time
+			# to pass CAPTCHA test. There are not too many ways to bypass it.
+			# We can wait when some of false user Agents work and went throut,
+			# but in half of all cases it takes too much time. Easier to pass CAPTCHA test.
 			if len(ttspage.split("div")) < 100:
-				print("<>ATTENTION!<> Most likely CAPTCHA noticed us. Pass a test, please, and after press ENTER in Terminal")
+				print("<>ATTENTION!<> Most likely CAPTCHA noticed the bot. Pass a test, please, and after press ENTER in Terminal")
 				input()
 		print(f'------------------------------------{i}------------------------------------------')
-		f = open("ttspage5.html", "a")
 		f.write(ttspage)
 	
 	print("Done.")
