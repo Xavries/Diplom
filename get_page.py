@@ -6,6 +6,7 @@ from selenium.webdriver.chrome.options import Options
 from fake_useragent import UserAgent
 import random
 import time
+'''
 import sqlite3
 
 #getting data from tts_urls.sqlite to form dict for farther web requests
@@ -24,7 +25,7 @@ for element in cursor.execute('SELECT items.item_name FROM items;'):
 	p+=1
 
 print(pages_dict)
-
+'''
 def get_pages(pages_dict):
 	'''This func's job is getting web pages source cod WITH dynamic data suppplied from
 	sites API for future data parcing. Also it is made in such manner to avoid CAPTCHA, 
@@ -98,8 +99,8 @@ def get_pages(pages_dict):
 		f.write(ttspage)
 	
 	print("Done.")
-	
+	f.close()
 	driver.quit()
 
-
-get_pages(pages_dict)
+if __name__ == "main":
+	get_pages(pages_dict)

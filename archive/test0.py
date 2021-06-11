@@ -1,4 +1,4 @@
-import sqlite3
+'''import sqlite3
 
 sql_conn = sqlite3.connect('tts_urls.sqlite')
 
@@ -28,3 +28,35 @@ pages_dict0 = {"Chromium Plating":"https://eu.tamrieltradecentre.com/pc/Trade/Se
  "Hakejio":"https://eu.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&ItemID=4794&ItemNamePattern=Hakeijo&ItemCategory1ID=&ItemTraitID=&ItemQualityID=&IsChampionPoint=false&LevelMin=&LevelMax=&MasterWritVoucherMin=&MasterWritVoucherMax=&AmountMin=&AmountMax=&PriceMin=&PriceMax=32500", 
  "Dreugh Wax":"https://eu.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&ItemID=211&ItemNamePattern=Dreugh+Wax&ItemCategory1ID=&ItemTraitID=&ItemQualityID=&IsChampionPoint=false&LevelMin=&LevelMax=&MasterWritVoucherMin=&MasterWritVoucherMax=&AmountMin=&AmountMax=&PriceMin=&PriceMax=12000", 
  "Tempering Alloy":"https://eu.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&ItemID=5687&ItemNamePattern=Tempering+Alloy&ItemCategory1ID=&ItemTraitID=&ItemQualityID=&IsChampionPoint=false&LevelMin=&LevelMax=&MasterWritVoucherMin=&MasterWritVoucherMax=&AmountMin=&AmountMax=&PriceMin=&PriceMax=6000"}
+'''
+
+def backward_string_by_wor(text: str) -> str:
+    b = []
+    n = []
+    for i in text.split():
+        print(i)
+        g = []
+        for j in i:
+            g.append(j)
+        g.reverse()
+        b.append(g)
+    print(b)
+    for i in b:
+        n.append(''.join(i))
+        print(n)
+    print(' '.join(n))
+    return ' '.join(n)
+
+
+
+def backward_string_by_word(text: str) -> str:
+    h = [i[::-1] for i in text.split(' ')]
+    h.reverse()
+    u = len(h)
+    #n = [h.pop(-1) for i in range(u)]
+    #for i in h:
+     #   n.append(h.pop(h[-1]))
+    print(h, '\n', 'n')
+    return None
+
+backward_string_by_word('welcome to  a game')
